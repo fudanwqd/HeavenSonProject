@@ -26,7 +26,7 @@ cc.Class({
     },
 
     start () {
-
+//try git
     },
 
 });
