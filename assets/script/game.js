@@ -25,8 +25,7 @@ cc.Class({
         cc.director.loadScene(sceneName);//可能需要回调函数
     },
 
-    start () {
 
-    },
+
 
 });
