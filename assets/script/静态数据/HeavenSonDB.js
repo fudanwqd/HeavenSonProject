@@ -17,6 +17,10 @@ var HeavenSonDemo = cc.Class({
             default:null,
             type: cc.SpriteFrame,
         },
+        e_headPortrait:{
+            default:null,
+            type: cc.SpriteFrame,
+        },
     }
 }
 );

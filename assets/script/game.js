@@ -11,12 +11,13 @@ cc.Class({
 
     },
 
-    onload(){
+    onLoad(){
         this.userData = this.userDataNode.getComponent("userData");
         this.HeavenSonDB = this.HeavenSonDatabaseNode.getComponent("HeavenSonDB");
         this.TreasureDB = this.TreasureDatabaseNode.getComponent("TreasureDB");
         this.MonsterDB = this.MonsterDatabaseNode.getComponent("MonsterDB");
 
+        cc.log("into game onload");//
         // 常驻节点
         cc.game.addPersistRootNode(this.node);
     },
@@ -25,7 +26,14 @@ cc.Class({
         cc.director.loadScene(sceneName);//可能需要回调函数
     },
 
+    start () {
 
+    },
 
+    //根据getChildbyID（childID）：根据身份id获得该天道之子对象
+    getChildbyID(childID){
+        //...
+        // return HeavenSonDemo
+    }
 
 });
