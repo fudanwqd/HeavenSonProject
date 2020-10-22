@@ -29,18 +29,31 @@ cc.Class({
     start () {
 
     },
-
-    //根据getChildbyID（childID）：根据身份id获得该天道之子对象HeavenSon
-    getChildbyID(childID){
-        //...
-        // return HeavenSon
+    // 根据天道之子demo的id获得对应的天道之子demo对象 id应当是在抽卡函数中随机生成的数。
+    getHeavenSonDemoByID(demoID){
+        var returnChildDemo = null;
+        this.HeavenSonDB.sons.forEach(element => {
+            if(element.heavenSonDemoId==demoID){
+                returnChildDemo = element;
+                return;
+            }
+        });
+        return returnChildDemo;
     },
 
-    //获得玩家拥有的全部天道之子对象
-    getAllOwnedHeavenSons(){
-        //...
-        //return HeavenSon[]
-    }
- 
+     // 根据灵宝demo的id获得对应的灵宝demo对象 id应当是在战斗成功之后随机生成的数。
+     getTreasureByID(demoID){
+        var returnTreasureDemo = null;
+        this.TreasureDB.treasures.forEach(element => {
+            if(element.treasurDemoId==demoID){
+                returnTreasureDemo = element;
+                return;
+            }
+        });
+        return returnTreasureDemo;
+    },
+
+
+
 
 });

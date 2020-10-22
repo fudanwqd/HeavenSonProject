@@ -1,7 +1,7 @@
 var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
-       heavenSonDemo : HeavenSonDemo,
+       heavenSonDemo : Object,
        heavenSonId : cc.Integer,
        level : cc.Integer,
        power : cc.Integer,
@@ -25,14 +25,14 @@ var HeavenSon = cc.Class({
 var Treasure = cc.Class({
     name : '灵宝',
     properties :{
-       treasureNode : cc.Node,
+       treasureDemo : Object,
        treasureId:cc.Integer,
        level : cc.Integer,
        power : cc.Integer,
        defend: cc.Integer,
        HP    : cc.Integer,
     }
-}) s
+})
 
 
 cc.Class({
@@ -174,6 +174,10 @@ cc.Class({
         return this.sons;
         //...
         //return HeavenSon[]
+    },
+
+    getAllOwnedTreasures(){
+        return this.treasures;
     },
     start () {
 

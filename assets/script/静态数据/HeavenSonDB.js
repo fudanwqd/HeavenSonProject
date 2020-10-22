@@ -4,8 +4,7 @@ var HeavenSonDemo = cc.Class({
     name : '天道之子模板',
     properties :{
         name : cc.String,
-        heavenSonId : cc.Integer,//身份识别唯一编码
-        type : cc.Integer,//门派
+        heavenSonDemoId : cc.Integer,//与其在sons数组的下标相同
         worldType : cc.String,//世界属性
         minPower : cc.Integer,
         maxPower : cc.Integer,

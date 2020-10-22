@@ -2,7 +2,7 @@ var TreasureDemo = cc.Class({
     name : "灵宝模板",
     properties : {
         name : cc.String,
-        treasureId : cc.Integer,
+        treasurDemoId : cc.Integer,
         type : cc.Integer,//门派
         minPower : cc.Integer,
         maxPower : cc.Integer,
