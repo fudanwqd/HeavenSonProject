@@ -1,7 +1,7 @@
 var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
-       heavenSonNode : cc.Node,
+       heavenSonDemo : HeavenSonDemo,
        heavenSonId : cc.Integer,
        level : cc.Integer,
        power : cc.Integer,
