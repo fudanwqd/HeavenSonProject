@@ -1,8 +1,10 @@
 var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
-       heavenSonNode : cc.Node,
-       heavenSonId : cc.Integer,
+       name : cc.String,
+       heavenSonId : cc.Integer,//身份识别唯一编码
+       heavenSonDemo : HeavenSonDemo,
+
        level : cc.Integer,
        power : cc.Integer,
        defend: cc.Integer,
@@ -10,7 +12,15 @@ var HeavenSon = cc.Class({
        ownTreasure : {
            default :[],
            type : [Treasure]
-       }
+       },
+       staticImage:{
+        default:null,
+        type: cc.SpriteFrame,
+       },
+       e_headPortrait:{
+            default:null,
+            type: cc.SpriteFrame,
+       },
     }
 })
 //能跨文件夹调用类吗
@@ -24,7 +34,7 @@ var Treasure = cc.Class({
        defend: cc.Integer,
        HP    : cc.Integer,
     }
-})
+}) s
 
 
 cc.Class({
