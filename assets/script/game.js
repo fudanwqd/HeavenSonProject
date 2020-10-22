@@ -41,5 +41,6 @@ cc.Class({
         //...
         //return HeavenSon[]
     }
+ 
 
 });
