@@ -30,10 +30,6 @@ cc.Class({
 
     },
 
-    //根据getChildbyID（childID）：根据身份id获得该天道之子对象
-    getChildbyID(childID){
-        //...
-        // return HeavenSonDemo
-    }
+   
 
 });

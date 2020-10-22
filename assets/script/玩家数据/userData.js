@@ -2,6 +2,7 @@ var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
        heavenSonNode : cc.Node,
+       heavenSonId : cc.Integer,
        level : cc.Integer,
        power : cc.Integer,
        defend: cc.Integer,
@@ -17,6 +18,7 @@ var Treasure = cc.Class({
     name : '灵宝',
     properties :{
        treasureNode : cc.Node,
+       treasureId:cc.Integer,
        level : cc.Integer,
        power : cc.Integer,
        defend: cc.Integer,
@@ -84,12 +86,89 @@ cc.Class({
     getData(dataName){
         return cc.sys.localStorage.getItem(dataName);
     },
+
     setData(dataName,data){
         cc.sys.localStorage.setItem(dataName, JSON.stringify(data));
+    },
+
+ //根据getChildByID（childID）：根据身份id获得该天道之子对象
+    getChildByID(childID){
+        var returnChild = null;
+        this.sons.forEach(element => {
+            if(element.heavenSonId==childID){
+                returnChild = element;
+                return;
+            }
+        });
+        return returnChild;
+        //...
+        // return HeavenSonDemo
+    },
+
+    addNewChild(heavenSon){
+        this.sons.push(heavenSon);
+        //更新数据之后进行数据的存储
+        updateHeavenSon();
+    },
+
+    deleteChild(childID){
+        var child = getChildByID(childID);
+        if(child){
+            this.sons.remove(child);
+        }
+        updateHeavenSon();
+    },
+
+    getChildByIndex(index){
+        if(index<0||index>=this.sons.length){
+            return null;
+        }
+        return this.sons[index];
+    },
+
+
+
+    getTreasureByID(treasureID){
+        var returnTreasure = null;
+        this.treasures.forEach(element => {
+            if(element.treasureId==treasureID){
+                returnTreasure = element;
+                return;
+            }
+        });
+        return returnTreasure;
+    },
+
+    addNewTreasure(treasure){
+        this.treasures.push(treasure);
+        updateTreasure();
+    },
+
+    deleteTreasure(treasureID){
+        var treasure = getTreasureByID(treasureID);
+        if(treasure){
+            this.treasures.remove(treasure);
+        }
+        updateTreasure();
+    },
+
+    getTreasureByIndex(index){
+        if(index<0||index>=this.sons.length){
+            return null;
+        }
+        return this.sons[index];  
     },
     start () {
 
     },
+
+    updateHeavenSon(){
+        setData("heavenSons",this.sons);
+    },
+
+    updateTreasure(){
+        setData("treasures",this.treasures)
+    }
 
 });
 
