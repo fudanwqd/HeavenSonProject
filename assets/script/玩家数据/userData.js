@@ -1,7 +1,10 @@
 var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
-       heavenSonNode : cc.Node,
+       name : cc.String,
+       heavenSonId : cc.Integer,//身份识别唯一编码
+       worldType : cc.String,//世界属性
+       heavenSonNode : cc.Node,//node不能存到预制件里，storage应该也不太好存吧
        level : cc.Integer,
        power : cc.Integer,
        defend: cc.Integer,
@@ -9,7 +12,15 @@ var HeavenSon = cc.Class({
        ownTreasure : {
            default :[],
            type : [Treasure]
-       }
+       },
+       staticImage:{
+        default:null,
+        type: cc.SpriteFrame,
+       },
+       e_headPortrait:{
+            default:null,
+            type: cc.SpriteFrame,
+       },
     }
 })
 //能跨文件夹调用类吗

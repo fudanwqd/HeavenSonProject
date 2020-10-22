@@ -30,10 +30,16 @@ cc.Class({
 
     },
 
-    //根据getChildbyID（childID）：根据身份id获得该天道之子对象
+    //根据getChildbyID（childID）：根据身份id获得该天道之子对象HeavenSon
     getChildbyID(childID){
         //...
-        // return HeavenSonDemo
+        // return HeavenSon
+    },
+
+    //获得玩家拥有的全部天道之子对象
+    getAllOwnedHeavenSons(){
+        //...
+        //return HeavenSon[]
     }
 
 });

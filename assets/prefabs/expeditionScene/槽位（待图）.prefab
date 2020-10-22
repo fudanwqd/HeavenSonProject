@@ -17,7 +17,7 @@
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2
@@ -195,6 +195,7 @@
     "emptySF": {
       "__uuid__": "5e1dfaa7-399c-41e9-85ec-46bb77e06b2f"
     },
+    "heavenSonPNode": null,
     "_id": ""
   },
   {
