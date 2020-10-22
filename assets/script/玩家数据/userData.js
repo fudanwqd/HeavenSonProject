@@ -166,6 +166,15 @@ cc.Class({
         }
         return this.sons[index];  
     },
+
+
+
+    //获得玩家拥有的全部天道之子对象
+    getAllOwnedHeavenSons(){
+        return this.sons;
+        //...
+        //return HeavenSon[]
+    },
     start () {
 
     },
@@ -177,6 +186,9 @@ cc.Class({
     updateTreasure(){
         setData("treasures",this.treasures)
     }
+
+
+    
 
 });
 
