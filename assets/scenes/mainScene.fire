@@ -67,7 +67,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": true,
-    "_id": "c7ca2135-8f7a-4253-b563-467667f08d54"
+    "_id": "241fb91e-afc1-4706-98ad-855d76687fba"
   },
   {
     "__type__": "cc.Node",
@@ -183,7 +183,7 @@
       "array": [
         0,
         0,
-        269.1424907422142,
+        269.1313401070383,
         0,
         0,
         0,
@@ -1040,6 +1040,7 @@
     "name": "",
     "heavenSonId": 0,
     "type": 0,
+    "worldType": "",
     "minPower": 0,
     "maxPower": 0,
     "minDefend": 0,

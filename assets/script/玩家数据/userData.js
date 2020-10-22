@@ -10,7 +10,15 @@ var HeavenSon = cc.Class({
        ownTreasure : {
            default :[],
            type : [Treasure]
-       }
+       },
+       staticImage:{
+        default:null,
+        type: cc.SpriteFrame,
+       },
+       e_headPortrait:{
+            default:null,
+            type: cc.SpriteFrame,
+       },
     }
 })
 //能跨文件夹调用类吗
@@ -24,7 +32,7 @@ var Treasure = cc.Class({
        defend: cc.Integer,
        HP    : cc.Integer,
     }
-})
+}) s
 
 
 cc.Class({
