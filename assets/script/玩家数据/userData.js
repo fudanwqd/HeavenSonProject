@@ -32,7 +32,7 @@ var Treasure = cc.Class({
        defend: cc.Integer,
        HP    : cc.Integer,
     }
-}) s
+}) 
 
 
 cc.Class({
