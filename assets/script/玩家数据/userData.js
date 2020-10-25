@@ -1,9 +1,10 @@
 var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
-       heavenSonDemo : HeavenSonDemo,
+       heavenSonDemo : Object,
        heavenSonId : cc.Integer,
        level : cc.Integer,
+       exp: cc.Integer,//当前级别修为（经验）值； 该级别满值（能突破的时候）=expBase*level
        power : cc.Integer,
        defend: cc.Integer,
        HP    : cc.Integer,
@@ -25,7 +26,7 @@ var HeavenSon = cc.Class({
 var Treasure = cc.Class({
     name : '灵宝',
     properties :{
-       treasureNode : cc.Node,
+       treasureDemo : Object,
        treasureId:cc.Integer,
        level : cc.Integer,
        power : cc.Integer,
@@ -72,7 +73,14 @@ cc.Class({
             default : [] ,
             type : [Treasure]
          },
-         
+        expBase : {//经验基础  每级（100点）
+            default : 100,
+            type : cc.Integer,
+        },
+        maxLevel : {//等级上限（如 1~10:炼气，11~20：筑基... 90~100：大乘）
+            default : 100,
+            type : cc.Integer,
+        },
 
     },
 
@@ -134,6 +142,11 @@ cc.Class({
         return this.sons[index];
     },
 
+    //更改某天道之子
+    changeChild(heavenSon){
+        //...
+    },
+
 
 
     getTreasureByID(treasureID){
@@ -174,6 +187,10 @@ cc.Class({
         return this.sons;
         //...
         //return HeavenSon[]
+    },
+
+    getAllOwnedTreasures(){
+        return this.treasures;
     },
     start () {
 

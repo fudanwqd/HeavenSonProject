@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "42fbb930-fc39-4cd3-916e-18b9d022bbc8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 308,
+  "height": 156,
+  "platformSettings": {},
+  "subMetas": {
+    "人物名字底图-蓝色-表示此境已经解锁-尚未有天道之子在其中历练": {
+      "ver": "1.0.4",
+      "uuid": "2dd5c9b9-8638-4ced-b21f-e6fe7cda566d",
+      "rawTextureUuid": "42fbb930-fc39-4cd3-916e-18b9d022bbc8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 308,
+      "height": 156,
+      "rawWidth": 308,
+      "rawHeight": 156,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

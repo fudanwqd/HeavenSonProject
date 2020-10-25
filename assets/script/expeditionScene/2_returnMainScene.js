@@ -28,20 +28,13 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    
-    onLoad () {
-        //可以预加载的场景
-        cc.director.preloadScene("expedition", function () {
-            cc.log("expedition scene preloaded");
-        });
+    // onLoad () {},
+
+    //返回主场景
+    returnMainScene() {
+        cc.log("应该切换到场景：MainScene");
+        cc.director.loadScene("mainScene");
     },
-
-    changeSceneExpedition () {
-        cc.log("应该切换到场景：expedition");
-        cc.director.loadScene("expedition");
-    },
-
-
 
     // update (dt) {},
 });

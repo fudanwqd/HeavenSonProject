@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "5f33cdae-0d5f-4d8a-8c46-4b0ebd24b62b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 217,
+  "height": 180,
+  "platformSettings": {},
+  "subMetas": {
+    "历练完成后莲座内的图片": {
+      "ver": "1.0.4",
+      "uuid": "0d9d4cee-2181-44fb-a0d1-4ef646ef0929",
+      "rawTextureUuid": "5f33cdae-0d5f-4d8a-8c46-4b0ebd24b62b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 217,
+      "height": 180,
+      "rawWidth": 217,
+      "rawHeight": 180,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
