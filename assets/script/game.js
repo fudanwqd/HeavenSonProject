@@ -43,4 +43,4 @@ cc.Class({
     }
  
 
-});
+});//which one
