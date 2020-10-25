@@ -177,7 +177,7 @@
       "array": [
         0,
         0,
-        268.98749570124625,
+        223.5444295342025,
         0,
         0,
         0,
@@ -433,6 +433,7 @@
     "name": "李周清",
     "heavenSonId": 1,
     "type": 0,
+    "worldType": "",
     "minPower": 0,
     "maxPower": 0,
     "minDefend": 0,
@@ -440,13 +441,15 @@
     "HP": 0,
     "growRate": 0,
     "quality": 0,
-    "staticImage": null
+    "staticImage": null,
+    "e_headPortrait": null
   },
   {
     "__type__": "天道之子模板",
     "name": "",
     "heavenSonId": 0,
     "type": 0,
+    "worldType": "",
     "minPower": 0,
     "maxPower": 0,
     "minDefend": 0,
@@ -454,7 +457,8 @@
     "HP": 0,
     "growRate": 0,
     "quality": 0,
-    "staticImage": null
+    "staticImage": null,
+    "e_headPortrait": null
   },
   {
     "__type__": "cc.Node",
