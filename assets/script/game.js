@@ -56,4 +56,4 @@ cc.Class({
 
 
 
-});
+});//which one
