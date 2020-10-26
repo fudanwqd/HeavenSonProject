@@ -85,13 +85,139 @@ cc.Class({
     },
 
     onload(){
+        // 将数据从已有数据开始进行初始化，如果localstorage中有数据，则使用localstorage数据，否则使用默认数据
         var level = getData("level");
         if(level){
             this.level = level;
         }
+
+        var stoneNum = getData("stoneNum");
+        if(stoneNum){
+            this.stoneNum = stoneNum;
+        }
+
+        var hmzqNum = getData("hmzqNum");
+        if(hmzqNum){
+            this.hmzqNum = hmzqNum;
+        }
+
+        var currentWorld = getData("currentWorld");
+        if(currentWorld){
+            this.currentWorld = currentWorld;
+        }
+
+        var fighterID = getData("fighterID");
+        if(fighterID){
+            this.fighterID = fighterID;
+        }
+
+        var years = getData("years");
+        if(years){
+            this.years = years;
+        }
+
+        var sons = getData("sons");
+        if(sons){
+            this.sons = sons;
+        }
+
+        var treasures = getData("treasures");
+        if(treasures){
+            this.treasures = treasures;
+        }
+        var expBase = getData("expBase");
+        if(expBase){
+            this.expBase = expBase;
+        }
+
+        var maxLevel = getData("maxLevel");
+        if(maxLevel){
+            this.maxLevel = maxLevel;
+        }
+
+
+        
         //...
 
     },
+    //用户属性的getset方法,set时认为数据已经更新，因此要和数据库进行同步
+
+    getStoneNum(){
+        return this.stoneNum;
+    },
+
+    setStoneNum(num){
+        if(num>=0){
+            this.stoneNum = num;
+        }
+    },
+
+
+    getHmzqNum(){
+        return this.hmzqNum;
+    },
+
+    setHmzqNum(num){
+        if(num>=0){
+            this.hmzqNum = num;
+        }
+    },
+
+
+    getCurrentWorld(){
+        return this.currentWorld;
+    },
+
+    setCurrentWorld(worldID){
+        if(worldID>=0){
+            this.currentWorld = worldID;
+        }
+    },
+    
+
+    getFighterID(){
+        return this.fighterID;
+    },
+
+    setFighterID(fighterID){
+        if(fighterID>=0){
+            this.fighterID = fighterID;
+        }
+    },
+
+    getYears(){
+        return this.years;
+    },
+
+    setYears(years){
+        if(years>0){
+            this.years = years;
+        }
+    },
+
+    getExpBase(){
+        return this.expBase;
+    },
+
+    setExpBase(exp){
+        if(exp>=0){
+            this.expBase = exp;
+        }
+    },
+
+    getMaxLevel(){
+        return  this.maxLevel;
+    },
+
+    setMaxLevel(maxlevel){
+        if(maxlevel>0){
+            this.maxLevel = maxlevel;
+        }
+    },
+    
+
+
+
     //数据持久化
     // loadInformation(){
     //     cc.sys.localStorage.setItem("level", JSON.stringify(this.level));
@@ -147,6 +273,9 @@ cc.Class({
     //更改某天道之子
     changeChild(heavenSon){
         //...
+        // 这里有一个问题，就是其他界面在拿到天道之子对象后，在这个对象上进行修改，是否会影响到用户数据中原有的对象，也就是传递的是不是个引用
+        // 如果是引用，这个方法就不需要实现，否则需要将新对象刷新到用户数据中
+        updateHeavenSon();
     },
 
 

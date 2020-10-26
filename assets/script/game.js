@@ -53,6 +53,17 @@ cc.Class({
         return returnTreasureDemo;
     },
 
+    getMonsterByID(monsterID){
+        var returnMonster = null;
+        this.MonsterDB.monsters.forEach(element => {
+            if(element.monsterId==monsterID){
+                returnMonster = element;
+                return;
+            }
+        });
+        return returnMonster;
+    }
+
 
 
 
