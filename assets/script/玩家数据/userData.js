@@ -120,13 +120,14 @@ cc.Class({
         //...
         // return HeavenSonDemo
     },
-
+// 为玩家新增一个天道之子，输入天道之子对象
     addNewChild(heavenSon){
         this.sons.push(heavenSon);
         //更新数据之后进行数据的存储
         updateHeavenSon();
     },
 
+// 根据id删除玩家拥有的天道之子
     deleteChild(childID){
         var child = getChildByID(childID);
         if(child){
@@ -135,6 +136,7 @@ cc.Class({
         updateHeavenSon();
     },
 
+// 根据下标获得玩家的天道之子
     getChildByIndex(index){
         if(index<0||index>=this.sons.length){
             return null;
