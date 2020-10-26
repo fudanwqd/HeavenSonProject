@@ -63,13 +63,20 @@ cc.Class({
     },
 
     //重新渲染该插槽按钮（空→历练中）（待扩展：历练中→历练结束可收获）
-    setNewSon(childID){
-        //...
+    setNewSon(son){
+        this.isEmpty = false;
+        //获得该天道之子的头像
+        this.heavenSon = son;
+        this.getComponent(cc.Sprite).spriteFrame = this.heavenSon.e_headPortrait;
     },
 
     //重新渲染该插槽按钮（→空）
     setEmpty(){
-        //...
+        this.isEmpty = true;
+        this.getComponent(cc.Sprite).spriteFrame = this.emptySF;
+        this.heavenSon={};
+        this.heavenSon.heavenSonId = -1;
+        this.heavenSon.staticImage = null;
     }
 
     

@@ -13,11 +13,11 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "槽位（待图）",
+    "_name": "槽位",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 2
@@ -42,8 +42,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 100
+      "width": 300,
+      "height": 138
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -55,7 +55,7 @@
       "ctor": "Float64Array",
       "array": [
         0,
-        -60,
+        -189,
         0,
         0,
         0,
@@ -95,7 +95,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "a23235d1-15db-4b95-8439-a2e005bfff91"
+      "__uuid__": "a2e361a1-602f-4ed2-bd7c-ba157956231a"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -190,12 +190,11 @@
     },
     "_enabled": true,
     "lockedSF": {
-      "__uuid__": "39cc2438-632f-48fa-8a54-fdbfafcd278c"
+      "__uuid__": "a2e361a1-602f-4ed2-bd7c-ba157956231a"
     },
     "emptySF": {
-      "__uuid__": "5e1dfaa7-399c-41e9-85ec-46bb77e06b2f"
+      "__uuid__": "2dd5c9b9-8638-4ced-b21f-e6fe7cda566d"
     },
-    "heavenSonPNode": null,
     "_id": ""
   },
   {
