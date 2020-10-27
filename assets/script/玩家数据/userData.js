@@ -84,53 +84,62 @@ cc.Class({
 
     },
 
-    onload(){
+
+    getData(dataName){
+        return JSON.parse(cc.sys.localStorage.getItem(dataName));
+    },
+
+    setData(dataName,data){
+        cc.sys.localStorage.setItem(dataName, JSON.stringify(data));
+    },
+    onLoad(){
         // 将数据从已有数据开始进行初始化，如果localstorage中有数据，则使用localstorage数据，否则使用默认数据
-        var level = getData("level");
+        cc.log("userdata onload!");
+        var level = this.getData("level");
         if(level){
             this.level = level;
         }
 
-        var stoneNum = getData("stoneNum");
+        var stoneNum =  this.getData("stoneNum");
         if(stoneNum){
             this.stoneNum = stoneNum;
         }
 
-        var hmzqNum = getData("hmzqNum");
+        var hmzqNum =  this.getData("hmzqNum");
         if(hmzqNum){
             this.hmzqNum = hmzqNum;
         }
 
-        var currentWorld = getData("currentWorld");
+        var currentWorld =  this.getData("currentWorld");
         if(currentWorld){
             this.currentWorld = currentWorld;
         }
 
-        var fighterID = getData("fighterID");
+        var fighterID =  this.getData("fighterID");
         if(fighterID){
             this.fighterID = fighterID;
         }
 
-        var years = getData("years");
+        var years =  this.getData("years");
         if(years){
             this.years = years;
         }
 
-        var sons = getData("sons");
+        var sons =  this.getData("heavenSons");
         if(sons){
             this.sons = sons;
         }
 
-        var treasures = getData("treasures");
+        var treasures =  this.getData("treasures");
         if(treasures){
             this.treasures = treasures;
         }
-        var expBase = getData("expBase");
+        var expBase =  this.getData("expBase");
         if(expBase){
             this.expBase = expBase;
         }
 
-        var maxLevel = getData("maxLevel");
+        var maxLevel = this.getData("maxLevel");
         if(maxLevel){
             this.maxLevel = maxLevel;
         }
@@ -141,6 +150,21 @@ cc.Class({
 
     },
     //用户属性的getset方法,set时认为数据已经更新，因此要和数据库进行同步
+    getLevel(){
+        // for test
+        // cc.log("getlevel :"+this.getData("level"));
+        return this.level;
+    },
+
+    setLevel(level){
+        if(level>0){
+            this.level = level;
+        }
+        // for test
+        // cc.log("setlevel");
+        this.setData("level",this.level);
+        
+    },
 
     getStoneNum(){
         return this.stoneNum;
@@ -225,13 +249,7 @@ cc.Class({
     //     //与浏览器类似
     // },
 
-    getData(dataName){
-        return cc.sys.localStorage.getItem(dataName);
-    },
-
-    setData(dataName,data){
-        cc.sys.localStorage.setItem(dataName, JSON.stringify(data));
-    },
+  
 
  //根据getChildByID（childID）：根据身份id获得该天道之子对象
     getChildByID(childID){
@@ -250,7 +268,7 @@ cc.Class({
     addNewChild(heavenSon){
         this.sons.push(heavenSon);
         //更新数据之后进行数据的存储
-        updateHeavenSon();
+        this.updateHeavenSon();
     },
 
 // 根据id删除玩家拥有的天道之子
@@ -259,7 +277,7 @@ cc.Class({
         if(child){
             this.sons.remove(child);
         }
-        updateHeavenSon();
+        this.updateHeavenSon();
     },
 
 // 根据下标获得玩家的天道之子
@@ -275,7 +293,7 @@ cc.Class({
         //...
         // 这里有一个问题，就是其他界面在拿到天道之子对象后，在这个对象上进行修改，是否会影响到用户数据中原有的对象，也就是传递的是不是个引用
         // 如果是引用，这个方法就不需要实现，否则需要将新对象刷新到用户数据中
-        updateHeavenSon();
+        this.updateHeavenSon();
     },
 
 
@@ -293,7 +311,7 @@ cc.Class({
 
     addNewTreasure(treasure){
         this.treasures.push(treasure);
-        updateTreasure();
+        this.updateTreasure();
     },
 
     deleteTreasure(treasureID){
@@ -301,7 +319,7 @@ cc.Class({
         if(treasure){
             this.treasures.remove(treasure);
         }
-        updateTreasure();
+        this.updateTreasure();
     },
 
     getTreasureByIndex(index){
@@ -328,12 +346,21 @@ cc.Class({
     },
 
     updateHeavenSon(){
-        setData("heavenSons",this.sons);
+        this.setData("heavenSons",this.sons);
     },
 
     updateTreasure(){
-        setData("treasures",this.treasures)
-    }
+        this.setData("treasures",this.treasures)
+    },
+
+    // for test
+    
+    // createTestHeavenSon(HeavenSonDemo){
+    //     var newHeavenSon = new HeavenSon();
+    //     newHeavenSon.heavenSonDemo = HeavenSonDemo;
+    //     newHeavenSon.heavenSonId = 1;
+    //     return newHeavenSon;
+    // }
 
 
     

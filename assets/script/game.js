@@ -17,7 +17,19 @@ cc.Class({
         this.TreasureDB = this.TreasureDatabaseNode.getComponent("TreasureDB");
         this.MonsterDB = this.MonsterDatabaseNode.getComponent("MonsterDB");
 
-        cc.log("into game onload");//
+        cc.log("into game onload");
+       
+        
+        // for test
+        
+        //  this.userData.onLoad();
+        // var testHeavenSonDemo =  this.getHeavenSonDemoByID(1);
+        // var testHeavenSon = this.userData.createTestHeavenSon(testHeavenSonDemo);
+        // this.userData.addNewChild(testHeavenSon);
+        // this.userData.setLevel(2);
+        //  var level = this.userData.getLevel();
+        
+        // var child = this.userData.getChildByID(1);
         // 常驻节点
         cc.game.addPersistRootNode(this.node);
     },

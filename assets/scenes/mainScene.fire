@@ -67,7 +67,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": true,
-    "_id": "241fb91e-afc1-4706-98ad-855d76687fba"
+    "_id": "d2058b92-d95b-4157-b4c7-f1ae79e065e5"
   },
   {
     "__type__": "cc.Node",
@@ -183,7 +183,7 @@
       "array": [
         0,
         0,
-        269.1313401070383,
+        268.98749570124625,
         0,
         0,
         0,
@@ -1037,18 +1037,19 @@
   },
   {
     "__type__": "天道之子模板",
-    "name": "",
-    "heavenSonId": 0,
-    "type": 0,
-    "worldType": "",
-    "minPower": 0,
-    "maxPower": 0,
-    "minDefend": 0,
-    "maxDefend": 0,
-    "HP": 0,
-    "growRate": 0,
-    "quality": 0,
-    "staticImage": null,
+    "name": "test",
+    "heavenSonDemoId": 1,
+    "worldType": "1",
+    "minPower": 100,
+    "maxPower": 200,
+    "minDefend": 50,
+    "maxDefend": 100,
+    "HP": 1000,
+    "growRate": 0.5,
+    "quality": 3,
+    "staticImage": {
+      "__uuid__": "d7df03c2-695a-4192-bf5e-a78244b93db9"
+    },
     "e_headPortrait": null
   },
   {
@@ -1160,8 +1161,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
+      "width": 50,
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1213,6 +1214,8 @@
     "years": 0,
     "sons": [],
     "treasures": [],
+    "expBase": 100,
+    "maxLevel": 100,
     "_id": "e9ervPiqRI5pWtaurc5Nty"
   }
 ]
