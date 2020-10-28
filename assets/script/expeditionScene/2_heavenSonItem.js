@@ -19,6 +19,8 @@ cc.Class({
         this.game = cc.find("game").getComponent("game");//game节点的game脚本
         this.userData = this.game.userData;
         this.chooseSonBtnCtr = cc.find("Canvas/弹窗/选择天道之子弹窗").getComponent("2_chooseSonBtnCtr");
+        this.sonDB = this.game.HeavenSonDB;
+        this.sfManager = cc.find("SFManager").getComponent("2_sfManager");
 
         this.heavenSonPNode= this.node.getChildByName("立绘");
         this.nameNode =this.node.getChildByName("名字");
@@ -26,7 +28,11 @@ cc.Class({
 
         this.heavenSon = son;
 
-        this.heavenSonPNode.getComponent(cc.Sprite).spriteFrame = son.heavenSonDemo.staticImage;//...
+        // sf = this.sonDB.sons[son.heavenSonId].staticImage;
+
+        // this.heavenSonPNode.getComponent(cc.Sprite).spriteFrame = this.heavenSonPNode.getComponent(cc.Sprite).spriteFrame;
+        this.heavenSonPNode.getComponent(cc.Sprite).spriteFrame = this.sfManager.staticImages[son.heavenSonId];//模板id，待改.......
+        // this.heavenSonPNode.getComponent(cc.Sprite).spriteFrame = son.heavenSonDemo.staticImage;//...
         this.nameNode.getComponent(cc.Label).string = son.name;
         this.chooseNode.active = false;
 

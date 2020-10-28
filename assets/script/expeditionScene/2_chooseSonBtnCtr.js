@@ -42,8 +42,10 @@ cc.Class({
 
     //渲染右侧（“全部”） 筛选模式
     showRight(filterMode){
+        //清空右侧
+        this.clearRight();
         //获得玩家已拥有的所有天道之子集合
-        allSons = this.game.getAllOwnedHeavenSons();
+        allSons = this.userData.getAllOwnedHeavenSons();
         
         this.sonArray = [];
         
@@ -94,7 +96,7 @@ cc.Class({
             //挂载到父节点上，进行显示
             newNode.parent = this.heavenSonItemFatherNode;
             
-            nNodeCtr = newLeftNode.getComponent("2_heavenSonItem");
+            nNodeCtr = newNode.getComponent("2_heavenSonItem");
             nNodeCtr.init(this.sonArray[i]);//初始化，节点开始监听点击按钮
             //默认第一个插槽，渲染右边
             if(i==0){
@@ -103,6 +105,15 @@ cc.Class({
             }
         }
         this.node.active = true;//显示
+    },
+
+    //清空右侧
+    clearRight(){
+        let children = this.heavenSonItemFatherNode.children;
+        for (let i = children.length-1 ; i >=0; i--) {//从后往前删，以防万一实时更新
+            let itemNode = children[i];
+            itemNode.destroy();
+        }
     },
 
     //按钮事件处理：确认使用当前天道之子进行历练

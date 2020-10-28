@@ -145,7 +145,8 @@ cc.Class({
         }
 
 
-        
+        // 常驻节点  不写的话，虽然通过game能调用函数和静态值，但是sons这种就没有了
+        cc.game.addPersistRootNode(this.node);
         //...
 
     },
@@ -361,6 +362,8 @@ cc.Class({
     //     newHeavenSon.heavenSonId = 1;
     //     return newHeavenSon;
     // }
+
+    
 
 
     

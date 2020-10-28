@@ -93,7 +93,7 @@ cc.Class({
                 this.heavenSon.level = this.mainCtr.userData.maxLevel;
                 text+="已是此界最强，无法获得更多修为"
             }else{
-                this.heavenSon.level++;//升级
+                this. upLevel(this.heavenSon);//升级
                 text+="修为x"+newExp+",恭喜成功突破!";
             }
         }else{
@@ -124,6 +124,15 @@ cc.Class({
             }
         }
         return currentWorldTs;
+    },
+
+
+    //升级
+    upLevel(son){
+        son.level++;
+        son.power+=10;
+        son.defend+=10;
+        son.HP+=20;
     }
 
     // update (dt) {},
