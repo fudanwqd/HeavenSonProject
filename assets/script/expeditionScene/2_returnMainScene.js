@@ -32,6 +32,8 @@ cc.Class({
 
     //返回主场景
     returnMainScene() {
+        this.bgmManager = cc.find("bgmManager").getComponent("2_bgmManager");
+        this.bgmManager.playBtnClickM();//playBGM()
         cc.log("应该切换到场景：MainScene");
         cc.director.loadScene("mainScene");
     },

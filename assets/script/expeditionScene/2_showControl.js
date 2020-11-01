@@ -63,6 +63,8 @@ cc.Class({
         //全局持久化节点
         this.game = cc.find("game").getComponent("game");//game节点的game脚本
         this.userData = this.game.userData;
+        this.sfManager= cc.find("SFManager").getComponent("2_sfManager");
+        this.bgmManager = cc.find("bgmManager").getComponent("2_bgmManager");
 
         //显示当前世界 名字 和 图片
         this.worldLabel = this.worldLabelNode.getComponent(cc.Label);
@@ -76,7 +78,12 @@ cc.Class({
         existData = cc.sys.localStorage.getItem("e_existData");
         if(existData=='true'){//已存在数据则读取
             this.unlockN = parseInt(cc.sys.localStorage.getItem('e_unlockN'));
-            this.slotsData = JSON.parse(cc.sys.localStorage.getItem('e_slotsData'));
+
+            //this.all_slotsData = {"神界":[slotsData],"仙界":[],...}
+            this.all_slotsData = JSON.parse(cc.sys.localStorage.getItem('e_All_slotsData'));
+            this.slotsData = this.all_slotsData[this.userData.currentWorld];
+
+            // this.slotsData = JSON.parse(cc.sys.localStorage.getItem('e_slotsData'));
             this.eStartTimes =JSON.parse(cc.sys.localStorage.getItem('e_eStartTimes'));
             if(this.eStartTimes == null){
                 this.eStartTimes = [];
@@ -92,9 +99,15 @@ cc.Class({
         //定时更新 每秒右侧刷新一次
         this.schedule(function() {
             // 这里的 this 指向 component
-            this.showRight(this.currentSlot.isEmpty,this.currentSonID,this.currentSlot.heavenSon.staticImage);
+            if(!this.currentSlot.isEmpty){
+                i = this.currentSlot.heavenSon.heavenSonDemo.heavenSonDemoId;
+                sf = this.sfManager.staticImages[i];
+            }else{
+                sf = null;
+            }
+            this.showRight(this.currentSlot.isEmpty,this.currentSonID,sf);
         }, 1);
-
+        this.bgmManager.playBGM();
     },
 
 
@@ -115,7 +128,7 @@ cc.Class({
                 isunLocked = false;
                 state = null;
             }
-            nNodeCtr.init(i,isunLocked,state);//初始化，节点开始监听点击按钮
+            nNodeCtr.init(i,isunLocked,state,i);//初始化，节点开始监听点击按钮
             //默认第一个插槽，渲染右边
             if(i==0){
                 nNodeCtr.touch();//相当于点了一下
@@ -135,6 +148,7 @@ cc.Class({
            this.chooseSonBtn.active = true;
            //不可收获
            this.harvestableNode.active =false;
+           this.timeNode.active = false;
 
        }else{
            //渲染立绘
@@ -165,8 +179,9 @@ cc.Class({
             leftSecond = 60-passedTime.second;
             leftMinute = this.expeditionTimeUnit - passedTime.minute-1;
         }
-        if(leftMinute>=this.expeditionTimeUnit){
-            s = '00:00'
+        leftSecond = Math.round(leftSecond);
+        if(leftMinute>=this.expeditionTimeUnit || leftMinute<0){
+            s = '结束历练'
         }else{
             if(leftMinute<10){
                 leftMinute = "0"+leftMinute;
@@ -177,8 +192,8 @@ cc.Class({
             s = leftMinute + ':' + leftSecond;
         }
         
-        
         this.timeNode.getComponent(cc.Label).string =s;
+        this.timeNode.active =true;
     },
 
 
@@ -189,11 +204,23 @@ cc.Class({
         // this.deleteStartTime(1);
     //新增一个条目
     addStartTime(childID){
+        slotI = this.currentSlot.slotI;
+        this.slotsData[slotI] = childID;
+        //this.all_slotsData = {"神界":[slotsData],"仙界":[],...}
+        this.all_slotsData[this.userData.currentWorld] = this.slotsData;
+        cc.sys.localStorage.setItem('e_All_slotsData', JSON.stringify(this.all_slotsData));
+        // cc.sys.localStorage.setItem('e_slotsData', JSON.stringify(this.slotsData));
         this.eStartTimes[childID] = new Date();
         cc.sys.localStorage.setItem('e_eStartTimes', JSON.stringify(this.eStartTimes));//存档
     },
     //移除一个条目
     deleteStartTime(childID){
+        slotI = this.currentSlot.slotI;
+        this.slotsData[slotI] = -1;
+        this.all_slotsData[this.userData.currentWorld] = this.slotsData;
+        cc.sys.localStorage.setItem('e_All_slotsData', JSON.stringify(this.all_slotsData));
+        // cc.sys.localStorage.setItem('e_slotsData', JSON.stringify(this.slotsData));
+        // cc.sys.localStorage.setItem('e_slotsData', JSON.stringify(this.slotsData));
         delete this.eStartTimes[childID];
         cc.sys.localStorage.setItem('e_eStartTimes', JSON.stringify(this.eStartTimes));//存档
     },
@@ -241,9 +268,21 @@ cc.Class({
         for(let i=0;i<this.initUnlockN;i++){
             this.slotsData[i] = -1;
         }
+        
+        //this.all_slotsData = {"神界":[slotsData],"仙界":[],...}
+        all_slotsData = {};
+        all_slotsData["神界"] = this.slotsData;
+        all_slotsData["仙界"] = this.slotsData;
+        all_slotsData["人界"] = this.slotsData;
+        all_slotsData["魔界"] = this.slotsData;
+        all_slotsData["冥界"] = this.slotsData;
+        all_slotsData["妖界"] = this.slotsData;
+
+        cc.sys.localStorage.setItem('e_All_slotsData', JSON.stringify(all_slotsData));
+        // cc.sys.localStorage.setItem('e_slotsData', JSON.stringify(this.slotsData));
+
         //空的历练列表
         this.eStartTimes = [];
-        cc.sys.localStorage.setItem('e_slotsData', JSON.stringify(this.slotsData));
         cc.sys.localStorage.setItem('e_eStartTimes', JSON.stringify(this.eStartTimes));
         //existData
         cc.sys.localStorage.setItem('e_existData', true);

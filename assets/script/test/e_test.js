@@ -31,13 +31,18 @@ cc.Class({
     onLoad () {
         this.game = cc.find("game").getComponent("game");//game节点的game脚本
         this.userData = this.game.userData;
-        this.heavenSonDB = cc.find("天道之子s").getComponent("HeavenSonDB");
+        this.heavenSonDB = cc.find("静态文件/天道之子s").getComponent("HeavenSonDB");
+        this.treasureDB = cc.find("静态文件/灵宝s").getComponent("TreasureDB");
     },
 
     start () {
+        this.userData.setData("currentWorld","仙界");
+        this.userData.setCurrentWorld("仙界");
 
+        this.initTreasures();
+        // cc.sys.localStorage.setItem('e_existData', false);
         // this.deleteSonsInStorage();
-        this.initSons();
+        // this.initSons();
     },
 
     deleteSonsInStorage(){
@@ -51,7 +56,7 @@ cc.Class({
             son ={};
             son.heavenSonDemo = sonsDB[i];
             son.name = son.heavenSonDemo.name;
-            son.heavenSonId = this.userData.sons.length;
+            son.heavenSonId = this.userData.sons.length;//暂用
             son.level = 1;
             son.exp=0;
             son.power = son.heavenSonDemo.minPower;
@@ -63,6 +68,22 @@ cc.Class({
             this.userData.addNewChild(son);
         }
         
-    }
+    },
+
+    initTreasures(){
+        treasureDB = this.treasureDB.treasures;
+        for(let i=0;i<treasureDB.length;i++){
+            treasure ={};
+            treasure.treasureDemo = treasureDB[i];
+            treasure.name = treasure.treasureDemo.name;
+            treasure.treasureId = i;//暂用
+            treasure.level = 1;
+            treasure.power = treasure.treasureDemo.minPower;
+            treasure.defend = treasure.treasureDemo.minDefend;
+            treasure.HP = treasure.treasureDemo.minHP;
+            this.userData.addTreasureToWorld(treasure,"仙界");
+        }
+        
+    },
     // update (dt) {},
 });

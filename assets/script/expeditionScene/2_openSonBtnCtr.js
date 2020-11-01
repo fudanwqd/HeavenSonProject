@@ -20,10 +20,12 @@ cc.Class({
 
     onLoad () {
         this.chooseCtr = this.chooseSonWindowNode.getComponent("2_chooseSonBtnCtr");
+        this.bgmManager = cc.find("bgmManager").getComponent("2_bgmManager");
     },
 
     //点击按钮显示弹窗，弹窗打开后禁用下层的背景捕捉（不是子节点应该不会影响下层）
     click() {
+        this.bgmManager.playBtnClickM();//playBGM()
         this.chooseSonWindowNode.active = true;
         this.chooseCtr.showRight("全部");
     },

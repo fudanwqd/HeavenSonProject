@@ -20,16 +20,13 @@
         "__id__": 17
       },
       {
-        "__id__": 22
-      },
-      {
-        "__id__": 27
-      },
-      {
         "__id__": 29
       },
       {
-        "__id__": 32
+        "__id__": 31
+      },
+      {
+        "__id__": 33
       }
     ],
     "_active": true,
@@ -189,7 +186,7 @@
       "array": [
         0,
         0,
-        269.6370147540846,
+        269.14900499512305,
         0,
         0,
         0,
@@ -762,7 +759,10 @@
         "__id__": 18
       },
       {
-        "__id__": 20
+        "__id__": 22
+      },
+      {
+        "__id__": 24
       }
     ],
     "_active": true,
@@ -885,8 +885,45 @@
       "__id__": 18
     },
     "_enabled": true,
-    "treasures": [],
+    "treasures": [
+      {
+        "__id__": 20
+      },
+      {
+        "__id__": 21
+      }
+    ],
     "_id": "bcmj8YXkxM9rln2rtWJGHH"
+  },
+  {
+    "__type__": "灵宝模板",
+    "name": "昆仑镜",
+    "treasurDemoId": 0,
+    "type": "仙界",
+    "minPower": 3,
+    "maxPower": 5,
+    "minDefend": 3,
+    "maxDefend": 5,
+    "minHP": 3,
+    "maxHP": 5,
+    "quality": 9,
+    "minCosttTime": 0,
+    "maxCostTime": 0
+  },
+  {
+    "__type__": "灵宝模板",
+    "name": "万妖幡",
+    "treasurDemoId": 1,
+    "type": "妖界",
+    "minPower": 2,
+    "maxPower": 5,
+    "minDefend": 2,
+    "maxDefend": 3,
+    "minHP": 2,
+    "maxHP": 4,
+    "quality": 8,
+    "minCosttTime": 0,
+    "maxCostTime": 0
   },
   {
     "__type__": "cc.Node",
@@ -899,7 +936,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 21
+        "__id__": 23
       }
     ],
     "_prefab": null,
@@ -955,7 +992,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 20
+      "__id__": 22
     },
     "_enabled": true,
     "monsters": [],
@@ -966,13 +1003,13 @@
     "_name": "天道之子s",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 1
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 23
+        "__id__": 25
       }
     ],
     "_prefab": null,
@@ -1028,18 +1065,18 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 22
+      "__id__": 24
     },
     "_enabled": true,
     "sons": [
       {
-        "__id__": 24
-      },
-      {
-        "__id__": 25
-      },
-      {
         "__id__": 26
+      },
+      {
+        "__id__": 27
+      },
+      {
+        "__id__": 28
       }
     ],
     "_id": "1b3ZyZUx1OxJExoqQbXRZg"
@@ -1112,7 +1149,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 28
+        "__id__": 30
       }
     ],
     "_prefab": null,
@@ -1168,20 +1205,20 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 27
+      "__id__": 29
     },
     "_enabled": true,
     "userDataNode": {
-      "__id__": 29
+      "__id__": 31
     },
     "HeavenSonDatabaseNode": {
-      "__id__": 22
+      "__id__": 24
     },
     "TreasureDatabaseNode": {
       "__id__": 18
     },
     "MonsterDatabaseNode": {
-      "__id__": 20
+      "__id__": 22
     },
     "_id": "3cVV3HhfdPErc6ZHtRqk0c"
   },
@@ -1196,7 +1233,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 30
+        "__id__": 32
       }
     ],
     "_prefab": null,
@@ -1252,37 +1289,20 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 29
+      "__id__": 31
     },
     "_enabled": true,
     "level": 0,
     "stoneNum": 1000,
     "hmzqNum": 1000,
-    "currentWorld": 1,
+    "currentWorld": "仙界",
     "fighterID": 1,
     "years": 0,
-    "sons": [
-      {
-        "__id__": 31
-      }
-    ],
+    "sons": [],
     "treasures": [],
     "expBase": 100,
     "maxLevel": 100,
     "_id": "e9ervPiqRI5pWtaurc5Nty"
-  },
-  {
-    "__type__": "天道之子",
-    "heavenSonDemo": null,
-    "heavenSonId": 0,
-    "level": 0,
-    "exp": 0,
-    "power": 0,
-    "defend": 0,
-    "HP": 0,
-    "ownTreasure": [],
-    "staticImage": null,
-    "e_headPortrait": null
   },
   {
     "__type__": "cc.Node",
@@ -1295,7 +1315,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 33
+        "__id__": 34
       }
     ],
     "_prefab": null,
@@ -1351,7 +1371,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 32
+      "__id__": 33
     },
     "_enabled": true,
     "_id": "ef76qHR0tGbLHk7CP4MecR"

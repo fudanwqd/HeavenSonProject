@@ -38,10 +38,13 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        this.bgmManager = cc.find("bgmManager").getComponent("2_bgmManager");
+    },
 
     //渲染并显示当前界面
     showHarvestWin () {
+        this.bgmManager.playBtnClickM();//playBGM()
         this.mainCtr = this.showCtrNode.getComponent("2_showControl");
         this.heavenSon = this.mainCtr.currentSlot.heavenSon;//获得当前历练结束的正在收获的天道之子heavenSon
         text = this.harvest();//根据当前世界的灵宝和天道之子的属性，随机给一些奖励
@@ -55,7 +58,7 @@ cc.Class({
     harvest(){
         //this.mainCtr,this.heavenSon按理已经有了
 
-        text = "获得天道之子某某获得"
+        text = "获得天道之子"+this.heavenSon.name+"获得";
         //灵宝部分
         //获得当前界的所有灵宝
         currentWorldTs = this.getCurrentTs();
@@ -72,21 +75,24 @@ cc.Class({
         randomNum =Math.random(); 
         if(randomNum<=P){//获得灵宝
             let tN = currentWorldTs.length;
-            i = Math.floor(Math.random()*tN);    // 可均衡获取 0 到 tN-1 的随机整数
-            treasure = currentWorldTs[i];
-            //将灵宝给天道之子
-            this.heavenSon.ownTreasure.push(treasure);
-            //将灵宝从天道库里删除
-            this.mainCtr.userData.deleteTreasure(treasure.treasureId);
-            text+=" 灵宝"+treasure.name+" x1、";
+            if(tN>0){
+                i = Math.floor(Math.random()*tN);    // 可均衡获取 0 到 tN-1 的随机整数
+                treasure = currentWorldTs[i];
+                //将灵宝给天道之子
+                this.heavenSon.ownTreasure.push(treasure);
+                //将灵宝从天道库里删除
+                // this.mainCtr.userData.deleteTreasure(treasure.treasureId);
+                this.mainCtr.userData. deleteTreasureFromWorld(treasure,this.mainCtr.userData.currentWorld);
+                text+=" 灵宝"+treasure.name+" x1、";
+            }
         }
 
         //修为部分 保底10%+资质加成（每点资质+5%）
-        exp = this.heavenSonlevel*(0.1+this.heavenSon.heavenSonDemo.quality*0.05)*this.mainCtr.userData.expBase;
+        exp = this.heavenSon.level*(0.1+this.heavenSon.heavenSonDemo.quality*0.05)*this.mainCtr.userData.expBase;
         ifUplevel = false;
-        newExp = exp+this.heavenSon.exp ;
+        newExp = Math.round(exp+this.heavenSon.exp);
         //是否到达上限
-        upExp = this.heavenSonlevel*this.mainCtr.userData.expBase;
+        upExp = this.heavenSon.level*this.mainCtr.userData.expBase;
         if(newExp>=upExp){
             this.heavenSon.exp = newExp - upExp;
             if(this.heavenSon.level>=this.mainCtr.userData.maxLevel){
@@ -101,7 +107,8 @@ cc.Class({
             text+="修为x"+newExp+",距离突破指日可待~";
         }
         //更改天道之子信息，并存储
-        this.mainCtr.userData.changeChild(this.heavenSon);
+        this.mainCtr.userData.updateHeavenSon();
+        // this.mainCtr.userData.changeChild(this.heavenSon);
         this.mainCtr.userData.stoneNum+=this.everyStones;
         this.mainCtr.userData.setData("stoneNum",this.mainCtr.userData.stoneNum);
         return text+"\n天道获得灵石x"+this.everyStones;
@@ -109,20 +116,22 @@ cc.Class({
 
     //关闭收获弹窗
     closeHarvestWin(){
+        this.bgmManager.playBtnClickM();//playBGM()
         this.node.active = false;
 
     },
 
     //获得当前界的所有灵宝
     getCurrentTs(){
-        allTreasures = this.mainCtr.userData.treasures;
-        currentWorldTs = [];
-        for(let i=0;i<allTreasures.length;i++){
-            treasure = allTreasures[i];
-            if(treasure.treasureDemo.type == this.mainCtr.userData.currentWorld){
-                currentWorldTs.push(treasure);
-            }
-        }
+        // allTreasures = this.mainCtr.userData.treasures;
+        // currentWorldTs = [];
+        // for(let i=0;i<allTreasures.length;i++){
+        //     treasure = allTreasures[i];
+        //     if(treasure.treasureDemo.type == this.mainCtr.userData.currentWorld){
+        //         currentWorldTs.push(treasure);
+        //     }
+        // }
+        currentWorldTs = this.mainCtr.userData.treasuresInWorld[this.mainCtr.userData.currentWorld];
         return currentWorldTs;
     },
 
