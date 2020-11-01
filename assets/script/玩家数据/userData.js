@@ -53,8 +53,8 @@ cc.Class({
             type : cc.Integer,
         },
         currentWorld : {
-            default : 1,
-            type : cc.Integer,
+            default : "仙界",
+            type : cc.String,
         },//代表玩家此时在哪一个界 ? 实现有可能有问题
         fighterID : {
             default : 1,
@@ -145,7 +145,22 @@ cc.Class({
         }
 
 
-        
+        // 常驻节点  不写的话，虽然通过game能调用函数和静态值，但是sons这种就没有了
+        cc.game.addPersistRootNode(this.node);
+
+        //定义一个数据结构（属性），存放置在世界中的灵宝
+        // this.treasuresInWorld["神界"] = [Treasure]
+        this.treasuresInWorld={
+            "神界":[],
+            "仙界":[],
+            "魔界":[],
+            "人界":[],
+            "冥界":[],
+            "妖界":[]
+        };
+        //...待初始化（/读取storage）
+
+
         //...
 
     },
@@ -192,12 +207,14 @@ cc.Class({
         return this.currentWorld;
     },
 
-    setCurrentWorld(worldID){
-        if(worldID>=0){
-            this.currentWorld = worldID;
-        }
+    // setCurrentWorld(worldID){
+    //     if(worldID>=0){
+    //         this.currentWorld = worldID;
+    //     }
+    // },
+    setCurrentWorld(world){//worldID 直接以字符串形式
+        this.currentWorld = world;
     },
-    
 
     getFighterID(){
         return this.fighterID;
@@ -353,6 +370,24 @@ cc.Class({
         this.setData("treasures",this.treasures)
     },
 
+    //将灵宝treasure从天道的灵宝库，放置到某界world   （this.treasuresInWorld）
+    addTreasureToWorld(treasure,world){
+        this.treasuresInWorld[world].push(treasure);//测试时暂用
+        //...
+        this.updateTreasureInWorld();
+    },
+
+    //将灵宝treasure从某界world中删除       （this.treasuresInWorld）
+    deleteTreasureFromWorld(treasure,world){
+        //...
+        this.updateTreasureInWorld();
+    },
+
+    //更新六界中的灵宝       （this.treasuresInWorld）
+    updateTreasureInWorld(){
+        //...
+    },
+
     // for test
     
     // createTestHeavenSon(HeavenSonDemo){
@@ -361,6 +396,8 @@ cc.Class({
     //     newHeavenSon.heavenSonId = 1;
     //     return newHeavenSon;
     // }
+
+    
 
 
     

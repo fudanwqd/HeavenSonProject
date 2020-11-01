@@ -3,7 +3,7 @@ var TreasureDemo = cc.Class({
     properties : {
         name : cc.String,
         treasurDemoId : cc.Integer,
-        type : cc.Integer,//门派
+        type : cc.String,//世界
         minPower : cc.Integer,
         maxPower : cc.Integer,
         minDefend: cc.Integer,
