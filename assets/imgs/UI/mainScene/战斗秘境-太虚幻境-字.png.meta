@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "8d99bf65-8db4-4b38-b3af-5d7d0b097788",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 151,
+  "height": 306,
+  "platformSettings": {},
+  "subMetas": {
+    "战斗秘境-太虚幻境-字": {
+      "ver": "1.0.4",
+      "uuid": "f0f0e052-ba5d-4848-80dd-f5f3387edd61",
+      "rawTextureUuid": "8d99bf65-8db4-4b38-b3af-5d7d0b097788",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 151,
+      "height": 306,
+      "rawWidth": 151,
+      "rawHeight": 306,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
