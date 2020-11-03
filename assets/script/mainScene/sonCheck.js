@@ -5,6 +5,7 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
+//查看天道之子
 cc.Class({
     extends: cc.Component,
 
@@ -28,22 +29,16 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    
     onLoad () {
-        //可以预加载的场景
-        cc.director.preloadScene("expedition", function () {
-            cc.log("expedition scene preloaded");
-        });
+        cc.director.preloadScene("heavenSonScene", function(){
+            cc.log("heavenSonScene preloaded");
+        })
+     },
+
+     changeSceneHeavenSon(){
+        cc.log("应该切换到场景：heavenSonScene");
+        cc.director.loadScene("heavenSonScene");
     },
-
-    changeSceneExpedition () {
-        cc.log("应该切换到场景：expedition");
-        cc.director.loadScene("expedition");
-    },
-
-    
-
-
 
     // update (dt) {},
 });

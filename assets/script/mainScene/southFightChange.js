@@ -5,6 +5,7 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
+//南海秘境切换脚本
 cc.Class({
     extends: cc.Component,
 
@@ -28,22 +29,16 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    
     onLoad () {
-        //可以预加载的场景
-        cc.director.preloadScene("expedition", function () {
-            cc.log("expedition scene preloaded");
-        });
+        cc.director.preloadScene("fightScene", function(){
+            cc.log("fightScene preloaded");
+        })
+     },
+
+     changeSceneFight(){
+        cc.log("应该切换到场景：fight");
+        cc.director.loadScene("fightScene");
     },
-
-    changeSceneExpedition () {
-        cc.log("应该切换到场景：expedition");
-        cc.director.loadScene("expedition");
-    },
-
-    
-
-
 
     // update (dt) {},
 });

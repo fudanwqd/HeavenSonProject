@@ -5,6 +5,8 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
+
+//查看灵宝
 cc.Class({
     extends: cc.Component,
 
@@ -28,22 +30,16 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    
     onLoad () {
-        //可以预加载的场景
-        cc.director.preloadScene("expedition", function () {
-            cc.log("expedition scene preloaded");
-        });
+        cc.director.preloadScene("treasureScene", function(){
+            cc.log("treasureScene preloaded");
+        })
+     },
+
+     changeSceneTreasure(){
+        cc.log("应该切换到场景：treasureScene");
+        cc.director.loadScene("treasureScene");
     },
-
-    changeSceneExpedition () {
-        cc.log("应该切换到场景：expedition");
-        cc.director.loadScene("expedition");
-    },
-
-    
-
-
 
     // update (dt) {},
 });

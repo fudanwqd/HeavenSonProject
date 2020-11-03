@@ -16,34 +16,30 @@ cc.Class({
         //     type: cc.SpriteFrame, // optional, default is typeof default
         //     serializable: true,   // optional, default is true
         // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        canvas: {
+            default:null,
+            type: cc.Node
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
 
-    
-    onLoad () {
-        //可以预加载的场景
-        cc.director.preloadScene("expedition", function () {
-            cc.log("expedition scene preloaded");
-        });
+    // onLoad () {},
+
+    clickDevilHandle() {//点击魔界珠子
+        var node = cc.find("Canvas/魔/魔界按钮/atom", canvas);
+        var particle = node.active;
+        cc.log();
+        if(!particle){
+            particle = true;
+        }
+
+        //cc.log("应该杀死所有粒子");
+        // var devil =  cc.find("魔/魔界按钮/atom", this.node);
+        // devil.active = true;
+        //this.node.getChildByName("button 01").active = true;
+        //this.node.active = false;
     },
-
-    changeSceneExpedition () {
-        cc.log("应该切换到场景：expedition");
-        cc.director.loadScene("expedition");
-    },
-
-    
-
-
 
     // update (dt) {},
 });
