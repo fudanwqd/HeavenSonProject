@@ -16,7 +16,7 @@ cc.Class({
         //     type: cc.SpriteFrame, // optional, default is typeof default
         //     serializable: true,   // optional, default is true
         // },
-        canvas: {
+        immortalNode: { //仙界珠子节点，以下类推
             default:null,
             type: cc.Node
         },
@@ -26,13 +26,24 @@ cc.Class({
 
     // onLoad () {},
 
+    clickImmortalsHandele(){//点击仙界珠子
+        this.immortalNode.active = false;
+        cc.log("click immortal");
+        // this.node.active = false;
+        // var particle = cc.find("Canvas/仙/仙界按钮/atom",this.node);
+        // particle.active = false;
+    },
+
     clickDevilHandle() {//点击魔界珠子
-        var node = cc.find("Canvas/魔/魔界按钮/atom", canvas);
-        var particle = node.active;
-        cc.log();
-        if(!particle){
-            particle = true;
-        }
+        this.node.active = false;
+        //var node = cc.find("Canvas/魔/魔界按钮", canvas);
+        //var particle = this.getComponent(cc.ParticleSystem);
+        //var tag = particle.active;
+        //cc.log();
+        // if(!tag){
+        //     tag = true;
+        // }
+        //else tag = false;
 
         //cc.log("应该杀死所有粒子");
         // var devil =  cc.find("魔/魔界按钮/atom", this.node);

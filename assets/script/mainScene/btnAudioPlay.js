@@ -9,17 +9,23 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        audio: {
+        btnAudio: {
             default: null,
             type: cc.AudioClip
         },
     },
 
-    onLoad: function () {
-        this.current = cc.audioEngine.play(this.audio, true, 0);
+    onLoad(){
+        cc.game.addPersistRootNode(this.node);
+    },
+
+    click: function () {
+        this.current = cc.audioEngine.play(this.btnAudio, false, 0.8);
     },
 
     onDestroy: function () {
         cc.audioEngine.stop(this.current);
     }
+
+
 });
