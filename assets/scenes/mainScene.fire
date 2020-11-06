@@ -186,7 +186,7 @@
       "array": [
         0,
         0,
-        269.14900499512305,
+        268.7039003191882,
         0,
         0,
         0,
@@ -1302,6 +1302,8 @@
     "treasures": [],
     "expBase": 100,
     "maxLevel": 100,
+    "totalHeavenSonNum": 1,
+    "totalTreasureNum": 1,
     "_id": "e9ervPiqRI5pWtaurc5Nty"
   },
   {

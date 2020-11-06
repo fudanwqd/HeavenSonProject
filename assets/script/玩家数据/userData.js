@@ -3,8 +3,14 @@ var HeavenSon = cc.Class({
     properties :{
        heavenSonDemo : Object,
        heavenSonId : cc.Integer,
-       level : cc.Integer,
-       exp: cc.Integer,//当前级别修为（经验）值； 该级别满值（能突破的时候）=expBase*level
+       level : {
+        default: 1,
+        type : cc.Integer
+        },
+       exp: {
+        default : 0,
+        type:  cc.Integer
+        },//当前级别修为（经验）值； 该级别满值（能突破的时候）=expBase*level
        power : cc.Integer,
        defend: cc.Integer,
        HP    : cc.Integer,
@@ -12,14 +18,7 @@ var HeavenSon = cc.Class({
            default :[],
            type : [Treasure]
        },
-       staticImage:{
-        default:null,
-        type: cc.SpriteFrame,
-       },
-       e_headPortrait:{
-            default:null,
-            type: cc.SpriteFrame,
-       },
+      
     }
 })
 //能跨文件夹调用类吗
@@ -82,6 +81,16 @@ cc.Class({
             type : cc.Integer,
         },
 
+        totalHeavenSonNum : {
+            default : 1,
+            type : cc.Integer,
+        },
+
+        totalTreasureNum : {
+            default : 1,
+            type : cc.Integer,
+        },
+
     },
 
 
@@ -95,6 +104,7 @@ cc.Class({
     onLoad(){
         // 将数据从已有数据开始进行初始化，如果localstorage中有数据，则使用localstorage数据，否则使用默认数据
         cc.log("userdata onload!");
+        this.gameNode = cc.find("game").getComponent("game");
         var level = this.getData("level");
         if(level){
             this.level = level;
@@ -145,8 +155,7 @@ cc.Class({
         }
 
 
-        // 常驻节点  不写的话，虽然通过game能调用函数和静态值，但是sons这种就没有了
-        cc.game.addPersistRootNode(this.node);
+        
 
         //定义一个数据结构（属性），存放置在世界中的灵宝
         // this.treasuresInWorld["神界"] = [Treasure]
@@ -162,7 +171,22 @@ cc.Class({
 
 
         //...
+        //获得玩家总共获得过的天道之子个数，用于分配天道之子ID
+        var heavenSonNum = this.getData("totalHeavenSonNum");
+        if(HeavenSonNum){
+            this.totalHeavenSonNum = heavenSonNum;
+        }
 
+        var treasureNum = this.getData("totalTreasureNum");
+        if(treasureNum){
+            this.totalTreasureNum = treasureNum;
+        }
+
+        
+        
+        // 常驻节点  不写的话，虽然通过game能调用函数和静态值，但是sons这种就没有了
+        cc.game.addPersistRootNode(this.node);
+        
     },
     //用户属性的getset方法,set时认为数据已经更新，因此要和数据库进行同步
     getLevel(){
@@ -254,6 +278,13 @@ cc.Class({
         if(maxlevel>0){
             this.maxLevel = maxlevel;
         }
+    },
+
+    setTotalHeavenSonNum(num){
+        this.totalHeavenSonNum = num;
+    },
+    setTotalTreasureNum(num){
+        this.totalTreasureNum = num;
     },
     
 
@@ -396,6 +427,27 @@ cc.Class({
     //     newHeavenSon.heavenSonId = 1;
     //     return newHeavenSon;
     // }
+
+
+    getRandomRange(min,max){
+        return Math.floor(Math.random()*(max - min + 1)) + min; 
+    },
+    // 根据demoId 创建一个新的天道之子实例
+    createNewHeavenSonByDemoID(heavenSonDemoId){
+        var newHeavenSon = new HeavenSon();
+        newHeavenSon.heavenSonDemoId = heavenSonDemoId;
+        var heavenSonId = this.totalHeavenSonNum;
+        this.setTotalHeavenSonNum(heavenSonId++);
+        newHeavenSon.heavenSonId = heavenSonId;
+        //根据随机数获得天道之子实例的攻击力和防御力
+        var heavenSonDemo = this.gameNode.getHeavenSonDemoByID(heavenSonDemoId);
+        newHeavenSon.power = this.getRandomRange(heavenSonDemo.minPower,heavenSonDemo.maxPower);
+        newHeavenSon.defend = this.getRandomRange(heavenSonDemo.minDefend,heavenSonDemo.maxDefend);
+        newHeavenSon.HP = heavenSonDemo.HP;
+        return newHeavenSon;
+    },
+
+    
 
     
 
