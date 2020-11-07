@@ -3,7 +3,7 @@
   "_name": "enemyHurt",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 0.7,
+  "_duration": 0.8,
   "sample": 10,
   "speed": 1,
   "wrapMode": 1,
@@ -12,51 +12,51 @@
       "cc.Sprite": {
         "spriteFrame": [
           {
-            "frame": -0.1,
-            "value": {
-              "__uuid__": "a79e38c2-d203-4f00-8b0d-fc2332504058"
-            }
-          },
-          {
             "frame": 0,
             "value": {
-              "__uuid__": "61e7b7ea-bfd8-4555-b112-fd70461e6cfb"
+              "__uuid__": "c45d9d57-ea3d-4035-9501-79845e8096d2"
             }
           },
           {
             "frame": 0.1,
             "value": {
-              "__uuid__": "ffced94f-fa5b-48ef-87c6-5f513b8268b6"
+              "__uuid__": "9b141080-87d2-4437-bf92-5e6425cea67e"
             }
           },
           {
             "frame": 0.2,
             "value": {
-              "__uuid__": "e6ce1ec4-1f44-4b0d-95bb-aa72f90fdbf3"
+              "__uuid__": "ce3553dd-d670-45cf-8627-68c2962f1089"
             }
           },
           {
             "frame": 0.3,
             "value": {
-              "__uuid__": "59525062-8555-4f55-9850-65856a21bad0"
+              "__uuid__": "75afb3f7-bc47-4d9d-8ce8-9e7bc8532200"
             }
           },
           {
             "frame": 0.4,
             "value": {
-              "__uuid__": "27f947de-7d36-4ea4-a0dc-e11b839c4e6b"
+              "__uuid__": "789369cf-d1f1-419a-a8d3-865dc1de18c5"
             }
           },
           {
             "frame": 0.5,
             "value": {
-              "__uuid__": "b8303f78-81a6-4336-8c80-f4ba87dcbf4c"
+              "__uuid__": "b689262b-f30d-4530-b7b3-bfa2b1e0a6d7"
             }
           },
           {
             "frame": 0.6,
             "value": {
-              "__uuid__": "a5c4998b-c330-45d8-a87c-65bb4f36ca5d"
+              "__uuid__": "91560dfa-bc6c-41f0-aa21-715ab7bfc951"
+            }
+          },
+          {
+            "frame": 0.7,
+            "value": {
+              "__uuid__": "273c7e98-f3d2-48b7-95a0-2ff2933cfd31"
             }
           }
         ]

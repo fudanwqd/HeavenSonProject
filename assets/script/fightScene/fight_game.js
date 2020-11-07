@@ -2,20 +2,41 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        mapNode : cc.Node
-
+        mapNode : cc.Node,
+        PREFAB : cc.Prefab,
+        parent : cc.Node,
+        autoLoad : true,
     },
 
 
     onLoad () {
         cc.director.getPhysicsManager().enabled = true;
         // cc.director.getPhysicsManager().debugDrawFlags = true;
-
         cc.director.getCollisionManager().enabled = true;
         cc.director.getCollisionManager().enabledDebugDraw = true;
 
 
         this.iniMapNode(this.mapNode);
+
+
+        if(this.autoLoad){
+            let interval = 2;//2秒执行一次
+            let repeat = 1;//默认执行一次，重复执行次数，怪物的个数。=1，意味着有两个怪
+            let delay = 2;//延时
+            this.schedule(function() {
+                this.loadPrefab();
+            }, interval, repeat, delay);
+        }
+    },
+
+    loadPrefab(){
+        let node = cc.instantiate(this.PREFAB);
+        node.active = true;
+        this.node.addChild(node);
+
+        console.log('动态加载');
+        // node.setPosition(cc.v2());
+        node.parent = this.node;
     },
 
 

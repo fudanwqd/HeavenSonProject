@@ -101,6 +101,20 @@
               "height": 0
             }
           }
+        ],
+        "tag": [
+          {
+            "frame": 0.1,
+            "value": 0
+          },
+          {
+            "frame": 0.3,
+            "value": 1
+          },
+          {
+            "frame": 0.5,
+            "value": 0
+          }
         ]
       }
     }

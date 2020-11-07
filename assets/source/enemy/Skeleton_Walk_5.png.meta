@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "50aaf61a-2c9d-45e5-b43d-682ad6b75522",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 22,
+  "height": 33,
+  "platformSettings": {},
+  "subMetas": {
+    "Skeleton_Walk_5": {
+      "ver": "1.0.4",
+      "uuid": "feccec9f-e84f-4a63-8b46-f0335ad55f7e",
+      "rawTextureUuid": "50aaf61a-2c9d-45e5-b43d-682ad6b75522",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 22,
+      "height": 33,
+      "rawWidth": 22,
+      "rawHeight": 33,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
