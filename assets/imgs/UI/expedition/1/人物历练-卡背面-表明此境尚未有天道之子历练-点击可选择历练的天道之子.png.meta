@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "73486e87-57d0-46eb-8a5d-09d656f8c330",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 300,
+  "height": 529,
+  "platformSettings": {},
+  "subMetas": {
+    "人物历练-卡背面-表明此境尚未有天道之子历练-点击可选择历练的天道之子": {
+      "ver": "1.0.4",
+      "uuid": "32657732-facc-4bf0-a1d6-c28d2ecab51f",
+      "rawTextureUuid": "73486e87-57d0-46eb-8a5d-09d656f8c330",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 300,
+      "height": 529,
+      "rawWidth": 300,
+      "rawHeight": 529,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

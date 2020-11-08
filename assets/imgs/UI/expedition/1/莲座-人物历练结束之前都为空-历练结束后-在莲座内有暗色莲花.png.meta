@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "c01b256a-6fd0-42fe-ac1a-2022b142af4b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 439,
+  "height": 279,
+  "platformSettings": {},
+  "subMetas": {
+    "莲座-人物历练结束之前都为空-历练结束后-在莲座内有暗色莲花": {
+      "ver": "1.0.4",
+      "uuid": "f7a2cc25-8d01-4dd8-9b0e-9e94381253b7",
+      "rawTextureUuid": "c01b256a-6fd0-42fe-ac1a-2022b142af4b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 439,
+      "height": 279,
+      "rawWidth": 439,
+      "rawHeight": 279,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

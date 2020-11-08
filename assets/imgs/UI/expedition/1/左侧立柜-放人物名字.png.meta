@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "2d5951d5-e838-43d8-92e1-0eaf01e22a3d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 360,
+  "height": 809,
+  "platformSettings": {},
+  "subMetas": {
+    "左侧立柜-放人物名字": {
+      "ver": "1.0.4",
+      "uuid": "dce27a90-d12a-4394-90e5-7a7e657581cf",
+      "rawTextureUuid": "2d5951d5-e838-43d8-92e1-0eaf01e22a3d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 360,
+      "height": 809,
+      "rawWidth": 360,
+      "rawHeight": 809,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
