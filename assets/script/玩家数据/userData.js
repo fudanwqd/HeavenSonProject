@@ -1,7 +1,10 @@
 var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
-       heavenSonDemo : Object,
+       heavenSonDemo : {
+           default : null,
+           type : require("../静态数据/HeavenSonDemo"),
+       },
        heavenSonId : cc.Integer,
        level : {
         default: 1,
@@ -14,6 +17,7 @@ var HeavenSon = cc.Class({
        power : cc.Integer,
        defend: cc.Integer,
        HP    : cc.Integer,
+       growRate : cc.Float,
        ownTreasure : {
            default :[],
            type : [Treasure]
