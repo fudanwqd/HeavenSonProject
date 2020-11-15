@@ -37,11 +37,14 @@ cc.Class({
     },
 
     changeSceneExpedition () {
-        cc.log("应该切换到场景：expedition");
-        cc.director.loadScene("expedition");
+        cc.log("应该切换到场景：抽卡场景");
+        cc.director.loadScene("getHeavenSonScene");
     },
 
     
+
+
+
 
 
 

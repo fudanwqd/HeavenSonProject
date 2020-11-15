@@ -1,7 +1,10 @@
 var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
-       heavenSonDemo : Object,
+        heavenSonDemo : {
+            default : null,
+            type : require("../静态数据/HeavenSonDemo"),
+        },
        name : cc.String,
        heavenSonId : cc.Integer,
        level : cc.Integer,
@@ -397,7 +400,6 @@ cc.Class({
     //     return newHeavenSon;
     // }
 
-    
 
 
     

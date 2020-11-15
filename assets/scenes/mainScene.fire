@@ -35,7 +35,7 @@
         "__id__": 235
       },
       {
-        "__id__": 238
+        "__id__": 239
       }
     ],
     "_active": true,
@@ -241,6 +241,7 @@
     "currentLevelNode": {
       "__id__": 193
     },
+    "headPortraitNode": null,
     "_id": "4cYsYHgv5LbJVjep8eOut/"
   },
   {
@@ -1642,7 +1643,7 @@
       "array": [
         0,
         0,
-        303.10889132455355,
+        303.3795242632362,
         0,
         0,
         0,
@@ -1996,6 +1997,7 @@
     "roleNameNode": null,
     "currentExpeNode": null,
     "currentLevelNode": null,
+    "headPortraitNode": null,
     "_id": "09CF8ol2dGH6yOtYE8Wild"
   },
   {
@@ -2125,7 +2127,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "cbGZPDfFFNwIUZDOx/wEBw"
+    "_id": "9183Xf6Z9OxpAhwjcW5mM3"
   },
   {
     "__type__": "cc.Label",
@@ -2159,7 +2161,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "8dFIdNHOlFfp+h4FTvSIJn"
+    "_id": "5c4bF+2jlBx6dVsG84nxaf"
   },
   {
     "__type__": "cc.RichText",
@@ -9400,7 +9402,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "8blbkAK+xKGbFveqJtAx0R"
+    "_id": "f8AmNNKupFpKAhaRhBpZL/"
   },
   {
     "__type__": "cc.Label",
@@ -9434,7 +9436,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "aded7uNtZPwZEW2E6uy7nU"
+    "_id": "1cQIomtYlN7a5XCqTNOPwe"
   },
   {
     "__type__": "cc.RichText",
@@ -9561,7 +9563,7 @@
       "ctor": "Float64Array",
       "array": [
         -19.465,
-        -31.5,
+        -63,
         0,
         0,
         0,
@@ -9584,7 +9586,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "3b1Wz5my1A4KNMxr657k1s"
+    "_id": "3bohupsm1AtIHq4sidE5OW"
   },
   {
     "__type__": "cc.Label",
@@ -9618,7 +9620,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "e54T3udCBC3IQC9mt9NR6Y"
+    "_id": "575YRk9hVJY6ZphKb8K1qU"
   },
   {
     "__type__": "cc.RichText",
@@ -9768,7 +9770,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c7L1hr9upOJJhifOw4/WzX"
+    "_id": "caDKyuouxBybRPpVrCzbh8"
   },
   {
     "__type__": "cc.Label",
@@ -9802,7 +9804,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "12382Gl41JVoYOkn+LXIJt"
+    "_id": "8bkAdfp6JBBIYJIoZbwgSt"
   },
   {
     "__type__": "cc.RichText",
@@ -10001,7 +10003,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "317wnybPZLvr7DS1FpaphH"
+    "_id": "3eIbTzg41DMJsdSglxd1h3"
   },
   {
     "__type__": "cc.Label",
@@ -10035,7 +10037,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "3fMqlyvmxElKrWRgK1mWQc"
+    "_id": "3d9k7x+8FEvocRYEkiQbv/"
   },
   {
     "__type__": "cc.RichText",
@@ -10737,7 +10739,8 @@
     "minDefend": 3,
     "maxDefend": 5,
     "HP": 6,
-    "growRate": 3,
+    "minGrowRate": 0,
+    "maxGrowRate": 0,
     "quality": 9,
     "staticImage": {
       "__uuid__": "ceead107-cdad-4234-9e34-09165f22b6dd"
@@ -10756,7 +10759,8 @@
     "minDefend": 2,
     "maxDefend": 4,
     "HP": 5,
-    "growRate": 3,
+    "minGrowRate": 0,
+    "maxGrowRate": 0,
     "quality": 8,
     "staticImage": {
       "__uuid__": "cc5a172b-0f3d-4c77-94b6-2e473acfa867"
@@ -10775,7 +10779,8 @@
     "minDefend": 2,
     "maxDefend": 4,
     "HP": 4,
-    "growRate": 2,
+    "minGrowRate": 0,
+    "maxGrowRate": 0,
     "quality": 7,
     "staticImage": {
       "__uuid__": "74b811ee-8439-464c-b6a6-6f6d0acdebf1"
@@ -10956,7 +10961,9 @@
   },
   {
     "__type__": "天道之子",
-    "heavenSonDemo": null,
+    "heavenSonDemo": {
+      "__id__": 238
+    },
     "name": "邓小月",
     "heavenSonId": 1,
     "level": 4,
@@ -10965,6 +10972,22 @@
     "defend": 5,
     "HP": 200,
     "ownTreasure": [],
+    "staticImage": null,
+    "e_headPortrait": null
+  },
+  {
+    "__type__": "天道之子模板",
+    "name": "邓小月",
+    "heavenSonDemoId": 0,
+    "worldType": "",
+    "minPower": 0,
+    "maxPower": 0,
+    "minDefend": 0,
+    "maxDefend": 0,
+    "HP": 0,
+    "minGrowRate": 0,
+    "maxGrowRate": 0,
+    "quality": 0,
     "staticImage": null,
     "e_headPortrait": null
   },
@@ -10979,7 +11002,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 239
+        "__id__": 240
       }
     ],
     "_prefab": null,
@@ -11035,7 +11058,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 238
+      "__id__": 239
     },
     "_enabled": true,
     "_id": "ef76qHR0tGbLHk7CP4MecR"

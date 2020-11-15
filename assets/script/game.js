@@ -53,8 +53,10 @@ cc.Class({
         return returnChildDemo;
     },
 
+    
+
      // 根据灵宝demo的id获得对应的灵宝demo对象 id应当是在战斗成功之后随机生成的数。
-     getTreasureByID(demoID){
+     getTreasureDemoByID(demoID){
         var returnTreasureDemo = null;
         this.TreasureDB.treasures.forEach(element => {
             if(element.treasurDemoId==demoID){

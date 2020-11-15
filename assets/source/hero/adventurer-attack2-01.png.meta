@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "eee811b9-8cda-4f06-9f75-5c48dc20e448",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 50,
+  "height": 37,
+  "platformSettings": {},
+  "subMetas": {
+    "adventurer-attack2-01": {
+      "ver": "1.0.4",
+      "uuid": "703913d6-e4db-4448-9d96-a1f83dd34b40",
+      "rawTextureUuid": "eee811b9-8cda-4f06-9f75-5c48dc20e448",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -4,
+      "trimX": 15,
+      "trimY": 9,
+      "width": 18,
+      "height": 27,
+      "rawWidth": 50,
+      "rawHeight": 37,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "20832b0b-25c6-4326-b576-e6cbfd4461a8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 590,
+  "height": 93,
+  "platformSettings": {},
+  "subMetas": {
+    "使用鸿蒙之气抽卡": {
+      "ver": "1.0.4",
+      "uuid": "4bc4ec17-53c6-4e39-b41d-ea0fb9f4980c",
+      "rawTextureUuid": "20832b0b-25c6-4326-b576-e6cbfd4461a8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 590,
+      "height": 93,
+      "rawWidth": 590,
+      "rawHeight": 93,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
