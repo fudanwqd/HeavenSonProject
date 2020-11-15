@@ -16,30 +16,65 @@ cc.Class({
         cc.director.getCollisionManager().enabledDebugDraw = true;
 
 
+        this.enemies = this.node.getChildByName('enemies');
+        this.enemyCount = 0;
+        this.isIniEnemy = true;
+        
         this.iniMapNode(this.mapNode);
 
+        this.enemyPerBattle = 2;
+        this.battleCount = 3;
+        this.nowBattleIndex = 0;
+        this.iniEnemy(this.enemyPerBattle);
+        
+        this.node.on(cc.Node.EventType.CHILD_ADDED, function(){
+            this.addEnemyCount()
+        }, this);
+        // this.node.on(cc.Node.EventType.CHILD_REMOVED, this.removeEnemyCount(), this);
+        
+    },
 
+    addEnemyCount(){
+        this.enemyCount++;
+        console.log('增加子节点');
+    }, 
+
+    removeEnemyCount(){
+        console.log('移除子节点');
+        this.enemyCount--;
+        if(this.enemyCount == 0){
+            console.log('生成新的怪兽');
+            this.iniEnemy(4);
+        }
+    }, 
+
+    //初始化敌人
+    iniEnemy(count){//生成的怪物数量
+        console.log("怪物初始化");
         if(this.autoLoad){
             let interval = 2;//2秒执行一次
-            let repeat = 1;//默认执行一次，重复执行次数，怪物的个数。=1，意味着有两个怪
+            // let repeat = 1;//默认执行一次，重复执行次数，怪物的个数。=1，意味着有两个怪
             let delay = 2;//延时
             this.schedule(function() {
-                this.loadPrefab();
-            }, interval, repeat, delay);
+                this.loadEnemyPrefab();
+            }, interval, count - 1, delay);
         }
+        this.enemyPerBattle++;
     },
 
-    loadPrefab(){
+    //加载敌人预制件
+    loadEnemyPrefab(){
         let node = cc.instantiate(this.PREFAB);
         node.active = true;
-        this.node.addChild(node);
+        this.enemies.addChild(node);
 
         console.log('动态加载');
-        // node.setPosition(cc.v2());
-        node.parent = this.node;
+        // node.setPosition(cc.v2());//设置位置
+        node.parent = this.enemies;
     },
 
 
+    //根据地图，动态生成墙
     iniMapNode(mapNode){
         let tiledMap = mapNode.getComponent(cc.TiledMap);
         let tiledSize = tiledMap.getTileSize();
@@ -67,5 +102,19 @@ cc.Class({
 
     },
 
-    update (dt) {},
+    update (dt) {
+        // console.log(this.enemies.childrenCount);
+        // console.log(this.isIniEnemy);
+        if(this.enemies.childrenCount == 0 && !this.isIniEnemy 
+            && this.nowBattleIndex < this.battleCount){
+            console.log('生成新的怪兽');
+            this.iniEnemy(this.enemyPerBattle);
+            this.isIniEnemy = true;
+            this.nowBattleIndex++;
+        }
+
+        if(this.nowBattleIndex == this.battleCount){
+            // to do 战斗胜利
+        }
+    },
 });

@@ -31,17 +31,19 @@ cc.Class({
 
 
         this.isHit = false;
+        this.bg = this.node.parent.parent.getComponent('fight_game');
 
         this.enemyAni = this.node.getChildByName('body').getComponent(cc.Animation);
         this.enemyAni.on("finished", (e, data) => {
             if(data.name == 'enemyHurt' && this.tag != 1){
-                console.log("扣血");
+                // console.log("扣血");
                 this.hp -= 10;
                 this.isHit = false;
                 this.hpProgress.getComponent(cc.ProgressBar).progress = this.hp / this.totalHP;
                 
-                console.log(this.hp / this.totalHP);
+                // console.log(this.hp / this.totalHP);
                 if(this.hp == 0){
+                    this.bg.isIniEnemy = false;
                     this.node.destroy();
                 }
             }else if(data.name == 'enemyAttack'){
@@ -73,7 +75,7 @@ cc.Class({
 
     
     hurt(){
-        console.log("怪物受伤");
+        // console.log("怪物受伤");
         if(this.isHit){
             return ; 
         }
@@ -95,14 +97,14 @@ cc.Class({
         let dis = cc.Vec2.distance(e_pos, p_pos);
 
         if(dis <= 30){//攻击距离
-            console.log("attack");
+            // console.log("attack");
             
             this.moveLeft = false;
             this.moveRight = false;
 
             this.enemyState = State.attack;
         }else if(dis <= 500){//追击距离
-            console.log("find");
+            // console.log("find");
 
 
             let v = p_pos.sub(e_pos);
@@ -115,7 +117,7 @@ cc.Class({
             }
             this.enemyState = State.stand;
         }else{//不动
-            console.log("stand");
+            // console.log("stand");
 
             this.moveLeft = false;
             this.moveRight = false;
