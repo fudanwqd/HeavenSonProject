@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "4e9b4f2d-2e27-4e7f-883b-3297cd7bc508",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 651,
+  "height": 922,
+  "platformSettings": {},
+  "subMetas": {
+    "鸿蒙之气抽卡底图": {
+      "ver": "1.0.4",
+      "uuid": "b3ed6962-4b1b-4fbe-a68c-0bb4bb8804f7",
+      "rawTextureUuid": "4e9b4f2d-2e27-4e7f-883b-3297cd7bc508",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 651,
+      "height": 922,
+      "rawWidth": 651,
+      "rawHeight": 922,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
