@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "121207be-8b1d-45fb-b469-6cc0c36be17b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 775,
+  "height": 562,
+  "platformSettings": {},
+  "subMetas": {
+    "历练场所场景-灰色": {
+      "ver": "1.0.4",
+      "uuid": "10ee0069-0a32-4b83-9cc3-fc1af57e8927",
+      "rawTextureUuid": "121207be-8b1d-45fb-b469-6cc0c36be17b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 775,
+      "height": 562,
+      "rawWidth": 775,
+      "rawHeight": 562,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

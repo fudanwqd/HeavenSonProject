@@ -41,5 +41,7 @@ cc.Class({
         cc.director.loadScene("expedition");
     },
 
+
+
     // update (dt) {},
 });

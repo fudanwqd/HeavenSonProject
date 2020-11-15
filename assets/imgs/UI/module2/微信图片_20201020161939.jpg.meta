@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "02f22486-503b-4ea7-9acd-5d2b23f5e624",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 800,
+  "height": 496,
+  "platformSettings": {},
+  "subMetas": {
+    "微信图片_20201020161939": {
+      "ver": "1.0.4",
+      "uuid": "ac50936b-ff85-420d-b54f-b19e15682168",
+      "rawTextureUuid": "02f22486-503b-4ea7-9acd-5d2b23f5e624",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 800,
+      "height": 496,
+      "rawWidth": 800,
+      "rawHeight": 496,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

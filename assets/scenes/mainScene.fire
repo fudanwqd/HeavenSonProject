@@ -20,10 +20,13 @@
         "__id__": 17
       },
       {
-        "__id__": 25
+        "__id__": 29
       },
       {
-        "__id__": 27
+        "__id__": 31
+      },
+      {
+        "__id__": 33
       }
     ],
     "_active": true,
@@ -67,7 +70,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": true,
-    "_id": "c7ca2135-8f7a-4253-b563-467667f08d54"
+    "_id": "d2058b92-d95b-4157-b4c7-f1ae79e065e5"
   },
   {
     "__type__": "cc.Node",
@@ -183,7 +186,7 @@
       "array": [
         0,
         0,
-        269.1424907422142,
+        269.14900499512305,
         0,
         0,
         0,
@@ -713,7 +716,7 @@
       "width": 960,
       "height": 640
     },
-    "_fitWidth": false,
+    "_fitWidth": true,
     "_fitHeight": true,
     "_id": "1adU0edwFG2JRFijvDQ2pA"
   },
@@ -756,10 +759,10 @@
         "__id__": 18
       },
       {
-        "__id__": 20
+        "__id__": 22
       },
       {
-        "__id__": 22
+        "__id__": 24
       }
     ],
     "_active": true,
@@ -882,85 +885,49 @@
       "__id__": 18
     },
     "_enabled": true,
-    "treasures": [],
-    "_id": "bcmj8YXkxM9rln2rtWJGHH"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "怪物s",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 17
-    },
-    "_children": [],
-    "_active": true,
-    "_components": [
+    "treasures": [
+      {
+        "__id__": 20
+      },
       {
         "__id__": 21
       }
     ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_trs": {
-      "__type__": "TypedArray",
-      "ctor": "Float64Array",
-      "array": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "_groupIndex": 0,
-    "groupIndex": 0,
-    "_id": "01rQ1If+VMCKlmrhFmI3SZ"
+    "_id": "bcmj8YXkxM9rln2rtWJGHH"
   },
   {
-    "__type__": "e0923YxXsNEO5vHV8Bl5tqk",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 20
-    },
-    "_enabled": true,
-    "monsters": [],
-    "_id": "b6Hj9XkfVDApeAdPS9zWMp"
+    "__type__": "灵宝模板",
+    "name": "昆仑镜",
+    "treasurDemoId": 0,
+    "type": "仙界",
+    "minPower": 3,
+    "maxPower": 5,
+    "minDefend": 3,
+    "maxDefend": 5,
+    "minHP": 3,
+    "maxHP": 5,
+    "quality": 9,
+    "minCosttTime": 0,
+    "maxCostTime": 0
+  },
+  {
+    "__type__": "灵宝模板",
+    "name": "万妖幡",
+    "treasurDemoId": 1,
+    "type": "妖界",
+    "minPower": 2,
+    "maxPower": 5,
+    "minDefend": 2,
+    "maxDefend": 3,
+    "minHP": 2,
+    "maxHP": 4,
+    "quality": 8,
+    "minCosttTime": 0,
+    "maxCostTime": 0
   },
   {
     "__type__": "cc.Node",
-    "_name": "天道之子s",
+    "_name": "怪物s",
     "_objFlags": 0,
     "_parent": {
       "__id__": 17
@@ -1018,6 +985,79 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
+    "_id": "01rQ1If+VMCKlmrhFmI3SZ"
+  },
+  {
+    "__type__": "e0923YxXsNEO5vHV8Bl5tqk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 22
+    },
+    "_enabled": true,
+    "monsters": [],
+    "_id": "b6Hj9XkfVDApeAdPS9zWMp"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "天道之子s",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 17
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 25
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
     "_id": "f55MP0WAtD0p1AGJQSt3je"
   },
   {
@@ -1025,30 +1065,78 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 22
+      "__id__": 24
     },
     "_enabled": true,
     "sons": [
       {
-        "__id__": 24
+        "__id__": 26
+      },
+      {
+        "__id__": 27
+      },
+      {
+        "__id__": 28
       }
     ],
     "_id": "1b3ZyZUx1OxJExoqQbXRZg"
   },
   {
     "__type__": "天道之子模板",
-    "name": "",
-    "heavenSonId": 0,
-    "type": 0,
-    "minPower": 0,
-    "maxPower": 0,
-    "minDefend": 0,
-    "maxDefend": 0,
-    "HP": 0,
-    "growRate": 0,
-    "quality": 0,
-    "staticImage": null,
-    "e_headPortrait": null
+    "name": "龙傲天",
+    "heavenSonDemoId": 0,
+    "worldType": "魔界",
+    "minPower": 3,
+    "maxPower": 5,
+    "minDefend": 3,
+    "maxDefend": 5,
+    "HP": 6,
+    "growRate": 3,
+    "quality": 9,
+    "staticImage": {
+      "__uuid__": "ceead107-cdad-4234-9e34-09165f22b6dd"
+    },
+    "e_headPortrait": {
+      "__uuid__": "ceead107-cdad-4234-9e34-09165f22b6dd"
+    }
+  },
+  {
+    "__type__": "天道之子模板",
+    "name": "润玉",
+    "heavenSonDemoId": 1,
+    "worldType": "仙界",
+    "minPower": 2,
+    "maxPower": 4,
+    "minDefend": 2,
+    "maxDefend": 4,
+    "HP": 5,
+    "growRate": 3,
+    "quality": 8,
+    "staticImage": {
+      "__uuid__": "cc5a172b-0f3d-4c77-94b6-2e473acfa867"
+    },
+    "e_headPortrait": {
+      "__uuid__": "cc5a172b-0f3d-4c77-94b6-2e473acfa867"
+    }
+  },
+  {
+    "__type__": "天道之子模板",
+    "name": "花翠花",
+    "heavenSonDemoId": 2,
+    "worldType": "妖界",
+    "minPower": 2,
+    "maxPower": 4,
+    "minDefend": 2,
+    "maxDefend": 4,
+    "HP": 4,
+    "growRate": 2,
+    "quality": 7,
+    "staticImage": {
+      "__uuid__": "74b811ee-8439-464c-b6a6-6f6d0acdebf1"
+    },
+    "e_headPortrait": {
+      "__uuid__": "74b811ee-8439-464c-b6a6-6f6d0acdebf1"
+    }
   },
   {
     "__type__": "cc.Node",
@@ -1061,7 +1149,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 26
+        "__id__": 30
       }
     ],
     "_prefab": null,
@@ -1117,20 +1205,20 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 25
+      "__id__": 29
     },
     "_enabled": true,
     "userDataNode": {
-      "__id__": 27
+      "__id__": 31
     },
     "HeavenSonDatabaseNode": {
-      "__id__": 22
+      "__id__": 24
     },
     "TreasureDatabaseNode": {
       "__id__": 18
     },
     "MonsterDatabaseNode": {
-      "__id__": 20
+      "__id__": 22
     },
     "_id": "3cVV3HhfdPErc6ZHtRqk0c"
   },
@@ -1145,7 +1233,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 28
+        "__id__": 32
       }
     ],
     "_prefab": null,
@@ -1201,17 +1289,91 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 27
+      "__id__": 31
     },
     "_enabled": true,
     "level": 0,
     "stoneNum": 1000,
     "hmzqNum": 1000,
-    "currentWorld": 1,
+    "currentWorld": "仙界",
     "fighterID": 1,
     "years": 0,
     "sons": [],
     "treasures": [],
+    "expBase": 100,
+    "maxLevel": 100,
     "_id": "e9ervPiqRI5pWtaurc5Nty"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "test",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 34
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "26nWzHCqBAgoygySUe9T9R"
+  },
+  {
+    "__type__": "028e638gctA7YVHj9TzqgYc",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 33
+    },
+    "_enabled": true,
+    "_id": "ef76qHR0tGbLHk7CP4MecR"
   }
 ]
