@@ -17,7 +17,7 @@ cc.Class({
         this.TreasureDB = this.TreasureDatabaseNode.getComponent("TreasureDB");
         this.MonsterDB = this.MonsterDatabaseNode.getComponent("MonsterDB");
 
-        cc.log("into game onload");
+        console.log("into game onload");
        
         
         // for test

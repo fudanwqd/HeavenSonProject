@@ -2,6 +2,7 @@ var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
        heavenSonDemo : Object,
+       name : cc.String,
        heavenSonId : cc.Integer,
        level : cc.Integer,
        exp: cc.Integer,//当前级别修为（经验）值； 该级别满值（能突破的时候）=expBase*level
@@ -45,11 +46,11 @@ cc.Class({
             type : cc.Integer,
         },
         stoneNum : {
-            default : 1000,
+            default : 500,
             type : cc.Integer,
         },
         hmzqNum : {
-            default : 1000,
+            default : 500,
             type : cc.Integer,
         },
         currentWorld : {
@@ -94,7 +95,6 @@ cc.Class({
     },
     onLoad(){
         // 将数据从已有数据开始进行初始化，如果localstorage中有数据，则使用localstorage数据，否则使用默认数据
-        cc.log("userdata onload!");
         var level = this.getData("level");
         if(level){
             this.level = level;
