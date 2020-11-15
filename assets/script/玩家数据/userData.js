@@ -95,6 +95,7 @@ cc.Class({
     },
     onLoad(){
         // 将数据从已有数据开始进行初始化，如果localstorage中有数据，则使用localstorage数据，否则使用默认数据
+
         cc.log("userdata onload!");
         // for test
         // cc.log(this.getData("heavenSons"));
@@ -170,6 +171,7 @@ cc.Class({
         }
 
         //...
+
         //获得玩家总共获得过的天道之子个数，用于分配天道之子ID
         var heavenSonNum = this.getData("totalHeavenSonNum");
         if(heavenSonNum){
@@ -442,7 +444,6 @@ cc.Class({
     
 
     
-
 
     
 
