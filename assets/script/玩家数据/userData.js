@@ -20,7 +20,8 @@ var HeavenSon = cc.Class({
        growRate : cc.Float,
        ownTreasure : {
            default :[],
-           type : [Treasure]
+           type : [cc.Integer]
+           // 拥有的灵宝的ID
        },
       
     }
@@ -103,6 +104,7 @@ cc.Class({
     },
 
     setData(dataName,data){
+        cc.sys.localStorage.removeItem(dataName);
         cc.sys.localStorage.setItem(dataName, JSON.stringify(data));
     },
     onLoad(){
@@ -173,11 +175,15 @@ cc.Class({
         };
         //...待初始化（/读取storage）
 
+        var treasuresInWorld = this.getData("treasuresInWorld");
+        if(treasuresInWorld){
+            this.treasuresInWorld = treasuresInWorld;
+        }
 
         //...
         //获得玩家总共获得过的天道之子个数，用于分配天道之子ID
         var heavenSonNum = this.getData("totalHeavenSonNum");
-        if(HeavenSonNum){
+        if(heavenSonNum){
             this.totalHeavenSonNum = heavenSonNum;
         }
 
@@ -216,6 +222,7 @@ cc.Class({
     setStoneNum(num){
         if(num>=0){
             this.stoneNum = num;
+            this.setData("stoneNum",num);
         }
     },
 
@@ -227,6 +234,7 @@ cc.Class({
     setHmzqNum(num){
         if(num>=0){
             this.hmzqNum = num;
+            this.setData("hmzqNum",num);
         }
     },
 
@@ -242,6 +250,7 @@ cc.Class({
     // },
     setCurrentWorld(world){//worldID 直接以字符串形式
         this.currentWorld = world;
+        this.setData("currentWorld",world);
     },
 
     getFighterID(){
@@ -251,7 +260,9 @@ cc.Class({
     setFighterID(fighterID){
         if(fighterID>=0){
             this.fighterID = fighterID;
+            this.setData("fighterID",fighterID);
         }
+
     },
 
     getYears(){
@@ -262,6 +273,7 @@ cc.Class({
         if(years>0){
             this.years = years;
         }
+        this.setData("years",years);
     },
 
     getExpBase(){
@@ -271,6 +283,7 @@ cc.Class({
     setExpBase(exp){
         if(exp>=0){
             this.expBase = exp;
+            this.setData("expBase",exp);
         }
     },
 
@@ -281,27 +294,19 @@ cc.Class({
     setMaxLevel(maxlevel){
         if(maxlevel>0){
             this.maxLevel = maxlevel;
+            this.setData("maxLevel",maxlevel);
         }
     },
 
     setTotalHeavenSonNum(num){
         this.totalHeavenSonNum = num;
+        this.setData("totalHeavenSonNum",num);
     },
     setTotalTreasureNum(num){
         this.totalTreasureNum = num;
+        this.setData("totalTreasureNum",num);
     },
     
-
-
-
-    //数据持久化
-    // loadInformation(){
-    //     cc.sys.localStorage.setItem("level", JSON.stringify(this.level));
-    //     this.level = cc.sys.localStorage.getItem("level");
-    //     //与浏览器类似
-    // },
-
-  
 
  //根据getChildByID（childID）：根据身份id获得该天道之子对象
     getChildByID(childID){
@@ -320,7 +325,8 @@ cc.Class({
     addNewChild(heavenSon){
         this.sons.push(heavenSon);
         //更新数据之后进行数据的存储
-        this.updateHeavenSon();
+        // ！！！ 目前将天道之子更新后的写入localstorage注释了，因为sons的对象存储会导致循环引用问题，暂时还没能解决
+        // this.updateHeavenSon();
     },
 
 // 根据id删除玩家拥有的天道之子
@@ -415,12 +421,14 @@ cc.Class({
     //将灵宝treasure从某界world中删除       （this.treasuresInWorld）
     deleteTreasureFromWorld(treasure,world){
         //...
+        this.treasuresInWorld[world].remove(treasure);
         this.updateTreasureInWorld();
     },
 
     //更新六界中的灵宝       （this.treasuresInWorld）
     updateTreasureInWorld(){
         //...
+        this.setData("treasuresInWorld",this.treasuresInWorld);
     },
 
     // for test
@@ -439,12 +447,13 @@ cc.Class({
     // 根据demoId 创建一个新的天道之子实例
     createNewHeavenSonByDemoID(heavenSonDemoId){
         var newHeavenSon = new HeavenSon();
-        newHeavenSon.heavenSonDemoId = heavenSonDemoId;
+        var gameNode =  cc.find("game").getComponent("game");
+        var heavenSonDemo = gameNode.getHeavenSonDemoByID(heavenSonDemoId);
+        newHeavenSon.heavenSonDemo = heavenSonDemo;
         var heavenSonId = this.totalHeavenSonNum;
-        this.setTotalHeavenSonNum(heavenSonId++);
+        this.setTotalHeavenSonNum(++heavenSonId);
         newHeavenSon.heavenSonId = heavenSonId;
         //根据随机数获得天道之子实例的攻击力和防御力
-        var heavenSonDemo = this.gameNode.getHeavenSonDemoByID(heavenSonDemoId);
         newHeavenSon.power = this.getRandomRange(heavenSonDemo.minPower,heavenSonDemo.maxPower);
         newHeavenSon.defend = this.getRandomRange(heavenSonDemo.minDefend,heavenSonDemo.maxDefend);
         newHeavenSon.HP = heavenSonDemo.HP;

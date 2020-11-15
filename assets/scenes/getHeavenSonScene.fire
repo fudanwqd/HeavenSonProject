@@ -17,7 +17,7 @@
         "__id__": 2
       },
       {
-        "__id__": 17
+        "__id__": 28
       }
     ],
     "_active": false,
@@ -78,19 +78,19 @@
         "__id__": 5
       },
       {
-        "__id__": 39
+        "__id__": 50
       },
       {
-        "__id__": 53
+        "__id__": 64
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 63
+        "__id__": 74
       },
       {
-        "__id__": 64
+        "__id__": 75
       }
     ],
     "_prefab": null,
@@ -180,7 +180,7 @@
       "array": [
         0,
         0,
-        352.52646592800306,
+        342.38077621315915,
         0,
         0,
         0,
@@ -257,13 +257,7 @@
         "__id__": 10
       },
       {
-        "__id__": 12
-      },
-      {
-        "__id__": 14
-      },
-      {
-        "__id__": 19
+        "__id__": 21
       },
       {
         "__id__": 23
@@ -272,19 +266,28 @@
         "__id__": 25
       },
       {
-        "__id__": 27
+        "__id__": 30
       },
       {
-        "__id__": 31
+        "__id__": 34
       },
       {
-        "__id__": 35
+        "__id__": 36
       },
       {
-        "__id__": 37
+        "__id__": 38
+      },
+      {
+        "__id__": 42
+      },
+      {
+        "__id__": 46
+      },
+      {
+        "__id__": 48
       }
     ],
-    "_active": false,
+    "_active": true,
     "_components": [],
     "_prefab": null,
     "_opacity": 255,
@@ -373,7 +376,7 @@
       "array": [
         0,
         0,
-        268.9875,
+        342.38077621315915,
         0,
         0,
         0,
@@ -528,6 +531,506 @@
   },
   {
     "__type__": "cc.Node",
+    "_name": "灵石鸿蒙之气底图",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 5
+    },
+    "_children": [
+      {
+        "__id__": 11
+      },
+      {
+        "__id__": 13
+      },
+      {
+        "__id__": 15
+      },
+      {
+        "__id__": 17
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 19
+      },
+      {
+        "__id__": 20
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 500,
+      "height": 60
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        228.636,
+        275.815,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "b6bTG8y91DJ6X4o+iBRTci"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "灵石",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 10
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 12
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 46,
+      "height": 40
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        -170.57,
+        1.815,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "c6AqG7yOVNcpW84Uww9FTL"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 11
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "5361f63b-0ee2-4212-98d2-0807ecb0b7c7"
+    },
+    "_type": 0,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": "13v5AsKHlC9q8VlVJgG+Lu"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "鸿蒙之气",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 10
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 14
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 46,
+      "height": 38
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        50.808,
+        1.815,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "eaDFOCidFE2pd6HiFSmPUk"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 13
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "368526b3-eae0-48f2-9573-d58c82794941"
+    },
+    "_type": 0,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": "40rsnim+ZLFYTaSQc/eUzh"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "灵石数量",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 10
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 16
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 16.68,
+      "height": 37.8
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        -74.398,
+        5.444,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "5fd8GUOFdL9KHeu4NkxPCf"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 15
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_useOriginalSize": false,
+    "_string": "1",
+    "_N$string": "1",
+    "_fontSize": 30,
+    "_lineHeight": 30,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "69rm8jtb1Fso49KZoPECzt"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "鸿蒙之气数量",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 10
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 18
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 16.68,
+      "height": 37.8
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        152.424,
+        5.443,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "d16TGwp+xI46flW7/YgIj9"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 17
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_useOriginalSize": false,
+    "_string": "2",
+    "_N$string": "2",
+    "_fontSize": 30,
+    "_lineHeight": 30,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "bbmghgXKlBOpCOIkmiuZEZ"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 10
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "69e2a437-c386-4821-b00a-ae12bca13877"
+    },
+    "_type": 0,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": "f1BtYfDp1B+49ROPcfK3Gb"
+  },
+  {
+    "__type__": "fb49flQbK1AgL+8X5GtC6SR",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 10
+    },
+    "_enabled": true,
+    "_id": "e4KfW/W9RMNILHJ2SISMfN"
+  },
+  {
+    "__type__": "cc.Node",
     "_name": "灵石抽卡底图",
     "_objFlags": 0,
     "_parent": {
@@ -537,7 +1040,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 11
+        "__id__": 22
       }
     ],
     "_prefab": null,
@@ -593,7 +1096,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 10
+      "__id__": 21
     },
     "_enabled": true,
     "_materials": [
@@ -631,7 +1134,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 13
+        "__id__": 24
       }
     ],
     "_prefab": null,
@@ -687,7 +1190,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 12
+      "__id__": 23
     },
     "_enabled": true,
     "_materials": [
@@ -725,7 +1228,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 15
+        "__id__": 26
       }
     ],
     "_prefab": null,
@@ -781,7 +1284,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 14
+      "__id__": 25
     },
     "_enabled": true,
     "_normalMaterial": null,
@@ -790,7 +1293,7 @@
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 16
+        "__id__": 27
       }
     ],
     "_N$interactable": true,
@@ -858,14 +1361,14 @@
       "__uuid__": "29158224-f8dd-4661-a796-1ffab537140e"
     },
     "_N$target": {
-      "__id__": 14
+      "__id__": 25
     },
     "_id": "04egMFkz5K37MvwOymFEDn"
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 17
+      "__id__": 28
     },
     "component": "",
     "_componentId": "c19afh49ZlKL5CjAdqrCWPJ",
@@ -883,7 +1386,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 18
+        "__id__": 29
       }
     ],
     "_prefab": null,
@@ -939,9 +1442,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 17
+      "__id__": 28
     },
     "_enabled": true,
+    "stonePossibleArray": [],
+    "HMZQPossibleArray": [],
     "_id": "62VqoIv95BroDu+KpXQ5Io"
   },
   {
@@ -955,10 +1460,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 20
+        "__id__": 31
       },
       {
-        "__id__": 21
+        "__id__": 32
       }
     ],
     "_prefab": null,
@@ -1014,7 +1519,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 19
+      "__id__": 30
     },
     "_enabled": true,
     "_materials": [
@@ -1046,7 +1551,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 19
+      "__id__": 30
     },
     "_enabled": true,
     "_normalMaterial": null,
@@ -1055,7 +1560,7 @@
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 22
+        "__id__": 33
       }
     ],
     "_N$interactable": true,
@@ -1116,11 +1621,11 @@
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 17
+      "__id__": 28
     },
     "component": "",
     "_componentId": "c19afh49ZlKL5CjAdqrCWPJ",
-    "handler": "getHMZQRandomDemoId",
+    "handler": "onHMZQButtonClick",
     "customEventData": "30"
   },
   {
@@ -1134,7 +1639,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 24
+        "__id__": 35
       }
     ],
     "_prefab": null,
@@ -1190,7 +1695,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 23
+      "__id__": 34
     },
     "_enabled": true,
     "_materials": [
@@ -1228,7 +1733,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 26
+        "__id__": 37
       }
     ],
     "_prefab": null,
@@ -1284,7 +1789,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 25
+      "__id__": 36
     },
     "_enabled": true,
     "_materials": [
@@ -1324,10 +1829,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 28
+        "__id__": 39
       },
       {
-        "__id__": 30
+        "__id__": 41
       }
     ],
     "_prefab": null,
@@ -1383,7 +1888,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 27
+      "__id__": 38
     },
     "_enabled": true,
     "_normalMaterial": null,
@@ -1392,7 +1897,7 @@
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 29
+        "__id__": 40
       }
     ],
     "_N$interactable": false,
@@ -1448,14 +1953,14 @@
     "hoverSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 27
+      "__id__": 38
     },
     "_id": "29TIrKfJpBjKcDXilLLHLc"
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 17
+      "__id__": 28
     },
     "component": "",
     "_componentId": "c19afh49ZlKL5CjAdqrCWPJ",
@@ -1467,7 +1972,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 27
+      "__id__": 38
     },
     "_enabled": true,
     "_materials": [
@@ -1505,10 +2010,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 32
+        "__id__": 43
       },
       {
-        "__id__": 33
+        "__id__": 44
       }
     ],
     "_prefab": null,
@@ -1564,7 +2069,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 31
+      "__id__": 42
     },
     "_enabled": true,
     "_materials": [
@@ -1596,7 +2101,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 31
+      "__id__": 42
     },
     "_enabled": true,
     "_normalMaterial": null,
@@ -1605,7 +2110,7 @@
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 34
+        "__id__": 45
       }
     ],
     "_N$interactable": true,
@@ -1666,11 +2171,11 @@
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 17
+      "__id__": 28
     },
     "component": "",
     "_componentId": "c19afh49ZlKL5CjAdqrCWPJ",
-    "handler": "getStoneRandomDemoId",
+    "handler": "onStoneButtonClick",
     "customEventData": "30"
   },
   {
@@ -1684,7 +2189,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 36
+        "__id__": 47
       }
     ],
     "_prefab": null,
@@ -1740,7 +2245,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 35
+      "__id__": 46
     },
     "_enabled": true,
     "_materials": [
@@ -1780,7 +2285,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 38
+        "__id__": 49
       }
     ],
     "_prefab": null,
@@ -1836,7 +2341,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 37
+      "__id__": 48
     },
     "_enabled": true,
     "_materials": [
@@ -1872,10 +2377,10 @@
     },
     "_children": [
       {
-        "__id__": 40
+        "__id__": 51
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": null,
     "_opacity": 255,
@@ -1930,23 +2435,23 @@
     "_name": "抽卡展示弹窗",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 39
+      "__id__": 50
     },
     "_children": [
       {
-        "__id__": 41
+        "__id__": 52
       },
       {
-        "__id__": 43
+        "__id__": 54
       },
       {
-        "__id__": 45
+        "__id__": 56
       },
       {
-        "__id__": 47
+        "__id__": 58
       },
       {
-        "__id__": 49
+        "__id__": 60
       }
     ],
     "_active": true,
@@ -2004,13 +2509,13 @@
     "_name": "抽卡成功底图",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 40
+      "__id__": 51
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 42
+        "__id__": 53
       }
     ],
     "_prefab": null,
@@ -2066,7 +2571,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 41
+      "__id__": 52
     },
     "_enabled": true,
     "_materials": [
@@ -2098,13 +2603,13 @@
     "_name": "成功描述",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 40
+      "__id__": 51
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 44
+        "__id__": 55
       }
     ],
     "_prefab": null,
@@ -2160,7 +2665,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 43
+      "__id__": 54
     },
     "_enabled": true,
     "_materials": [
@@ -2194,13 +2699,13 @@
     "_name": "抽到的天道之子",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 40
+      "__id__": 51
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 46
+        "__id__": 57
       }
     ],
     "_prefab": null,
@@ -2256,7 +2761,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 45
+      "__id__": 56
     },
     "_enabled": true,
     "_materials": [
@@ -2288,13 +2793,13 @@
     "_name": "属性描述",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 40
+      "__id__": 51
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 48
+        "__id__": 59
       }
     ],
     "_prefab": null,
@@ -2350,7 +2855,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 47
+      "__id__": 58
     },
     "_enabled": true,
     "_materials": [
@@ -2384,16 +2889,16 @@
     "_name": "抽卡成功关闭按钮",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 40
+      "__id__": 51
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 50
+        "__id__": 61
       },
       {
-        "__id__": 51
+        "__id__": 62
       }
     ],
     "_prefab": null,
@@ -2449,7 +2954,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 49
+      "__id__": 60
     },
     "_enabled": true,
     "_materials": [
@@ -2481,7 +2986,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 49
+      "__id__": 60
     },
     "_enabled": true,
     "_normalMaterial": null,
@@ -2490,7 +2995,7 @@
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 52
+        "__id__": 63
       }
     ],
     "_N$interactable": true,
@@ -2546,14 +3051,14 @@
     "hoverSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 49
+      "__id__": 60
     },
     "_id": "1eSb99vR5J4KBAie9EhKZa"
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 17
+      "__id__": 28
     },
     "component": "",
     "_componentId": "c19afh49ZlKL5CjAdqrCWPJ",
@@ -2569,7 +3074,7 @@
     },
     "_children": [
       {
-        "__id__": 54
+        "__id__": 65
       }
     ],
     "_active": false,
@@ -2627,17 +3132,17 @@
     "_name": "抽卡展示弹窗",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 53
+      "__id__": 64
     },
     "_children": [
       {
-        "__id__": 55
+        "__id__": 66
       },
       {
-        "__id__": 57
+        "__id__": 68
       },
       {
-        "__id__": 59
+        "__id__": 70
       }
     ],
     "_active": true,
@@ -2695,13 +3200,13 @@
     "_name": "抽卡失败底图",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 54
+      "__id__": 65
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 56
+        "__id__": 67
       }
     ],
     "_prefab": null,
@@ -2757,7 +3262,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 55
+      "__id__": 66
     },
     "_enabled": true,
     "_materials": [
@@ -2789,13 +3294,13 @@
     "_name": "抽卡失败描述",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 54
+      "__id__": 65
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 58
+        "__id__": 69
       }
     ],
     "_prefab": null,
@@ -2851,7 +3356,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 57
+      "__id__": 68
     },
     "_enabled": true,
     "_materials": [
@@ -2885,16 +3390,16 @@
     "_name": "抽卡失败关闭按钮",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 54
+      "__id__": 65
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 60
+        "__id__": 71
       },
       {
-        "__id__": 61
+        "__id__": 72
       }
     ],
     "_prefab": null,
@@ -2950,7 +3455,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 59
+      "__id__": 70
     },
     "_enabled": true,
     "_materials": [
@@ -2982,7 +3487,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 59
+      "__id__": 70
     },
     "_enabled": true,
     "_normalMaterial": null,
@@ -2991,7 +3496,7 @@
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 62
+        "__id__": 73
       }
     ],
     "_N$interactable": true,
@@ -3047,14 +3552,14 @@
     "hoverSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 59
+      "__id__": 70
     },
     "_id": "43GhmR2qBLarH0hTxC3l0C"
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 17
+      "__id__": 28
     },
     "component": "",
     "_componentId": "c19afh49ZlKL5CjAdqrCWPJ",
