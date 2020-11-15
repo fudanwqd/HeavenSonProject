@@ -16,11 +16,11 @@ cc.Class({
     },
 
     onLoad(){
-        cc.game.addPersistRootNode(this.node);
+        //cc.game.addPersistRootNode(this.node);
     },
 
     click: function () {
-        this.current = cc.audioEngine.play(this.btnAudio, false, 0.8);
+        this.current = cc.audioEngine.play(this.btnAudio, false);
     },
 
     onDestroy: function () {

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "f6c4cad4-a263-4349-a407-265f9bdc1f82",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 835,
+  "height": 79,
+  "platformSettings": {},
+  "subMetas": {
+    "作为天道化身，进入秘境-文字": {
+      "ver": "1.0.4",
+      "uuid": "5bd02717-af08-468b-a63d-7ff0abbfc40c",
+      "rawTextureUuid": "f6c4cad4-a263-4349-a407-265f9bdc1f82",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 835,
+      "height": 79,
+      "rawWidth": 835,
+      "rawHeight": 79,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

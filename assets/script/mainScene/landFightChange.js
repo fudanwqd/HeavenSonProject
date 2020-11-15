@@ -10,35 +10,53 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        comfirmNode: {
+            default:null,
+            type: cc.Node
+        },
+        fightNameNode: {
+            default:null,
+            type: cc.Node
+        },
+        mijingNode: {
+            default:null,
+            type: cc.Node
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
 
      onLoad () {
+        this.game = cc.find("game").getComponent("game");//game节点的game脚本
+        this.game.onLoad();
+        this.userData = this.game.userData;
+
+        this.comfirmNode.active = false;
+        this.fightSon = this.userData.getChildByID(this.userData.fighterID);
+        console.log(this.userData.fighterID);
+        console.log(this.fightSon);
+        this.fightName = this.fightNameNode.getComponent(cc.Label);
+        this.fightName.string = '"' +this.fightSon.name+'"';
+
         cc.director.preloadScene("fightScene", function(){
             cc.log("fightScene preloaded");
         })
      },
 
      changeSceneFight(){
+        this.comfirmNode.active = true;
+        this.mijingName = this.mijingNode.getComponent(cc.Label);
+        this.mijingName.string = '太虚幻境';
+    },
+
+    confirmSceneChange(){
         cc.log("应该切换到场景：fight");
         cc.director.loadScene("fightScene");
     },
+
+    cancelSceneChange(){
+        this.comfirmNode.active = false;
+    }
 
     // update (dt) {},
 });

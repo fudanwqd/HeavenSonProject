@@ -52,8 +52,8 @@ cc.Class({
         this.hmzqNumber.string = "<color=#80aec2>" + this.userData.hmzqNum + "</color>";
         
         this.fightSon = this.userData.getChildByID(this.userData.fighterID);
-        console.log(this.userData.fighterID);
-        console.log(this.fightSon);
+        // console.log(this.userData.fighterID);
+        // console.log(this.fightSon);
         this.roleName = this.roleNameNode.getComponent(cc.RichText);
         this.roleName.string = "<color=#80aec2>名字：" + this.fightSon.name + "</color>";
 
