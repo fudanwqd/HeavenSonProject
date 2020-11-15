@@ -96,7 +96,7 @@
     "_is3DNode": true,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "autoReleaseAssets": true,
+    "autoReleaseAssets": false,
     "_id": "d2058b92-d95b-4157-b4c7-f1ae79e065e5"
   },
   {
