@@ -9,7 +9,15 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        
+        stonePossibleArray : {
+            default : [],
+            type : [cc.Integer]
+        },
+
+        HMZQPossibleArray : {
+            default : [],
+            type : [cc.Integer]
+        }
       
     },
 
@@ -18,7 +26,9 @@ cc.Class({
     onLoad () {
         this.game = cc.find("game").getComponent("game");//game节点的game脚本
         this.userData = this.game.userData;
-        this.showSuccessPopUp(null);
+        this.heavenSonDB = this.game.HeavenSonDB;
+        this.loadPossiblities();
+        // this.showSuccessPopUp(null);
     },
 
     start () {
@@ -41,6 +51,9 @@ cc.Class({
             var newHeavenSonDemoId =  this.getStoneRandomDemoId();
             var newHeavenSon =  this.userData.createNewHeavenSonByDemoID(newHeavenSonDemoId);
             this.userData.addNewChild(newHeavenSon);
+            // 刷新页面灵石鸿蒙之气展示
+            cc.find("Canvas/抽卡界面/灵石鸿蒙之气底图").getComponent("stoneAndHmzqOnload").flushStoneAndHmzqNum();
+    
             // 抽卡成功，弹出抽卡成功弹窗
             this.showSuccessPopUp(newHeavenSon);
 
@@ -63,7 +76,7 @@ cc.Class({
         }else{
             //更新玩家手中鸿蒙之气数量
             this.userData.setHmzqNum(hmzqNum-customEventData);
-            var newHeavenSonDemoId = this.getStoneRandomDemoId();
+            var newHeavenSonDemoId = this.getHMZQRandomDemoId();
             var newHeavenSon =  this.userData.createNewHeavenSonByDemoID(newHeavenSonDemoId);
             this.userData.addNewChild(newHeavenSon);
             // 抽卡成功，弹出抽卡成功弹窗
@@ -73,6 +86,7 @@ cc.Class({
     },
     // 弹出抽卡成功弹窗
     showSuccessPopUp(heavenSon){
+        alert("抽卡成功弹窗");
         var successPopUpNode = cc.find("Canvas/抽卡成功弹窗");
         var subNode = successPopUpNode.getChildByName("抽卡展示弹窗");
         var SuccessDiscriptionNode = subNode.getChildByName("成功描述");
@@ -81,7 +95,10 @@ cc.Class({
         var successStr = "恭喜你！抽到了"+heavenSon.heavenSonDemo.name+"角色!";
         SuccessDiscriptionNode.getComponent(cc.Label).string = successStr;
         // 将抽到的天道之子的立绘放在展位图中
-        getHeavenSonNode.getComponent(cc.Sprite).spriteFrame = heavenSon.heavenSonDemo.staticImage;
+
+        var image  =  heavenSon.heavenSonDemo.staticImage;
+
+        getHeavenSonNode.getComponent(cc.Sprite).spriteFrame = image;
         var descriptionStr = "名称 ： "+ heavenSon.heavenSonDemo.name+
         "  门派 ："+heavenSon.heavenSonDemo.worldType+
         "\n\n 攻击力 ："+heavenSon.power+
@@ -104,24 +121,74 @@ cc.Class({
     //抽卡失败界面弹窗关闭按钮
     onFailedButtonOffClick:function(event,customEventData){
         var failedPopUp = cc.find("Canvas/抽卡失败弹窗");
-        this.failedPopUp.active = false;
+        failedPopUp.active = false;
     },
 
     //抽卡成功界面弹窗关闭按钮
     OnSuccessButtonOffClick: function(event,customEventData){
         var successPopUp = cc.find("Canvas/抽卡成功弹窗");
-        this.failedPopUp.active = false;
+        successPopUp.active = false;
     },
 
+    loadPossiblities(){
+        var totalNum  = this.heavenSonDB.sons.length;
+         var maxQuality = 10;
+         var stoneBegin = 1;// 去除龙傲天
+         var stoneEnd = totalNum;
+         var hmzqBegin = 0;
+         var hmzqEnd = totalNum-1;
+         var stonePossib = [];
+         var hmzqPossib = [];
+         var temp = 0;
+         for(var i =stoneBegin;i<stoneEnd;i++){
+            temp+= maxQuality - this.heavenSonDB.sons[i].quality;
+            stonePossib.push(temp);
+        }
+        temp = 0;
+        for(var i =hmzqBegin;i<hmzqEnd;i++){
+            temp+= maxQuality - this.heavenSonDB.sons[i].quality;
+            hmzqPossib.push(temp);
+        }
 
+        this.stonePossibleArray = stonePossib;
+        this.HMZQPossibleArray = hmzqPossib;
+    },
 
     
     getStoneRandomDemoId(){
         // 该方法实现用灵石抽卡的基本策略，该策略应当与天道之子的稀有性进行概率的分配
+        // 暂定为龙傲天为稀有卡组
+        var totalNum  = this.heavenSonDB.sons.length;
+        var stoneBegin = 1;// 去除龙傲天
+        var stoneEnd = totalNum;
+        var max = this.stonePossibleArray[this.stonePossibleArray.length-1]; 
+        var randomNum =  Math.random()*max;
+        var getIndex = 0;
+        for(var i=0;i<this.stonePossibleArray.length;i++){
+            if(randomNum<this.stonePossibleArray[i]){
+                getIndex = i;
+                break;
+            }
+        }
+        return stoneBegin+getIndex;
+        
     },
 
     getHMZQRandomDemoId(){
+        var totalNum  = this.heavenSonDB.sons.length;
+        var hmzqBegin = 0;
+        var hmzqEnd = totalNum-1;
 
+        var max = this.HMZQPossibleArray[this.HMZQPossibleArray.length-1]; 
+        var randomNum =  Math.random()*max;
+        var getIndex = 0;
+        for(var i=0;i<this.HMZQPossibleArray.length;i++){
+            if(randomNum<this.HMZQPossibleArray[i]){
+                getIndex = i;
+                break;
+            }
+        }
+        return hmzqBegin+getIndex;
     }
     // update (dt) {},
 });
