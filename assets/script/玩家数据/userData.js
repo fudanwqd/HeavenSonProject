@@ -30,7 +30,10 @@ var HeavenSon = cc.Class({
 var Treasure = cc.Class({
     name : '灵宝',
     properties :{
-       treasureDemo : Object,
+       treasureDemo : {
+           default : null,
+           type : require("../静态数据/TreasureDemo"),
+       },
        treasureId:cc.Integer,
        level : cc.Integer,
        power : cc.Integer,
@@ -104,13 +107,15 @@ cc.Class({
     },
 
     setData(dataName,data){
-        cc.sys.localStorage.removeItem(dataName);
-        cc.sys.localStorage.setItem(dataName, JSON.stringify(data));
+        var decycled =  JSON.decycle(data);
+        cc.sys.localStorage.setItem(dataName, JSON.stringify(decycled));
     },
     onLoad(){
         // 将数据从已有数据开始进行初始化，如果localstorage中有数据，则使用localstorage数据，否则使用默认数据
         cc.log("userdata onload!");
-        this.gameNode = cc.find("game").getComponent("game");
+        // for test
+        // cc.log(this.getData("heavenSons"));
+        // this.gameNode = cc.find("game").getComponent("game");
         var level = this.getData("level");
         if(level){
             this.level = level;
@@ -326,7 +331,7 @@ cc.Class({
         this.sons.push(heavenSon);
         //更新数据之后进行数据的存储
         // ！！！ 目前将天道之子更新后的写入localstorage注释了，因为sons的对象存储会导致循环引用问题，暂时还没能解决
-        // this.updateHeavenSon();
+        this.updateHeavenSon();
     },
 
 // 根据id删除玩家拥有的天道之子
