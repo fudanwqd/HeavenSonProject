@@ -17,14 +17,6 @@ var HeavenSon = cc.Class({
            type : [cc.Integer]
            // 拥有的灵宝的ID
        },
-       staticImage:{
-        default:null,
-        type: cc.SpriteFrame,
-       },
-       e_headPortrait:{
-            default:null,
-            type: cc.SpriteFrame,
-       },
     }
 })
 //能跨文件夹调用类吗

@@ -28,35 +28,23 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    
-    onLoad () {
-        //可以预加载的场景
-        cc.director.preloadScene("expedition", function () {
-            cc.log("expedition scene preloaded");
-        });
+     onLoad () {
+        this.game = cc.find("game").getComponent("game");//game节点的game脚本
+        this.userData = this.game.userData;
+        this.flushStoneAndHmzqNum();
+     },
+
+     flushStoneAndHmzqNum(){
+        var stoneNum  = this.userData.getStoneNum();
+        var hmzqNum = this.userData.getHmzqNum();
+        var stoneNumNode = this.node.getChildByName("灵石数量");
+        var hmzqNumNode = this.node.getChildByName("鸿蒙之气数量");
+        stoneNumNode.getComponent(cc.Label).string = stoneNum;
+        hmzqNumNode.getComponent(cc.Label).string = hmzqNum;
+     },
+    start () {
+
     },
-
-    changeSceneExpedition () {
-        cc.log("应该切换到场景：抽卡场景");
-        cc.director.loadScene("getHeavenSonScene");
-    },
-
-    changeSceneExpedition2 () {
-        cc.log("应该切换到场景：历练场景");
-        cc.director.loadScene("expedition");
-    },
-
-    
-
-
-    removeAllStorage(){
-        cc.sys.localStorage.clear();
-        
-    }
-
-
-
-
 
     // update (dt) {},
 });

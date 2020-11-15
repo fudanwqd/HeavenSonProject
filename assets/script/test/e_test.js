@@ -31,8 +31,8 @@ cc.Class({
     onLoad () {
         this.game = cc.find("game").getComponent("game");//game节点的game脚本
         this.userData = this.game.userData;
-        this.heavenSonDB = cc.find("静态文件/天道之子s").getComponent("HeavenSonDB");
-        this.treasureDB = cc.find("静态文件/灵宝s").getComponent("TreasureDB");
+        this.heavenSonDB = cc.find("天道之子s").getComponent("HeavenSonDB");
+        this.treasureDB = cc.find("灵宝s").getComponent("TreasureDB");
     },
 
     start () {
