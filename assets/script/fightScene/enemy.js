@@ -25,10 +25,15 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.hp = 100;
-        this.totalHP = 100;
-        this.hpProgress = this.node.getChildByName('hp');
+        this.hp = 50;
+        this.totalHP = 50;
+        this.power = 10;
+        this.defend = 10;
 
+
+        this.hpProgress = this.node.getChildByName('hp');
+        this.playerNode = cc.find('Canvas/bg/hero');//拿到节点
+        this.havenSon = this.playerNode.getComponent('havenSon');
 
         this.isHit = false;
         this.bg = this.node.parent.parent.getComponent('fight_game');
@@ -37,14 +42,20 @@ cc.Class({
         this.enemyAni.on("finished", (e, data) => {
             if(data.name == 'enemyHurt' && this.tag != 1){
                 // console.log("扣血");
-                this.hp -= 10;
-                this.isHit = false;
-                this.hpProgress.getComponent(cc.ProgressBar).progress = this.hp / this.totalHP;
+                if(this.defend >= this.havenSon.power){
+                    this.hp--;
+                }else{
+                    this.hp -= this.havenSon.power - this.defend;
+                }
+                
+                this.isHit = false;                
                 
                 // console.log(this.hp / this.totalHP);
-                if(this.hp == 0){
+                if(this.hp <= 0){
                     this.bg.isIniEnemy = false;
                     this.node.destroy();
+                }else{
+                    this.hpProgress.getComponent(cc.ProgressBar).progress = this.hp / this.totalHP;
                 }
             }else if(data.name == 'enemyAttack'){
                 this.setAni("enemyIdle");
@@ -66,7 +77,7 @@ cc.Class({
         this.moveRight = false;
 
 
-        this.playerNode = cc.find('Canvas/bg/hero');//拿到节点位置
+        
     },
 
     start () {

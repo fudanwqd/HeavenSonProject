@@ -26,9 +26,9 @@ cc.Class({
 
     onCollisionEnter(other, self){
         if(other.node.group == "hero" && other.tag <= 1 && other.tag > 0){
-            console.log("怪物受伤触发");
-            console.log(other.tag);
-            console.log(self.tag);
+            // console.log("怪物受伤触发");
+            // console.log(other.tag);
+            // console.log(self.tag);
             this.enemy.hurt();
         }
 

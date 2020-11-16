@@ -34,7 +34,8 @@ cc.Class({
             // console.log("人物受伤触发");
             // console.log(other.tag);
             // console.log(self.tag);
-            this.havenSon.hurt();
+            console.log(other);
+            this.havenSon.hurt(other);
         }
     }
 });

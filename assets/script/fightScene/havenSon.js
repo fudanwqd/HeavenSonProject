@@ -37,8 +37,17 @@ cc.Class({
         this.hpProgress = this.node.getChildByName('hp');
 
         this.heroAni = this.node.getChildByName('body').getComponent(cc.Animation);
-        this.hp = 100;
-        this.totalHP = 100;
+        
+
+
+        this.game = cc.find('game').getComponent('game');
+        this.userData = this.game.userData;
+        this.havenSonInstance = this.userData.sons[0];
+
+        this.totalHP = this.havenSonInstance.HP;//还未计算灵宝属性
+        this.hp = this.totalHP;
+        this.power = this.havenSonInstance.power;//还未计算灵宝属性
+        this.defend = this.havenSonInstance.defend;//还未计算灵宝属性
 
         this.attackBtn.on(cc.Node.EventType.TOUCH_START, event => {
             this.setAni("heroAttack"); 
@@ -107,7 +116,7 @@ cc.Class({
         }
     },
 
-    hurt(){
+    hurt(other){
         // console.log('人物受伤');
         if(this.isHit){
             return ; 
@@ -127,6 +136,17 @@ cc.Class({
         //以下内容也应该放到受伤动画完成后的监听上，目前的效果掉血太快，利用动画监听可以在受伤动画播放时有个小无敌，不会掉血
         this.havenSonState = State.stand;
         this.hp -= 10;
+
+        // 暂有问题
+        console.log(other);
+        let enemy = other.getComponent('enemy');
+        if(this.defend >= this.enemy.power){
+            console.log('未破防！');
+            this.hp--;
+        }else{
+            this.hp -= this.enemy.power - this.defend;
+        }
+
         this.isHit = false;
         this.hpProgress.getComponent(cc.ProgressBar).progress = this.hp / this.totalHP;
 

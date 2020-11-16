@@ -41,6 +41,16 @@ cc.Class({
         cc.director.loadScene("getHeavenSonScene");
     },
 
+    changeFightScene () {
+        cc.log("应该切换到场景：战斗场景");
+        cc.director.loadScene("fightScene");
+    },
+
+    changeMainScene(){
+        cc.log("应该切换到场景：主场景");
+        cc.director.loadScene("mainScene");
+    }, 
+
 
     removeAllStorage(){
         cc.sys.localStorage.clear();

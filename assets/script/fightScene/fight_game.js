@@ -19,11 +19,13 @@ cc.Class({
         this.enemies = this.node.getChildByName('enemies');
         this.enemyCount = 0;
         this.isIniEnemy = true;
+
+        this.game = cc.find('game').getComponent('game');
         
         this.iniMapNode(this.mapNode);
 
         this.enemyPerBattle = 2;
-        this.battleCount = 3;
+        this.battleCount = 3;//3波
         this.nowBattleIndex = 0;
         this.iniEnemy(this.enemyPerBattle);
         
@@ -105,16 +107,20 @@ cc.Class({
     update (dt) {
         // console.log(this.enemies.childrenCount);
         // console.log(this.isIniEnemy);
-        if(this.enemies.childrenCount == 0 && !this.isIniEnemy 
+        if(this.nowBattleIndex == this.battleCount){
+            // to do 战斗胜利
+            console.log('战斗胜利');
+            console.log(this.nowBattleIndex);
+
+        }else if(this.enemies.childrenCount == 0 && !this.isIniEnemy 
             && this.nowBattleIndex < this.battleCount){
             console.log('生成新的怪兽');
             this.iniEnemy(this.enemyPerBattle);
             this.isIniEnemy = true;
             this.nowBattleIndex++;
+            console.log(this.nowBattleIndex);
         }
 
-        if(this.nowBattleIndex == this.battleCount){
-            // to do 战斗胜利
-        }
+        
     },
 });
