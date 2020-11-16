@@ -116,7 +116,7 @@ cc.Class({
         }
     },
 
-    hurt(other){
+    hurt(){
         // console.log('人物受伤');
         if(this.isHit){
             return ; 
@@ -138,14 +138,14 @@ cc.Class({
         this.hp -= 10;
 
         // 暂有问题
-        console.log(other);
-        let enemy = other.getComponent('enemy');
-        if(this.defend >= this.enemy.power){
-            console.log('未破防！');
-            this.hp--;
-        }else{
-            this.hp -= this.enemy.power - this.defend;
-        }
+        // console.log(other);
+        // let enemy = other.getComponent('enemy');
+        // if(this.defend >= this.enemy.power){
+        //     console.log('未破防！');
+        //     this.hp--;
+        // }else{
+        //     this.hp -= this.enemy.power - this.defend;
+        // }
 
         this.isHit = false;
         this.hpProgress.getComponent(cc.ProgressBar).progress = this.hp / this.totalHP;

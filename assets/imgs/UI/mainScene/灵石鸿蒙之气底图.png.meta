@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "fc483ef1-ce26-43ad-bb3d-2e5888d04c91",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 717,
+  "height": 106,
+  "platformSettings": {},
+  "subMetas": {
+    "灵石鸿蒙之气底图": {
+      "ver": "1.0.4",
+      "uuid": "0ec2d965-1586-441d-a1bd-12c133337da1",
+      "rawTextureUuid": "fc483ef1-ce26-43ad-bb3d-2e5888d04c91",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 717,
+      "height": 106,
+      "rawWidth": 717,
+      "rawHeight": 106,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

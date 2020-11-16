@@ -79,14 +79,16 @@ cc.Class({
             var newHeavenSonDemoId = this.getHMZQRandomDemoId();
             var newHeavenSon =  this.userData.createNewHeavenSonByDemoID(newHeavenSonDemoId);
             this.userData.addNewChild(newHeavenSon);
-            // 抽卡成功，弹出抽卡成功弹窗
+             // 刷新页面灵石鸿蒙之气展示
+             cc.find("Canvas/抽卡界面/灵石鸿蒙之气底图").getComponent("stoneAndHmzqOnload").flushStoneAndHmzqNum(); 
+              // 抽卡成功，弹出抽卡成功弹窗
             this.showSuccessPopUp(newHeavenSon);
         }
 
     },
     // 弹出抽卡成功弹窗
     showSuccessPopUp(heavenSon){
-        alert("抽卡成功弹窗");
+        // alert("抽卡成功弹窗");
         var successPopUpNode = cc.find("Canvas/抽卡成功弹窗");
         var subNode = successPopUpNode.getChildByName("抽卡展示弹窗");
         var SuccessDiscriptionNode = subNode.getChildByName("成功描述");

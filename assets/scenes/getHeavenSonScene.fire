@@ -180,7 +180,7 @@
       "array": [
         0,
         0,
-        342.38077621315915,
+        340.6472026627128,
         0,
         0,
         0,
@@ -376,7 +376,7 @@
       "array": [
         0,
         0,
-        342.38077621315915,
+        340.6472026627128,
         0,
         0,
         0,
@@ -2176,7 +2176,7 @@
     "component": "",
     "_componentId": "c19afh49ZlKL5CjAdqrCWPJ",
     "handler": "onStoneButtonClick",
-    "customEventData": "30"
+    "customEventData": "1000"
   },
   {
     "__type__": "cc.Node",

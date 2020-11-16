@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "0e4f4f6a-7d12-4e5a-9e02-33aa84af8ed7",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 300,
+  "height": 276,
+  "platformSettings": {},
+  "subMetas": {
+    "战斗秘境-南海秘境": {
+      "ver": "1.0.4",
+      "uuid": "c4ebbd7a-29fb-4822-8c7a-565caa9c9842",
+      "rawTextureUuid": "0e4f4f6a-7d12-4e5a-9e02-33aa84af8ed7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 300,
+      "height": 276,
+      "rawWidth": 300,
+      "rawHeight": 276,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

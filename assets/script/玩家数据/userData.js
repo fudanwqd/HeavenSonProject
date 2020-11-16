@@ -1,36 +1,32 @@
 var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
-       heavenSonDemo : {
-           default : null,
-           type : require("../静态数据/HeavenSonDemo"),
-       },
-       heavenSonId : cc.Integer,
-       level : {
-        default: 1,
-        type : cc.Integer
+        heavenSonDemo : {
+            default : null,
+            type : require("../静态数据/HeavenSonDemo"),
         },
-       exp: {
-        default : 0,
-        type:  cc.Integer
-        },//当前级别修为（经验）值； 该级别满值（能突破的时候）=expBase*level
+       name : cc.String,
+       heavenSonId : cc.Integer,
+       level : cc.Integer,
+       exp: cc.Integer,//当前级别修为（经验）值； 该级别满值（能突破的时候）=expBase*level
        power : cc.Integer,
        defend: cc.Integer,
        HP    : cc.Integer,
-       growRate : cc.Float,
        ownTreasure : {
            default :[],
-           type : [cc.Integer]
+           type : [Treasure]
            // 拥有的灵宝的ID
        },
-      
     }
 })
 //能跨文件夹调用类吗
 var Treasure = cc.Class({
     name : '灵宝',
     properties :{
-       treasureDemo : Object,
+       treasureDemo : {
+           default : null,
+           type : require("../静态数据/TreasureDemo"),
+       },
        treasureId:cc.Integer,
        level : cc.Integer,
        power : cc.Integer,
@@ -49,11 +45,11 @@ cc.Class({
             type : cc.Integer,
         },
         stoneNum : {
-            default : 1000,
+            default : 500,
             type : cc.Integer,
         },
         hmzqNum : {
-            default : 1000,
+            default : 500,
             type : cc.Integer,
         },
         currentWorld : {
@@ -86,16 +82,6 @@ cc.Class({
             type : cc.Integer,
         },
 
-        totalHeavenSonNum : {
-            default : 1,
-            type : cc.Integer,
-        },
-
-        totalTreasureNum : {
-            default : 1,
-            type : cc.Integer,
-        },
-
     },
 
 
@@ -104,13 +90,16 @@ cc.Class({
     },
 
     setData(dataName,data){
-        cc.sys.localStorage.removeItem(dataName);
-        cc.sys.localStorage.setItem(dataName, JSON.stringify(data));
+        var decycled =  JSON.decycle(data);
+        cc.sys.localStorage.setItem(dataName, JSON.stringify(decycled));
     },
     onLoad(){
         // 将数据从已有数据开始进行初始化，如果localstorage中有数据，则使用localstorage数据，否则使用默认数据
+
         cc.log("userdata onload!");
-        this.gameNode = cc.find("game").getComponent("game");
+        // for test
+        // cc.log(this.getData("heavenSons"));
+        // this.gameNode = cc.find("game").getComponent("game");
         var level = this.getData("level");
         if(level){
             this.level = level;
@@ -161,7 +150,8 @@ cc.Class({
         }
 
 
-        
+        // 常驻节点  不写的话，虽然通过game能调用函数和静态值，但是sons这种就没有了
+        cc.game.addPersistRootNode(this.node);
 
         //定义一个数据结构（属性），存放置在世界中的灵宝
         // this.treasuresInWorld["神界"] = [Treasure]
@@ -181,22 +171,13 @@ cc.Class({
         }
 
         //...
+
         //获得玩家总共获得过的天道之子个数，用于分配天道之子ID
         var heavenSonNum = this.getData("totalHeavenSonNum");
         if(heavenSonNum){
             this.totalHeavenSonNum = heavenSonNum;
         }
 
-        var treasureNum = this.getData("totalTreasureNum");
-        if(treasureNum){
-            this.totalTreasureNum = treasureNum;
-        }
-
-        
-        
-        // 常驻节点  不写的话，虽然通过game能调用函数和静态值，但是sons这种就没有了
-        cc.game.addPersistRootNode(this.node);
-        
     },
     //用户属性的getset方法,set时认为数据已经更新，因此要和数据库进行同步
     getLevel(){
@@ -326,7 +307,7 @@ cc.Class({
         this.sons.push(heavenSon);
         //更新数据之后进行数据的存储
         // ！！！ 目前将天道之子更新后的写入localstorage注释了，因为sons的对象存储会导致循环引用问题，暂时还没能解决
-        // this.updateHeavenSon();
+        this.updateHeavenSon();
     },
 
 // 根据id删除玩家拥有的天道之子
@@ -459,11 +440,6 @@ cc.Class({
         newHeavenSon.HP = heavenSonDemo.HP;
         return newHeavenSon;
     },
-
-    
-
-    
-
 
     
 
