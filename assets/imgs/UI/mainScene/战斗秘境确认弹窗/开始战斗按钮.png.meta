@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "e9905811-231a-4ca1-9bb3-9715c115518b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 366,
+  "height": 101,
+  "platformSettings": {},
+  "subMetas": {
+    "开始战斗按钮": {
+      "ver": "1.0.4",
+      "uuid": "9096558e-6f58-41b5-8ed2-c8053ae4c5cf",
+      "rawTextureUuid": "e9905811-231a-4ca1-9bb3-9715c115518b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 366,
+      "height": 101,
+      "rawWidth": 366,
+      "rawHeight": 101,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

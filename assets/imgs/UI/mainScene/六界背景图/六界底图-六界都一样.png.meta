@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "88025348-ad2b-43de-b051-830549b52fc8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1920,
+  "height": 1080,
+  "platformSettings": {},
+  "subMetas": {
+    "六界底图-六界都一样": {
+      "ver": "1.0.4",
+      "uuid": "2b078e93-1a7b-440d-960c-f546e8f08bc6",
+      "rawTextureUuid": "88025348-ad2b-43de-b051-830549b52fc8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1920,
+      "height": 1080,
+      "rawWidth": 1920,
+      "rawHeight": 1080,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

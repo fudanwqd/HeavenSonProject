@@ -41,6 +41,13 @@ cc.Class({
         cc.director.loadScene("getHeavenSonScene");
     },
 
+    changeSceneExpedition2 () {
+        cc.log("应该切换到场景：历练场景");
+        cc.director.loadScene("expedition");
+    },
+
+    
+
 
     removeAllStorage(){
         cc.sys.localStorage.clear();

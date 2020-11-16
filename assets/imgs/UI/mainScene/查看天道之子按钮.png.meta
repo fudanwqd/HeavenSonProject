@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "60615857-cbc5-4045-9700-1d2b4b7c4fa3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 138,
+  "height": 138,
+  "platformSettings": {},
+  "subMetas": {
+    "查看天道之子按钮": {
+      "ver": "1.0.4",
+      "uuid": "503d7eef-72a2-48c0-9c31-0174bc47c285",
+      "rawTextureUuid": "60615857-cbc5-4045-9700-1d2b4b7c4fa3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 138,
+      "height": 138,
+      "rawWidth": 138,
+      "rawHeight": 138,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
