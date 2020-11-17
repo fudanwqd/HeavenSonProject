@@ -14,7 +14,7 @@ var HeavenSon = cc.Class({
        HP    : cc.Integer,
        ownTreasure : {
            default :[],
-           type : [cc.Integer]
+           type : [Treasure]
            // 拥有的灵宝的ID
        },
     }
@@ -440,10 +440,6 @@ cc.Class({
         newHeavenSon.HP = heavenSonDemo.HP;
         return newHeavenSon;
     },
-
-    
-
-    
 
     
 
