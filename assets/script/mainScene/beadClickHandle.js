@@ -84,6 +84,9 @@ cc.Class({
         this.ghostImageNode.active = false;
         this.bogyImageNode.active = false;
 
+        this.comfirmNode = cc.find("Canvas/确认弹窗");
+        this.comfirmNode.active = false;
+
         this.game = cc.find("game").getComponent("game");//game节点的game脚本
         this.userData = this.game.userData;
         this.userData.currentWorld = "仙界";

@@ -10,40 +10,30 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        comfirmNode: {
-            default:null,
-            type: cc.Node
-        },
-        fightNameNode: {
-            default:null,
-            type: cc.Node
-        },
-        mijingNode: {
-            default:null,
-            type: cc.Node
-        },
     },
 
     // LIFE-CYCLE CALLBACKS:
 
      onLoad () {
         this.game = cc.find("game").getComponent("game");//game节点的game脚本
-        this.game.onLoad();
+        // this.game.onLoad();
         this.userData = this.game.userData;
 
-        this.comfirmNode.active = false;
+        this.comfirmNode = cc.find("Canvas/确认弹窗");
+        this.fightNameNode = cc.find("Canvas/确认弹窗/战斗人物名字");
+        this.mijingNode = cc.find("Canvas/确认弹窗/秘境名字");
+
         this.fightSon = this.userData.getChildByID(this.userData.fighterID);
-        console.log(this.userData.fighterID);
-        console.log(this.fightSon);
+        
         this.fightName = this.fightNameNode.getComponent(cc.Label);
-        this.fightName.string = '"' +this.fightSon.name+'"';
+        this.fightName.string = '"' +this.fightSon.heavenSonDemo.name+'"';
 
         cc.director.preloadScene("fightScene", function(){
             cc.log("fightScene preloaded");
         })
      },
 
-     changeSceneFight(){
+     changeTaiXuSceneFight(){
         this.comfirmNode.active = true;
         this.mijingName = this.mijingNode.getComponent(cc.Label);
         this.mijingName.string = '太虚幻境';
@@ -52,6 +42,18 @@ cc.Class({
     confirmSceneChange(){
         cc.log("应该切换到场景：fight");
         cc.director.loadScene("fightScene");
+    },
+
+    changeSouthSceneFight(){
+        this.comfirmNode.active = true;
+        this.mijingName = this.mijingNode.getComponent(cc.Label);
+        this.mijingName.string = '南海秘境';
+    },
+
+    changeJianMuSceneFight(){
+        this.comfirmNode.active = true;
+        this.mijingName = this.mijingNode.getComponent(cc.Label);
+        this.mijingName.string = '建木仙境';
     },
 
     cancelSceneChange(){
