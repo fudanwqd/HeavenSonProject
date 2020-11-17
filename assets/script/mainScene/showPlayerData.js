@@ -29,19 +29,23 @@ cc.Class({
             default:null,
             type: cc.Node
         },
+        progressBarNode: {
+            default:null,
+            type: cc.Node
+        },
         
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.game = cc.find("game").getComponent("game");//game节点的game脚本
-        //this.game.onLoad();
-        this.userData = this.game.userData;
-        // this.userData.onLoad();
+        // this.game = cc.find("game").getComponent("game");//game节点的game脚本
+        // this.game.onLoad();
+        // this.userData = this.game.userData;
+        // // this.userData.onLoad();
 
-        //this.userData = cc.find("用户数据").getComponent("userData");//js脚本
-        console.log(this.stoneNumber);
+        this.userData = cc.find("用户数据").getComponent("userData");//js脚本
+        // console.log(this.stoneNumber);
         this.stoneNumber = this.stoneNumberNode.getComponent(cc.RichText);
         this.stoneNumber.string = "<color=#80aec2>" + this.userData.stoneNum + "</color>";
         
@@ -49,8 +53,8 @@ cc.Class({
         this.hmzqNumber.string = "<color=#80aec2>" + this.userData.hmzqNum + "</color>";
         
         this.fightSon = this.userData.getChildByID(this.userData.fighterID);
-        console.log(this.userData.fighterID);
-        console.log(this.fightSon);
+        // console.log(this.userData.fighterID);
+        // console.log(this.fightSon);
         this.roleName = this.roleNameNode.getComponent(cc.RichText);
 
         this.roleName.string = "<color=#80aec2>名字：" + this.fightSon.name + "</color>";
@@ -65,14 +69,20 @@ cc.Class({
         this.headPortrait = this.headPortraitNode.getComponent(cc.Sprite);
         this.headPortrait.spriteFrame = this.fightSon.heavenSonDemo.staticImage;
 
-        // cc.game.addPersistRootNode(this.node);
+        this.comfirmNode = cc.find("Canvas/确认弹窗");
+        this.fightNameNode = cc.find("Canvas/确认弹窗/战斗人物名字");
+        // this.mijingNode = cc.find("Canvas/确认弹窗/秘境名字");
+        this.fightName = this.fightNameNode.getComponent(cc.Label);
+        this.fightName.string = '"' +this.fightSon.heavenSonDemo.name+'"';
 
+        //经验条进度实现
+        this.progressNode = cc.find("Canvas/战斗人物圆框/progressBar");
+        this.prog = this.progressNode.getComponent(cc.ProgressBar);
+        this.prog.progress = this.fightSon.exp/100;
 
     },
 
     start () {
 
     },
-
-    // update (dt) {},
 });

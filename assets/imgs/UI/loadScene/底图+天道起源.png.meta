@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "7ab8a783-40eb-4061-ba6e-ce1aad0a8469",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1920,
+  "height": 1080,
+  "platformSettings": {},
+  "subMetas": {
+    "底图+天道起源": {
+      "ver": "1.0.4",
+      "uuid": "8c277231-a734-49bf-a158-f8a5aeab3c48",
+      "rawTextureUuid": "7ab8a783-40eb-4061-ba6e-ce1aad0a8469",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1920,
+      "height": 1080,
+      "rawWidth": 1920,
+      "rawHeight": 1080,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

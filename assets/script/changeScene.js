@@ -46,6 +46,11 @@ cc.Class({
         cc.director.loadScene("expedition");
     },
 
+    changeSceneMain () {
+        cc.log("应该切换到场景：主场景");
+        cc.director.loadScene("mainScene");
+    },
+
     
 
 
