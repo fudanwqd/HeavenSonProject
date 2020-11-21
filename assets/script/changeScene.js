@@ -50,6 +50,12 @@ cc.Class({
         cc.log("应该切换到场景：主场景");
         cc.director.loadScene("mainScene");
     }, 
+    changeSceneMain () {
+        cc.log("应该切换到场景：主场景");
+        cc.director.loadScene("mainScene");
+    },
+
+    
 
 
     removeAllStorage(){

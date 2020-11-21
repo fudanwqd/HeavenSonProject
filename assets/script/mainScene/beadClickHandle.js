@@ -84,8 +84,12 @@ cc.Class({
         this.ghostImageNode.active = false;
         this.bogyImageNode.active = false;
 
-        this.game = cc.find("game").getComponent("game");//game节点的game脚本
-        this.userData = this.game.userData;
+        this.comfirmNode = cc.find("Canvas/确认弹窗");
+        this.comfirmNode.active = false;
+
+//         this.game = cc.find("game").getComponent("game");//game节点的game脚本
+//         this.userData = this.game.userData;
+        this.userData = cc.find("用户数据").getComponent("userData");//js脚本
         this.userData.currentWorld = "仙界";
     },
 
@@ -107,15 +111,11 @@ cc.Class({
             this.godImageNode.active = false;
             this.ghostImageNode.active = false;
             this.bogyImageNode.active = false;
-
-
-
             
             this.userData.currentWorld = "仙界";
             //console.log(this.userData.getCurrentWorld);
             }
-            
-       // cc.log("click immortal");//log会影响按钮音效
+     
     },
 
     clickHumansHandele(){//点击人界珠子

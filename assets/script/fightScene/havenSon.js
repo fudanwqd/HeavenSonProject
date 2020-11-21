@@ -23,6 +23,11 @@ cc.Class({
             default:null,
         },
 
+        hpProgress:{
+            type: cc.ProgressBar,
+            default: null,
+        }
+
         
     },
     
@@ -34,7 +39,7 @@ cc.Class({
         this.ani = "heroIdle";
         this.isHit = false;
         this.rb = this.node.getComponent(cc.RigidBody);
-        this.hpProgress = this.node.getChildByName('hp');
+        // this.hpProgress = this.node.getChildByName('hp');
 
         this.heroAni = this.node.getChildByName('body').getComponent(cc.Animation);
         
@@ -43,30 +48,53 @@ cc.Class({
         this.game = cc.find('game').getComponent('game');
         this.userData = this.game.userData;
         this.havenSonInstance = this.userData.sons[0];
+        this.name = this.havenSonInstance.name;
 
+        // 设置更新用户的属性
+        this.treasures = this.havenSonInstance.ownTreasures;
+        this.treasures.forEach(element => {
+            this.totalHP = this.havenSonInstance.HP + element.HP;
+            this.power = this.havenSonInstance.power + element.power;
+            this.defend = this.havenSonInstance.defend + element.defend;
+            this.hp = this.totalHP;
+        });
 
-        // 遍历天道之子拥有的灵宝
-        // this.treasures = this.havenSonInstance.treasures;
+        this.iniShowErea();
+
+        console.log('HP: ', this.totalHP, '; power: ', this.power, '; defend: ', this.defend);
         
-
-
-        this.totalHP = this.havenSonInstance.HP;//还未计算灵宝属性
-        this.hp = this.totalHP;
-        this.power = this.havenSonInstance.power;//还未计算灵宝属性
-        this.defend = this.havenSonInstance.defend;//还未计算灵宝属性
 
         this.attackBtn.on(cc.Node.EventType.TOUCH_START, event => {
             this.setAni("heroAttack"); 
-            this.havenSonState = State.attack
+            this.havenSonState = State.attack;
         }, this);
 
         this.heroAni.on("finished", event => {
             this.setAni("heroIdle");
-            this.havenSonState = State.stand
+            this.havenSonState = State.stand;
             this.isHit = false;
         }, this);
 
     },
+
+    iniShowErea(){
+        this.show = cc.find('Canvas/bg/show');
+        // console.log('show: ', this.show);
+        let name = this.show.getChildByName('name').getComponent(cc.Label);
+        this.hpLabel = this.show.getChildByName('hp').getChildByName('hp').getComponent(cc.Label);
+        let totalHPLabel = this.show.getChildByName('hp').getChildByName('totalHP').getComponent(cc.Label);
+       
+        
+        name.string = this.name;
+        this.hpLabel.string = this.hp;
+        totalHPLabel.string = this.totalHP;
+        
+
+        // console.log('name: ', name);
+        // console.log('hpLabel: ', this.hpLabel);
+        // console.log('totalHPLabel: ', totalHPLabel);
+    },
+
 
     start () {
 
@@ -91,6 +119,7 @@ cc.Class({
 
 
     update (dt) {
+        this.hpLabel.string = this.hp;
         if(this.havenSonState == State.attack){
             this.setAni("heroAttack");
         }else{
@@ -148,12 +177,12 @@ cc.Class({
         var enemyNode = colliderTemp.body.node;
         // console.log(enemyNode);
         let enemy = enemyNode.getComponent('enemy');
-        console.log(enemy);
+        // console.log(enemy);
         if(this.defend >= enemy.power){
-            console.log('未破防！');
+            // console.log('未破防！');
             this.hp--;
         }else{
-            console.log("human hurt");
+            // console.log("human hurt");
             this.hp -= this.enemy.power - this.defend;
         }
 

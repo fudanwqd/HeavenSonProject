@@ -26,7 +26,7 @@ cc.Class({
     onCollisionEnter(other, self){
         if(other.node.group == "enemy" && other.tag <= 1 && other.tag > 0){
             // this.havenSon.hurt();
-            console.log("人物受伤， 碰撞体： ", other);
+            // console.log("人物受伤， 碰撞体： ", other);
             this.havenSon.hurt(other);
         }
     },
@@ -36,7 +36,7 @@ cc.Class({
             // console.log("人物受伤触发");
             // console.log(other.tag);
             // console.log(self.tag);
-            console.log("人物受伤， 碰撞体： ", other);
+            // console.log("人物受伤， 碰撞体： ", other);
             this.havenSon.hurt(other);
         }
     }
