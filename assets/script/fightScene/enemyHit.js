@@ -31,7 +31,6 @@ cc.Class({
             // console.log(self.tag);
             this.enemy.hurt();
         }
-
     },
 
     onCollisionStay(other, self){        

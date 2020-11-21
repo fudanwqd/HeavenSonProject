@@ -57,7 +57,7 @@
     "_is3DNode": true,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "autoReleaseAssets": true,
+    "autoReleaseAssets": false,
     "_id": "998e3830-6039-43d3-a2bf-963cb012a728"
   },
   {
@@ -98,8 +98,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 768,
-      "height": 640
+      "width": 1920,
+      "height": 1080
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -110,8 +110,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        384,
-        320,
+        960,
+        540,
         0,
         0,
         0,
@@ -283,8 +283,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 768,
-      "height": 640
+      "width": 1920,
+      "height": 1080
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -354,8 +354,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
+      "width": 1920,
+      "height": 1080
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -367,15 +367,15 @@
       "ctor": "Float64Array",
       "array": [
         0,
-        8.839,
+        0,
         0,
         0,
         0,
         0,
         1,
-        1.952,
-        1.952,
-        1.952
+        1,
+        1,
+        1
       ]
     },
     "_eulerAngles": {
@@ -416,8 +416,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 512,
-      "height": 320
+      "width": 1920,
+      "height": 1080
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -428,7 +428,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        3.396,
+        0,
         1.132,
         0,
         0,
@@ -472,7 +472,7 @@
       "__uuid__": "01486703-36c9-4ae1-936b-8e6551129022"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -510,8 +510,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 512,
-      "height": 283
+      "width": 1920,
+      "height": 1080
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -522,7 +522,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        1.067,
+        0,
         22.93,
         0,
         0,
@@ -566,7 +566,7 @@
       "__uuid__": "de433c25-ee59-46ae-82af-b7f8905bacfc"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -604,8 +604,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 512,
-      "height": 107
+      "width": 1920,
+      "height": 1080
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -660,7 +660,7 @@
       "__uuid__": "5131d34f-7046-4655-bdd2-bee5d0d4082c"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -698,8 +698,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 512,
-      "height": 118
+      "width": 1920,
+      "height": 1080
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -710,7 +710,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        1.262,
+        0,
         -84.311,
         0,
         0,
@@ -754,7 +754,7 @@
       "__uuid__": "c7f74b1e-109d-4512-b6b9-ca936336ae82"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -814,16 +814,16 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -384,
-        -320,
+        -960,
+        -540,
         0,
         0,
         0,
         0,
         1,
-        2.004,
-        2.004,
-        2.004
+        4.999,
+        4.084,
+        4.084
       ]
     },
     "_eulerAngles": {
@@ -883,7 +883,7 @@
         0,
         0,
         1,
-        1.248,
+        1,
         1,
         1
       ]
@@ -1086,16 +1086,16 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -96.846,
-        -189.782,
+        -390.812,
+        -300.019,
         0,
         0,
         0,
         0,
         1,
-        1,
-        1,
-        1
+        1.78,
+        1.78,
+        1.78
       ]
     },
     "_eulerAngles": {
@@ -1605,16 +1605,16 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -270.859,
-        -226.608,
+        -528.079,
+        -373.591,
         0,
         0,
         0,
         0,
         1,
-        0.246,
-        0.246,
-        0.246
+        0.313,
+        0.313,
+        0.313
       ]
     },
     "_eulerAngles": {
@@ -1923,16 +1923,16 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        258.91,
-        -225.858,
+        495.716,
+        -368.758,
         0,
         0,
         0,
         0,
         1,
-        0.885,
-        0.885,
-        0.885
+        1.29,
+        1.29,
+        1.29
       ]
     },
     "_eulerAngles": {
@@ -2205,8 +2205,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 200,
+      "height": 80
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2217,8 +2217,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -331.957,
-        218.031,
+        588.775,
+        345.812,
         0,
         0,
         0,
@@ -2274,8 +2274,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 200,
+      "height": 80
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2619,8 +2619,8 @@
     "_enabled": true,
     "_designResolution": {
       "__type__": "cc.Size",
-      "width": 768,
-      "height": 640
+      "width": 1920,
+      "height": 1080
     },
     "_fitWidth": false,
     "_fitHeight": true,
@@ -2649,8 +2649,8 @@
     "_isAbsBottom": true,
     "_isAbsHorizontalCenter": true,
     "_isAbsVerticalCenter": true,
-    "_originalWidth": 0,
-    "_originalHeight": 0,
+    "_originalWidth": 1920,
+    "_originalHeight": 1080,
     "_id": "54V1QyOKBFgY2qg8FS8uBo"
   },
   {

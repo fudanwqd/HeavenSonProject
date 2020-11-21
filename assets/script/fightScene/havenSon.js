@@ -28,7 +28,7 @@ cc.Class({
     
 
     onLoad () {
-        this._speed = 150;
+        this._speed = 300;
         this.sp = cc.v2(0, 0);
         this.havenSonState = State.stand;
         this.ani = "heroIdle";
@@ -43,6 +43,12 @@ cc.Class({
         this.game = cc.find('game').getComponent('game');
         this.userData = this.game.userData;
         this.havenSonInstance = this.userData.sons[0];
+
+
+        // 遍历天道之子拥有的灵宝
+        // this.treasures = this.havenSonInstance.treasures;
+        
+
 
         this.totalHP = this.havenSonInstance.HP;//还未计算灵宝属性
         this.hp = this.totalHP;
@@ -116,7 +122,7 @@ cc.Class({
         }
     },
 
-    hurt(){
+    hurt(other){
         // console.log('人物受伤');
         if(this.isHit){
             return ; 
@@ -133,19 +139,23 @@ cc.Class({
         // this.setAni('heroHurt');
 
 
-        //以下内容也应该放到受伤动画完成后的监听上，目前的效果掉血太快，利用动画监听可以在受伤动画播放时有个小无敌，不会掉血
+        //以下内容应该放到受伤动画完成后的监听上，目前的效果掉血太快，利用动画监听可以在受伤动画播放时有个小无敌，不会掉血
         this.havenSonState = State.stand;
-        this.hp -= 10;
+        // this.hp -= 10;
 
-        // 暂有问题
-        // console.log(other);
-        // let enemy = other.getComponent('enemy');
-        // if(this.defend >= this.enemy.power){
-        //     console.log('未破防！');
-        //     this.hp--;
-        // }else{
-        //     this.hp -= this.enemy.power - this.defend;
-        // }
+        
+        var colliderTemp = cc.director.getPhysicsManager().testPoint(other);
+        var enemyNode = colliderTemp.body.node;
+        // console.log(enemyNode);
+        let enemy = enemyNode.getComponent('enemy');
+        console.log(enemy);
+        if(this.defend >= enemy.power){
+            console.log('未破防！');
+            this.hp--;
+        }else{
+            console.log("human hurt");
+            this.hp -= this.enemy.power - this.defend;
+        }
 
         this.isHit = false;
         this.hpProgress.getComponent(cc.ProgressBar).progress = this.hp / this.totalHP;

@@ -68,7 +68,7 @@ cc.Class({
 
         this.ani = 'enemyIdle';
         this.rb = this.node.getComponent(cc.RigidBody);
-        this._speed = 100;
+        this._speed = 250;
         this.sp = cc.v2(0, 0);
         this.tt = 0;
         this.enemyState = State.stand;
@@ -107,14 +107,14 @@ cc.Class({
 
         let dis = cc.Vec2.distance(e_pos, p_pos);
 
-        if(dis <= 30){//攻击距离
+        if(dis <= 35){//攻击距离
             // console.log("attack");
             
             this.moveLeft = false;
             this.moveRight = false;
 
             this.enemyState = State.attack;
-        }else if(dis <= 500){//追击距离
+        }else if(dis <= 1800){//追击距离
             // console.log("find");
 
 
