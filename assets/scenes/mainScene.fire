@@ -41,19 +41,19 @@
         "__id__": 260
       },
       {
-        "__id__": 271
+        "__id__": 272
       },
       {
-        "__id__": 275
+        "__id__": 276
       },
       {
-        "__id__": 266
+        "__id__": 267
       },
       {
         "__id__": 262
       },
       {
-        "__id__": 277
+        "__id__": 278
       }
     ],
     "_active": true,
@@ -835,7 +835,7 @@
       "array": [
         0,
         0,
-        203.88377357638078,
+        318.0803107782766,
         0,
         0,
         0,
@@ -5449,7 +5449,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "3deovTFa9BcKUwY+RXScMG"
+    "_id": "092VqGKUtGYJpeg2IGVaKk"
   },
   {
     "__type__": "cc.Label",
@@ -5483,7 +5483,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "c1M3fIC4dM+IKYWoyp6kbp"
+    "_id": "54E+e0ywJCubtL3I3jy1al"
   },
   {
     "__type__": "cc.RichText",
@@ -9273,7 +9273,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "5bzGmFh0NBOpcdlhs+9KIJ"
+    "_id": "35SsvdNBVNZIH1JmWahuD2"
   },
   {
     "__type__": "cc.Label",
@@ -9307,7 +9307,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "30pZwD1CRItYUHzueuIFJ0"
+    "_id": "9eG9pB/FNJip4gVVnkgWLI"
   },
   {
     "__type__": "cc.RichText",
@@ -9457,7 +9457,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c12RPE4H5Pk4Hf9qvWd6TY"
+    "_id": "45MhXAFAdOXr9r4A63Rr5G"
   },
   {
     "__type__": "cc.Label",
@@ -9491,7 +9491,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "e5Mb4VZnZAHYN2vwttUZYA"
+    "_id": "bf1H9U9SZPso+SRrVqUBx/"
   },
   {
     "__type__": "cc.RichText",
@@ -9641,7 +9641,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "7bD8guH8hGorp2KCDjSMi4"
+    "_id": "22TdF/hKxCO6chJkql87RB"
   },
   {
     "__type__": "cc.Label",
@@ -9675,7 +9675,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "25ZqaxF1BGpbGDAxIYYaex"
+    "_id": "a9z955vORNfpitEL+ZaBy8"
   },
   {
     "__type__": "cc.RichText",
@@ -9874,7 +9874,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "39wIYFiS5BSonBBK7TvnUo"
+    "_id": "72ozpR3RdHzb/vwcsk0VCn"
   },
   {
     "__type__": "cc.Label",
@@ -9908,7 +9908,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "38HhfnKPtFLba5g8t03qO7"
+    "_id": "87OAWAQGBKe4R4qoz5rTdg"
   },
   {
     "__type__": "cc.RichText",
@@ -10187,7 +10187,7 @@
         "__id__": 236
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": null,
     "_opacity": 255,
@@ -12312,6 +12312,7 @@
     "currentLevelNode": {
       "__id__": 189
     },
+    "progressBarNode": null,
     "_id": "4cYsYHgv5LbJVjep8eOut/"
   },
   {
@@ -12388,13 +12389,13 @@
       "__id__": 262
     },
     "HeavenSonDatabaseNode": {
-      "__id__": 266
+      "__id__": 267
     },
     "TreasureDatabaseNode": {
-      "__id__": 271
+      "__id__": 272
     },
     "MonsterDatabaseNode": {
-      "__id__": 275
+      "__id__": 276
     },
     "_id": "3cVV3HhfdPErc6ZHtRqk0c"
   },
@@ -12493,10 +12494,14 @@
     "heavenSonId": 1,
     "level": 4,
     "exp": 80,
-    "power": 4,
-    "defend": 5,
+    "power": 100,
+    "defend": 50,
     "HP": 200,
-    "ownTreasure": []
+    "ownTreasures": [
+      {
+        "__id__": 266
+      }
+    ]
   },
   {
     "__type__": "天道之子模板",
@@ -12517,6 +12522,16 @@
     "e_headPortrait": null
   },
   {
+    "__type__": "灵宝",
+    "treasureDemo": null,
+    "treasureId": 1,
+    "name": "轩辕剑",
+    "level": 2,
+    "power": 220,
+    "defend": 20,
+    "HP": 100
+  },
+  {
     "__type__": "cc.Node",
     "_name": "天道之子s",
     "_objFlags": 0,
@@ -12527,7 +12542,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 267
+        "__id__": 268
       }
     ],
     "_prefab": null,
@@ -12583,18 +12598,18 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 266
+      "__id__": 267
     },
     "_enabled": true,
     "sons": [
-      {
-        "__id__": 268
-      },
       {
         "__id__": 269
       },
       {
         "__id__": 270
+      },
+      {
+        "__id__": 271
       }
     ],
     "_id": "1b3ZyZUx1OxJExoqQbXRZg"
@@ -12670,7 +12685,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 272
+        "__id__": 273
       }
     ],
     "_prefab": null,
@@ -12726,15 +12741,15 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 271
+      "__id__": 272
     },
     "_enabled": true,
     "treasures": [
       {
-        "__id__": 273
+        "__id__": 274
       },
       {
-        "__id__": 274
+        "__id__": 275
       }
     ],
     "_id": "bcmj8YXkxM9rln2rtWJGHH"
@@ -12780,7 +12795,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 276
+        "__id__": 277
       }
     ],
     "_prefab": null,
@@ -12836,7 +12851,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 275
+      "__id__": 276
     },
     "_enabled": true,
     "monsters": [],
@@ -12853,7 +12868,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 278
+        "__id__": 279
       }
     ],
     "_prefab": null,
@@ -12909,7 +12924,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 277
+      "__id__": 278
     },
     "_enabled": true,
     "_id": "ef76qHR0tGbLHk7CP4MecR"

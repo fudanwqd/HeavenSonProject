@@ -25,24 +25,37 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.hp = 100;
-        this.totalHP = 100;
-        this.hpProgress = this.node.getChildByName('hp');
+        this.hp = 50;
+        this.totalHP = 50;
+        this.power = 10;
+        this.defend = 10;
 
+
+        this.hpProgress = this.node.getChildByName('hp');
+        this.playerNode = cc.find('Canvas/bg/hero');//拿到节点
+        this.havenSon = this.playerNode.getComponent('havenSon');
 
         this.isHit = false;
+        this.bg = this.node.parent.parent.getComponent('fight_game');
 
         this.enemyAni = this.node.getChildByName('body').getComponent(cc.Animation);
         this.enemyAni.on("finished", (e, data) => {
             if(data.name == 'enemyHurt' && this.tag != 1){
-                console.log("扣血");
-                this.hp -= 10;
-                this.isHit = false;
-                this.hpProgress.getComponent(cc.ProgressBar).progress = this.hp / this.totalHP;
+                // console.log("扣血");
+                if(this.defend >= this.havenSon.power){
+                    this.hp--;
+                }else{
+                    this.hp -= this.havenSon.power - this.defend;
+                }
                 
-                console.log(this.hp / this.totalHP);
-                if(this.hp == 0){
+                this.isHit = false;                
+                
+                // console.log(this.hp / this.totalHP);
+                if(this.hp <= 0){
+                    this.bg.isIniEnemy = false;
                     this.node.destroy();
+                }else{
+                    this.hpProgress.getComponent(cc.ProgressBar).progress = this.hp / this.totalHP;
                 }
             }else if(data.name == 'enemyAttack'){
                 this.setAni("enemyIdle");
@@ -55,7 +68,7 @@ cc.Class({
 
         this.ani = 'enemyIdle';
         this.rb = this.node.getComponent(cc.RigidBody);
-        this._speed = 100;
+        this._speed = 250;
         this.sp = cc.v2(0, 0);
         this.tt = 0;
         this.enemyState = State.stand;
@@ -64,7 +77,7 @@ cc.Class({
         this.moveRight = false;
 
 
-        this.playerNode = cc.find('Canvas/bg/hero');//拿到节点位置
+        
     },
 
     start () {
@@ -73,7 +86,7 @@ cc.Class({
 
     
     hurt(){
-        console.log("怪物受伤");
+        // console.log("怪物受伤");
         if(this.isHit){
             return ; 
         }
@@ -94,15 +107,15 @@ cc.Class({
 
         let dis = cc.Vec2.distance(e_pos, p_pos);
 
-        if(dis <= 30){//攻击距离
-            console.log("attack");
+        if(dis <= 35){//攻击距离
+            // console.log("attack");
             
             this.moveLeft = false;
             this.moveRight = false;
 
             this.enemyState = State.attack;
-        }else if(dis <= 500){//追击距离
-            console.log("find");
+        }else if(dis <= 1800){//追击距离
+            // console.log("find");
 
 
             let v = p_pos.sub(e_pos);
@@ -115,7 +128,7 @@ cc.Class({
             }
             this.enemyState = State.stand;
         }else{//不动
-            console.log("stand");
+            // console.log("stand");
 
             this.moveLeft = false;
             this.moveRight = false;
