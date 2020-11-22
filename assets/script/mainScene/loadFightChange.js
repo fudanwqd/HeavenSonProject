@@ -33,18 +33,8 @@ cc.Class({
         this.userData = cc.find("用户数据").getComponent("userData");//js脚本
 
         this.comfirmNode = cc.find("Canvas/确认弹窗");
-        // this.fightNameNode = cc.find("Canvas/确认弹窗/战斗人物名字");
         this.mijingNode = cc.find("Canvas/确认弹窗/秘境名字");
-
-        // this.fightSon = this.userData.getChildByID(this.userData.fighterID);
         
-        // this.fightName = this.fightNameNode.getComponent(cc.Label);
-        // this.fightName.string = '"' +this.fightSon.heavenSonDemo.name+'"';
-
-        // this.stoneNumberNode = cc.find("")
-        // this.stoneNumber = this.stoneNumberNode.getComponent(cc.RichText);
-        // this.stoneNumber.string = "<color=#80aec2>" + this.userData.stoneNum + "</color>";
-
         cc.director.preloadScene("fightScene", function(){
             cc.log("fightScene preloaded");
         })
