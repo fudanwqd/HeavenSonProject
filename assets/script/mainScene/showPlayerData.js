@@ -70,6 +70,7 @@ cc.Class({
     },
 
     start () {
+        cc.log("start!");///
 
     },
 

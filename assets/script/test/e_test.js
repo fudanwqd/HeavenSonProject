@@ -28,22 +28,22 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    onLoad () {
-        this.game = cc.find("game").getComponent("game");//game节点的game脚本
-        this.userData = this.game.userData;
-        this.heavenSonDB = cc.find("天道之子s").getComponent("HeavenSonDB");
-        this.treasureDB = cc.find("灵宝s").getComponent("TreasureDB");
-    },
+    // onLoad () {
+    //     this.game = cc.find("game").getComponent("game");//game节点的game脚本
+    //     this.userData = this.game.userData;
+    //     this.heavenSonDB = cc.find("天道之子s").getComponent("HeavenSonDB");
+    //     this.treasureDB = cc.find("灵宝s").getComponent("TreasureDB");
+    // },
 
-    start () {
-        this.userData.setData("currentWorld","仙界");
-        this.userData.setCurrentWorld("仙界");
+    // start () {
+    //     this.userData.setData("currentWorld","仙界");
+    //     this.userData.setCurrentWorld("仙界");
 
-        this.initTreasures();
-        // cc.sys.localStorage.setItem('e_existData', false);
-        // this.deleteSonsInStorage();
-        // this.initSons();
-    },
+    //     this.initTreasures();
+    //     // cc.sys.localStorage.setItem('e_existData', false);
+    //     // this.deleteSonsInStorage();
+    //     // this.initSons();
+    // },
 
     deleteSonsInStorage(){
         cc.sys.localStorage.removeItem("heavenSons");
