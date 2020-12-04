@@ -1,4 +1,3 @@
-//能跨文件夹调用类吗
 var Treasure = cc.Class({
     name : '灵宝',
     properties :{
@@ -30,11 +29,13 @@ var HeavenSon = cc.Class({
        power : cc.Integer,
        defend: cc.Integer,
        HP    : cc.Integer,
+       growRate : cc.Float,
        ownTreasures : {
            default :[],
            type : [Treasure]
            // 拥有的灵宝的ID
        },
+       
     }
 })
 
@@ -61,7 +62,7 @@ cc.Class({
             // type : cc.String,
         },//代表玩家此时在哪一个界 ? 实现有可能有问题
         fighterID : {
-            default : 1,
+            default : 0,
             type : cc.Integer,
         },
         

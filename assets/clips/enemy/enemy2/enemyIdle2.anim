@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "怪物2待机",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 12,
+  "speed": 0.5,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "43af77a0-88dd-4dfd-80ce-74f1be0da0f6"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "ffa460b5-d8ec-4a4d-8b2d-4f821581e594"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "a841508b-ebad-448c-a90a-bfba48e28379"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "1a4f0efe-8c36-4a0e-8586-80d6c18f1404"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "555c652e-68f4-4787-b8f2-84aa71939801"
+            }
+          },
+          {
+            "frame": 0.4166666666666667,
+            "value": {
+              "__uuid__": "2a846de9-b4e7-43d5-9084-fcc00aed7813"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

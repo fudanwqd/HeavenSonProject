@@ -68,9 +68,9 @@
         0,
         0,
         1,
-        1.596,
-        1.596,
-        1.596
+        2.108,
+        2.108,
+        1.321
       ]
     },
     "_eulerAngles": {
@@ -122,8 +122,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 22,
-      "height": 32
+      "width": 30,
+      "height": 40
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -175,10 +175,10 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "fbefbe1d-dddd-40c7-a721-9f4e0fde8eea"
+      "__uuid__": "4f43507b-2a3f-4b96-b21a-6a096436a846"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -215,6 +215,36 @@
       },
       {
         "__uuid__": "8540da0e-3467-4fd7-b9d9-a9a4b50b55fc"
+      },
+      {
+        "__uuid__": "8064edd2-ff71-43fd-9b82-98ba6e66cda6"
+      },
+      {
+        "__uuid__": "ee8f98e5-1dd6-4cdb-9c32-b10a40f69beb"
+      },
+      {
+        "__uuid__": "8b309ed5-9797-4277-b465-e182cf402308"
+      },
+      {
+        "__uuid__": "7f602cb7-a908-483c-9120-93bffd99e464"
+      },
+      {
+        "__uuid__": "685b52c5-422b-44b8-94a4-43d33a90197c"
+      },
+      {
+        "__uuid__": "bd57db5a-7031-4bf1-b211-20a49d13f52d"
+      },
+      {
+        "__uuid__": "525f9020-d141-479c-bf84-27c1e91d9d68"
+      },
+      {
+        "__uuid__": "05fdbb2e-7e39-4ecb-951f-a80f74416020"
+      },
+      {
+        "__uuid__": "2f421fe3-643e-4594-8860-2d3c5a30b6af"
+      },
+      {
+        "__uuid__": "5c63ba10-7fa4-4563-b86d-2ce095792fcd"
       }
     ],
     "playOnLoad": true,
@@ -231,13 +261,13 @@
     "tag": 0,
     "_offset": {
       "__type__": "cc.Vec2",
-      "x": -2.3,
-      "y": 13.1
+      "x": -1.9,
+      "y": 16.5
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 17.2,
-      "height": 26.1
+      "width": 22.7,
+      "height": 34.1
     },
     "_id": ""
   },
@@ -308,8 +338,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -0.562,
-        33.149,
+        1.411,
+        39.373,
         0,
         0,
         0,

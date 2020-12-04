@@ -56,7 +56,7 @@
         "__id__": 278
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": null,
     "_opacity": 255,
@@ -835,7 +835,7 @@
       "array": [
         0,
         0,
-        318.0803107782766,
+        317.8417183641173,
         0,
         0,
         0,
@@ -5449,7 +5449,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "092VqGKUtGYJpeg2IGVaKk"
+    "_id": "e5Hu8Lo/pJ/JMfkeRiMUGg"
   },
   {
     "__type__": "cc.Label",
@@ -5483,7 +5483,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "54E+e0ywJCubtL3I3jy1al"
+    "_id": "1efs0kwyNH5pOrl8BJDS6H"
   },
   {
     "__type__": "cc.RichText",
@@ -9273,7 +9273,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "35SsvdNBVNZIH1JmWahuD2"
+    "_id": "370a0YjztOO7coTV6grDKn"
   },
   {
     "__type__": "cc.Label",
@@ -9307,7 +9307,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "9eG9pB/FNJip4gVVnkgWLI"
+    "_id": "aconU0rp5P2b25J//KLflT"
   },
   {
     "__type__": "cc.RichText",
@@ -9457,7 +9457,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "45MhXAFAdOXr9r4A63Rr5G"
+    "_id": "97hIdzGEZNb4bure5wnfh/"
   },
   {
     "__type__": "cc.Label",
@@ -9491,7 +9491,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "bf1H9U9SZPso+SRrVqUBx/"
+    "_id": "54CBFVaddMqqCaouL0Gte9"
   },
   {
     "__type__": "cc.RichText",
@@ -9641,7 +9641,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "22TdF/hKxCO6chJkql87RB"
+    "_id": "ddg2f6O61IBodhSgBAuWbf"
   },
   {
     "__type__": "cc.Label",
@@ -9675,7 +9675,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "a9z955vORNfpitEL+ZaBy8"
+    "_id": "40qbHy3slFjp2+2ogeVyxz"
   },
   {
     "__type__": "cc.RichText",
@@ -9874,7 +9874,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "72ozpR3RdHzb/vwcsk0VCn"
+    "_id": "d4rhoBV4xHYJJiNUKBCcaJ"
   },
   {
     "__type__": "cc.Label",
@@ -9908,7 +9908,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "87OAWAQGBKe4R4qoz5rTdg"
+    "_id": "6fOzuZtItIDr8e9H0YjvI4"
   },
   {
     "__type__": "cc.RichText",
@@ -12490,13 +12490,14 @@
     "heavenSonDemo": {
       "__id__": 265
     },
-    "name": "邓小月",
+    "name": "龙傲天",
     "heavenSonId": 1,
     "level": 4,
     "exp": 80,
     "power": 100,
     "defend": 50,
     "HP": 200,
+    "growRate": 1.2,
     "ownTreasures": [
       {
         "__id__": 266
@@ -12505,7 +12506,7 @@
   },
   {
     "__type__": "天道之子模板",
-    "name": "邓小月",
+    "name": "龙傲天",
     "heavenSonDemoId": 0,
     "worldType": "",
     "minPower": 0,
@@ -12513,9 +12514,9 @@
     "minDefend": 0,
     "maxDefend": 0,
     "HP": 0,
-    "minGrowRate": 0,
-    "maxGrowRate": 0,
-    "quality": 0,
+    "minGrowRate": 0.2,
+    "maxGrowRate": 0.5,
+    "quality": 0.7,
     "staticImage": {
       "__uuid__": "ceead107-cdad-4234-9e34-09165f22b6dd"
     },

@@ -1,6 +1,3 @@
-
-
-
 const State = {
     stand: 1,
     attack: 2,
@@ -36,18 +33,27 @@ cc.Class({
         this._speed = 300;
         this.sp = cc.v2(0, 0);
         this.havenSonState = State.stand;
-        this.ani = "heroIdle";
+        
         this.isHit = false;
         this.rb = this.node.getComponent(cc.RigidBody);
-        // this.hpProgress = this.node.getChildByName('hp');
+        this.bg = cc.find('Canvas/bg').getComponent('fight_game');
+        this.havenSonInstance = this.bg.havenSonInstance;
+        let id = this.havenSonInstance.heavenSonId;
+        this.aniName = {
+            idle : "heroIdle" + id,
+            run : "heroRun" + id,
+            attack : "heroAttack" + id,
+            hurt : "heroHurt" + id,
+            dead : "heroDead" + id,
+        };
+        this.ani = "";
 
         this.heroAni = this.node.getChildByName('body').getComponent(cc.Animation);
-        
+        this.setAni(this.aniName.idle);
 
-
+        // 用户数据
         this.game = cc.find('game').getComponent('game');
-        this.userData = this.game.userData;
-        this.havenSonInstance = this.userData.sons[0];
+        this.userData = this.game.userData;        
         this.name = this.havenSonInstance.name;
 
         // 设置更新用户的属性
@@ -63,14 +69,42 @@ cc.Class({
 
         console.log('HP: ', this.totalHP, '; power: ', this.power, '; defend: ', this.defend);
         
-
+        
         this.attackBtn.on(cc.Node.EventType.TOUCH_START, event => {
-            this.setAni("heroAttack"); 
+            this.setAni(this.aniName.attack); 
             this.havenSonState = State.attack;
         }, this);
 
-        this.heroAni.on("finished", event => {
-            this.setAni("heroIdle");
+        this.heroAni.on("finished", (e, data) => {
+            if(data.name == this.aniName.hurt && this.tag != 1){
+                console.log("human hurt");
+          
+                var colliderTemp = cc.director.getPhysicsManager().testPoint(this.other);
+                var enemyNode = colliderTemp.body.node;
+
+                if(cc.isValid(enemyNode)){
+                    // console.log(enemyNode);
+                    var enemy = enemyNode.getComponent('enemy');
+                    // console.log(enemy);
+                    if(this.defend >= enemy.power){
+                        // console.log('未破防！');
+                        this.hp--;
+                    }else{
+                        this.hp -= enemy.power - this.defend;
+                    }
+
+                    this.isHit = false;
+                    this.hpProgress.getComponent(cc.ProgressBar).progress = this.hp / this.totalHP;
+                    
+                    if(this.hp <= 0){
+                        this.node.destroy();
+                        console.log('failed! ');
+                        this.bg.showFailPage();
+                    }
+                }
+            }
+
+            this.setAni(this.aniName.idle);
             this.havenSonState = State.stand;
             this.isHit = false;
         }, this);
@@ -79,7 +113,6 @@ cc.Class({
 
     iniShowErea(){
         this.show = cc.find('Canvas/bg/show');
-        // console.log('show: ', this.show);
         let name = this.show.getChildByName('name').getComponent(cc.Label);
         this.hpLabel = this.show.getChildByName('hp').getChildByName('hp').getComponent(cc.Label);
         let totalHPLabel = this.show.getChildByName('hp').getChildByName('totalHP').getComponent(cc.Label);
@@ -89,15 +122,12 @@ cc.Class({
         this.hpLabel.string = this.hp;
         totalHPLabel.string = this.totalHP;
         
-
-        // console.log('name: ', name);
-        // console.log('hpLabel: ', this.hpLabel);
-        // console.log('totalHPLabel: ', totalHPLabel);
-    },
-
-
-    start () {
-
+        let header = this.show.getChildByName('header').getChildByName('header');
+        var url = 'imgs/' + this.name;
+        cc.resources.load(url,cc.SpriteFrame,function(err,spriteFrame)
+    　　{
+            header.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+    　　});
     },
 
 
@@ -115,13 +145,10 @@ cc.Class({
         this.heroAni.play(this.ani);
     },
 
-
-
-
     update (dt) {
         this.hpLabel.string = this.hp;
         if(this.havenSonState == State.attack){
-            this.setAni("heroAttack");
+            this.setAni(this.aniName.attack);
         }else{
             //站立状态
             if(this.havenSonState == State.stand){
@@ -130,14 +157,14 @@ cc.Class({
                 if(this.Rocker.dir.x < 0){
                     this.sp.x = -1;
                     this.node.scaleX = -1;
-                    this.setAni("heroRun");
+                    this.setAni(this.aniName.run);
                 }else if(this.Rocker.dir.x > 0){
                     this.sp.x = 1;
                     this.node.scaleX = 1;
-                    this.setAni("heroRun");
+                    this.setAni(this.aniName.run);
                 }else{
                     this.sp.x = 0;
-                    this.setAni("heroIdle");
+                    this.setAni(this.aniName.idle);
                 }
 
 
@@ -156,6 +183,7 @@ cc.Class({
         if(this.isHit){
             return ; 
         }
+        this.other = other;
         this.isHit = true;
         this.havenSonState = State.hurt;
 
@@ -163,31 +191,6 @@ cc.Class({
         this.lv.x = 0;
         this.rb.linearVelocity = this.lv;
 
-        
-        //播放动画，暂无资源
-        // this.setAni('heroHurt');
-
-
-        //以下内容应该放到受伤动画完成后的监听上，目前的效果掉血太快，利用动画监听可以在受伤动画播放时有个小无敌，不会掉血
-        this.havenSonState = State.stand;
-        // this.hp -= 10;
-
-        
-        var colliderTemp = cc.director.getPhysicsManager().testPoint(other);
-        var enemyNode = colliderTemp.body.node;
-        // console.log(enemyNode);
-        let enemy = enemyNode.getComponent('enemy');
-        // console.log(enemy);
-        if(this.defend >= enemy.power){
-            // console.log('未破防！');
-            this.hp--;
-        }else{
-            // console.log("human hurt");
-            this.hp -= this.enemy.power - this.defend;
-        }
-
-        this.isHit = false;
-        this.hpProgress.getComponent(cc.ProgressBar).progress = this.hp / this.totalHP;
-
+        this.setAni(this.aniName.hurt);
     },
 });

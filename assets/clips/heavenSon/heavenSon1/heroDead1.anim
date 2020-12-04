@@ -1,0 +1,61 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "heroDead",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5833333333333334,
+  "sample": 12,
+  "speed": 0.5,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "f0e8eaff-9bdf-4585-989e-928dbd6fd56a"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "11e4a0d4-36cb-4681-99c4-fa170d5775da"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "bf2a23bd-0348-40a8-9b48-e5ce04e60c74"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "7df1b2c7-9d6f-46d9-ae3d-ab62cbe968e8"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "c93b30ea-283a-404c-acec-ccd0cefafb43"
+            }
+          },
+          {
+            "frame": 0.4166666666666667,
+            "value": {
+              "__uuid__": "54a8b231-2c17-4882-9d15-3d311de90b31"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "60c67b26-77f6-49df-b9ef-78b847603843"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

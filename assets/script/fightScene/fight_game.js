@@ -21,6 +21,8 @@ cc.Class({
 
         this.enemies = this.node.getChildByName('enemies');
         this.havenSon = this.node.getChildByName('hero').getComponent('havenSon');
+        this.page = cc.find('Canvas/victoryPage');
+
         this.enemyCount = 0;
         this.isIniEnemy = false;
 
@@ -28,14 +30,20 @@ cc.Class({
 
         this.userData = this.game.userData;
         this.treasuresLen = cc.find('灵宝s').getComponent('TreasureDB').treasures.length;
-        
+        this.havenSonInstance = this.userData.getChildByID(this.userData.fighterID);
+
         this.victory = false;
         
         this.iniMapNode(this.mapNode);
 
         this.enemyPerBattle = 2;
-        this.battleCount = 1;//3波
+        this.battleCount = 3;//3波
         this.nowBattleIndex = 0;
+
+        // 生成的怪物种类
+        this.enemyKindId = 1;
+
+        // console.log(this.userData.currentWorld);// 获取当前所在世界
     },
 
     //生成敌人
@@ -44,7 +52,7 @@ cc.Class({
         this.nowBattleIndex++;
 
 
-        console.log("生成怪物");
+        // console.log("生成怪物, id: ", this.enemyKindId);
         if(this.autoLoad){
             let interval = 2;//2秒执行一次
             // let repeat = 1;//默认执行一次，重复执行次数，怪物的个数。= 1，意味着有两个怪
@@ -54,6 +62,7 @@ cc.Class({
             }, interval, count - 1, delay);
         }
         this.enemyPerBattle++;
+        
 
         if(this.nowBattleIndex == this.battleCount){
             this.battleEnd = true;
@@ -103,15 +112,77 @@ cc.Class({
 
     newTreasure(){
         this.newTreasures = [];
-        for(var i = 0;i < 3;i++){
+        for(var i = 0;i < 7;i++){
             var rate = Math.random(); // 左闭右开
             var demoID = Math.floor(Math.random()*(this.treasuresLen));
             if(rate > 0.5){
                 this.newTreasures.push(this.userData.createNewTreasureByDemoID(demoID));
             }
-            console.log(rate, demoID);
+            // console.log(rate, demoID);
         }
 
+    },
+
+
+
+
+    
+    ShowVictoryPage(){
+        //天道之子经验更新
+        this.updateExp();
+
+        //灵石更新
+        this.updateStone();
+
+        // 装备更新
+        this.updateTreasures();
+    },
+
+    updateExp(){
+        if(this.havenSonInstance.level < this.userData.maxLevel){
+            console.log('等级更新');
+            let exp = this.userData.getRandomRange(10, 50);
+            this.havenSonInstance.exp += exp;
+            // console.log(this.havenSonInstance.exp);
+            if(this.havenSonInstance.exp >= 100){// 升级
+                this.havenSonInstance.exp -= 100;
+                this.havenSonInstance.level++;
+
+                // 属性更新
+                this.updatePro();
+            }   
+            this.page.getChildByName('exp').getChildByName('num').getComponent(cc.Label).string = exp;
+
+            if(this.havenSonInstance.level == this.userData.maxLevel){
+                this.havenSonInstance.exp = 100;
+            }
+            // console.log(this.havenSonInstance.exp);
+        }
+    }, 
+
+    updateStone(){
+        let stoneNum = this.userData.getRandomRange(10, 100);
+        this.havenSonInstance.exp += stoneNum;
+        this.page.getChildByName('stone').getChildByName('num').getComponent(cc.Label).string = stoneNum;
+        this.userData.setStoneNum(stoneNum + this.userData.getStoneNum());
+    },
+
+    updateTreasures(){
+        console.log('装备更新');
+        for(var i = 0;i < 7;i++){
+            this.item = this.page.getChildByName('item' + i);
+            if(this.newTreasures.length <= i){
+                this.item.getChildByName('img').active = false;
+                this.item.getChildByName('name-img').active = false;
+                this.item.getChildByName('name').active = false;
+            }else{
+                this.item.getChildByName('name').getComponent(cc.Label).string = this.newTreasures[i].name;
+            }
+        }
+
+        this.newTreasures.forEach(element => {
+            this.userData.addNewTreasure(element);
+        });
     },
 
 
@@ -127,51 +198,27 @@ cc.Class({
         this.none = cc.find('Canvas/victoryPage/none');
         this.treasures = cc.find("Canvas/victoryPage/treasures");
 
-        if(this.newTreasures.length == 0){
-            this.none.active = true;
-            this.treasures.active = false;
-        }else{
-            // 没有实现动态处理，就很蠢
-            this.none.active = false;
-            this.treasures.active = true;
-            
-            var index = 0;
-            if(this.newTreasures[0]){
-                var trea = cc.find('Canvas/victoryPage/treasures/占位符1').getComponent(cc.Label);
-                trea.string = this.newTreasures[0].name;
-            }else{
-                cc.find('Canvas/victoryPage/treasures/占位符1').active = false;
-            }
 
-            if(this.newTreasures[1]){
-                var trea = cc.find('Canvas/victoryPage/treasures/占位符2').getComponent(cc.Label);
-                trea.string = this.newTreasures[1].name;
-            }else{
-                cc.find('Canvas/victoryPage/treasures/占位符2').active = false;
-            }
-
-            if(this.newTreasures[2]){
-                var trea = cc.find('Canvas/victoryPage/treasures/占位符3').getComponent(cc.Label);
-                trea.string = this.newTreasures[2].name;
-            }else{
-                cc.find('Canvas/victoryPage/treasures/占位符3').active = false;
-            }   
-        }
-
-        // 用户经验未更新
-        // 获得灵宝未同步
-
-        
-        // this.userData.expBase += 10;
-        
-       
+        // 结算 and 展示
+        this.ShowVictoryPage();
     },
 
 
-    update (dt) {
-        // console.log(this.enemies.childrenCount);
-        // console.log(this.isIniEnemy);
-        
+    // 更新属性
+    updatePro(){
+        console.log('属性更新');
+        let demo = this.havenSonInstance.heavenSonDemo;
+        this.havenSonInstance.power += Math.floor(this.userData.getRandomRange(10, 50) * demo.quality 
+        * this.havenSonInstance.growRate); 
+        this.havenSonInstance.defend += Math.floor(this.userData.getRandomRange(10, 50) * demo.quality 
+        * this.havenSonInstance.growRate);
+        this.havenSonInstance.HP += Math.floor(this.userData.getRandomRange(10, 50) * demo.quality 
+        * this.havenSonInstance.growRate);  
+        console.log('hp: ', this.havenSonInstance.HP, ', power: ', this.havenSonInstance.power, ' , defend: ', this.havenSonInstance.defend);
+    }, 
+
+
+    update (dt) {        
         if(this.battleEnd && this.enemies.childrenCount == 0 && !this.isIniEnemy && !this.victory){
             this.victoryBattle();
         }else if(this.enemies.childrenCount == 0 && !this.isIniEnemy 
@@ -187,13 +234,18 @@ cc.Class({
         let backPage = cc.find("Canvas/backPage");
         cc.director.pause();
         backPage.active = true;
-        this.active = false;
+        this.node.active = false;
     },
 
     backMainScence(){
         this.node.destroy();
         let backPage = cc.find("Canvas/backPage");
         backPage.destroy();
+
+        let failPage = cc.find('Canvas/failPage');
+        failPage.destroy();
+
+
         this.game.switchScene('mainScene');
     },
 
@@ -202,5 +254,11 @@ cc.Class({
         cc.director.resume();
         let backPage = cc.find("Canvas/backPage");
         backPage.active = false;
+    },
+
+    showFailPage(){
+        let failPage = cc.find('Canvas/failPage');
+        failPage.active = true;
+        this.node.active = false;
     }
 });
