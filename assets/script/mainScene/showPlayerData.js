@@ -63,9 +63,26 @@ cc.Class({
         this.currentLevel = this.currentLevelNode.getComponent(cc.RichText);
         this.currentLevel.string = "<color=#80aec2>Lv." + this.fightSon.level + "</color>";
 
+<<<<<<< HEAD
+=======
+        this.headPortraitNode = cc.find("Canvas/头像/战斗人物占位图/人物头像");
+>>>>>>> 99e30fdfe3c980d47ba1454aaee4d1148fc8c1b5
         this.headPortrait = this.headPortraitNode.getComponent(cc.Sprite);
         this.headPortrait.spriteFrame = this.fightSon.staticImage ;
 
+<<<<<<< HEAD
+=======
+        this.comfirmNode = cc.find("Canvas/确认弹窗");
+        this.fightNameNode = cc.find("Canvas/确认弹窗/战斗人物名字");
+        // this.mijingNode = cc.find("Canvas/确认弹窗/秘境名字");
+        this.fightName = this.fightNameNode.getComponent(cc.Label);
+        this.fightName.string = '"' +this.fightSon.heavenSonDemo.name+'"';
+
+        //经验条进度实现
+        this.progressNode = cc.find("Canvas/头像/战斗人物圆框/progressBar");
+        this.prog = this.progressNode.getComponent(cc.ProgressBar);
+        this.prog.progress = this.fightSon.exp/100;
+>>>>>>> 99e30fdfe3c980d47ba1454aaee4d1148fc8c1b5
 
     },
 
