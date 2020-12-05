@@ -41,11 +41,15 @@ cc.Class({
         cc.director.loadScene("getHeavenSonScene");
     },
 
-    changeSceneExpedition2 () {
-        cc.log("应该切换到场景：历练场景");
-        cc.director.loadScene("expedition");
+    changeFightScene () {
+        cc.log("应该切换到场景：战斗场景");
+        cc.director.loadScene("fightScene");
     },
 
+    changeMainScene(){
+        cc.log("应该切换到场景：主场景");
+        cc.director.loadScene("mainScene");
+    }, 
     changeSceneMain () {
         cc.log("应该切换到场景：主场景");
         cc.director.loadScene("mainScene");

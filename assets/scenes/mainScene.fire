@@ -835,7 +835,7 @@
       "array": [
         0,
         0,
-        208.77424280642146,
+        318.0803107782766,
         0,
         0,
         0,
@@ -5351,7 +5351,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "38Cgk7zXlBrZjYcm3aMDK+"
+    "_id": "092VqGKUtGYJpeg2IGVaKk"
   },
   {
     "__type__": "cc.Label",
@@ -5385,7 +5385,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "5d7kCBezdAiptwyDikJA7u"
+    "_id": "54E+e0ywJCubtL3I3jy1al"
   },
   {
     "__type__": "cc.RichText",
@@ -8878,7 +8878,8 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "60jroeFJNDYKDOsFbmBi67"
+    "showInEditor": false,
+    "_id": "35SsvdNBVNZIH1JmWahuD2"
   },
   {
     "__type__": "cc.Label",
@@ -8910,9 +8911,9 @@
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
-    "_N$overflow": 1,
-    "_N$cacheMode": 1,
-    "_id": "1cmN8jGJJK2bDNyhI+iGDF"
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "9eG9pB/FNJip4gVVnkgWLI"
   },
   {
     "__type__": "cc.Sprite",
@@ -9174,7 +9175,8 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "daS1L3nMVDRIfvkbEVNNHa"
+    "showInEditor": false,
+    "_id": "45MhXAFAdOXr9r4A63Rr5G"
   },
   {
     "__type__": "cc.Sprite",
@@ -9191,22 +9193,24 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "ac085957-c1f9-4c6f-9c17-d5cbf9b97ec3"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_atlas": null,
-    "_id": "63/zY8MzxN+qlkoXHJqJQz"
+    "_useOriginalSize": true,
+    "_string": "50",
+    "_N$string": "50",
+    "_fontSize": 35,
+    "_lineHeight": 100,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "bf1H9U9SZPso+SRrVqUBx/"
   },
   {
     "__type__": "cc.Node",
@@ -9469,7 +9473,8 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "6aQk1NfwFLD6ssXqA0FGwr"
+    "showInEditor": false,
+    "_id": "22TdF/hKxCO6chJkql87RB"
   },
   {
     "__type__": "cc.Label",
@@ -9501,9 +9506,9 @@
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
-    "_N$overflow": 1,
-    "_N$cacheMode": 1,
-    "_id": "816KCRAolA9pRQ5txVkL/h"
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "a9z955vORNfpitEL+ZaBy8"
   },
   {
     "__type__": "cc.Sprite",
@@ -9904,7 +9909,63 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "faNIcqc9dFSayYwnlsZrRk"
+    "showInEditor": false,
+    "_id": "72ozpR3RdHzb/vwcsk0VCn"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 204
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_useOriginalSize": true,
+    "_string": "人物名字：",
+    "_N$string": "人物名字：",
+    "_fontSize": 35,
+    "_lineHeight": 50,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "87OAWAQGBKe4R4qoz5rTdg"
+  },
+  {
+    "__type__": "cc.RichText",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 203
+    },
+    "_enabled": true,
+    "_fontFamily": "Arial",
+    "_isSystemFontUsed": true,
+    "_N$string": "<color=#80aec2>人物名字：</color>",
+    "_N$horizontalAlign": 0,
+    "_N$fontSize": 35,
+    "_N$font": null,
+    "_N$cacheMode": 0,
+    "_N$maxWidth": 0,
+    "_N$lineHeight": 50,
+    "_N$imageAtlas": null,
+    "_N$handleTouchEvent": true,
+    "_id": "eadZCzBF1E7pjqHzi3EWll"
   },
   {
     "__type__": "cc.Node",
@@ -12545,10 +12606,14 @@
     "heavenSonId": 1,
     "level": 4,
     "exp": 80,
-    "power": 4,
-    "defend": 5,
+    "power": 100,
+    "defend": 50,
     "HP": 200,
-    "ownTreasure": []
+    "ownTreasures": [
+      {
+        "__id__": 266
+      }
+    ]
   },
   {
     "__type__": "天道之子模板",
@@ -12567,6 +12632,16 @@
       "__uuid__": "ceead107-cdad-4234-9e34-09165f22b6dd"
     },
     "e_headPortrait": null
+  },
+  {
+    "__type__": "灵宝",
+    "treasureDemo": null,
+    "treasureId": 1,
+    "name": "轩辕剑",
+    "level": 2,
+    "power": 220,
+    "defend": 20,
+    "HP": 100
   },
   {
     "__type__": "cc.Node",
