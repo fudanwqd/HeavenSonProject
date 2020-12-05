@@ -252,7 +252,7 @@ cc.Class({
         nowTime = new Date();
         timespan = nowTime - startTime;
         hour = Math.floor(timespan / 1000 / 60 / 60);
-        minute = Math.floor(timespan / 1000 / 60 - hour * 60);
+        minute = Math.floor(timespan / 1000 / 60 - hour * 60)+hour * 60;
         second = timespan / 1000 - hour * 60 * 60 - minute * 60;
         return {'minute':minute,'second':second};
     },
