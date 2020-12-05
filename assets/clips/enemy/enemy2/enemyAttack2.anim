@@ -12,12 +12,6 @@
       "cc.Sprite": {
         "spriteFrame": [
           {
-            "frame": 0,
-            "value": {
-              "__uuid__": "4f43507b-2a3f-4b96-b21a-6a096436a846"
-            }
-          },
-          {
             "frame": 0.08333333333333333,
             "value": {
               "__uuid__": "8e2e41d8-97c1-405c-afe6-c07e40319761"
@@ -112,11 +106,11 @@
       "cc.BoxCollider": {
         "size": [
           {
-            "frame": 0,
+            "frame": 0.08333333333333333,
             "value": {
               "__type__": "cc.Size",
-              "width": 26.5,
-              "height": 39.3
+              "width": 81,
+              "height": 81
             }
           },
           {
@@ -131,8 +125,8 @@
             "frame": 0.6666666666666666,
             "value": {
               "__type__": "cc.Size",
-              "width": 28,
-              "height": 38.7
+              "width": 63,
+              "height": 79
             }
           },
           {
@@ -141,6 +135,14 @@
               "__type__": "cc.Size",
               "width": 17.2,
               "height": 26.1
+            }
+          },
+          {
+            "frame": 1.25,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 79,
+              "height": 81
             }
           }
         ],

@@ -41,7 +41,7 @@ cc.Class({
 
         
         let id = this.bg.nowBattleIndex;
-        console.log('怪物生成，id: ', id);
+        // console.log('怪物生成，id: ', id);
         this.aniName = {
             idle : "enemyIdle" + id,
             run : "enemyRun" + id,
@@ -79,7 +79,7 @@ cc.Class({
         this.ani = "";
         this.setAni(this.aniName.idle);
         this.rb = this.node.getComponent(cc.RigidBody);
-        this._speed = 250;
+        this._speed = 350;
         this.sp = cc.v2(0, 0);
         this.tt = 0;
         this.enemyState = State.stand;
@@ -116,7 +116,7 @@ cc.Class({
 
         let dis = cc.Vec2.distance(e_pos, p_pos);
 
-        if(dis <= 35){//攻击距离
+        if(dis <= 100){//攻击距离
             // console.log("attack");
             
             this.moveLeft = false;
@@ -147,7 +147,7 @@ cc.Class({
     },
 
     attack(){
-        console.log('enemy attack');
+        // console.log('enemy attack');
         this.setAni(this.aniName.attack);
         this.lv = this.rb.linearVelocity;
         this.lv.x = 0;

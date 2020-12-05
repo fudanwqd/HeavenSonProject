@@ -90,6 +90,14 @@
         ],
         "size": [
           {
+            "frame": 0.05,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 199,
+              "height": 205
+            }
+          },
+          {
             "frame": 0.25,
             "value": {
               "__type__": "cc.Size",
@@ -101,8 +109,8 @@
             "frame": 0.35,
             "value": {
               "__type__": "cc.Size",
-              "width": 83.6,
-              "height": 69.1
+              "width": 168,
+              "height": 200
             }
           },
           {
@@ -111,6 +119,14 @@
               "__type__": "cc.Size",
               "width": 0,
               "height": 0
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 197,
+              "height": 196
             }
           }
         ]

@@ -1,11 +1,11 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "怪物1待机",
+  "_name": "enemyIdle",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 0.5,
-  "sample": 12,
-  "speed": 0.6,
+  "_duration": 1.1,
+  "sample": 10,
+  "speed": 1,
   "wrapMode": 2,
   "curveData": {
     "comps": {
@@ -14,37 +14,67 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "764ad263-e0d3-462a-9025-a0d47bf594aa"
+              "__uuid__": "bdb7239f-62b9-4659-a378-f8ca0f507d47"
             }
           },
           {
-            "frame": 0.08333333333333333,
+            "frame": 0.1,
             "value": {
-              "__uuid__": "a0166850-1ba7-4150-8f52-f72b7da6ebb2"
+              "__uuid__": "fbefbe1d-dddd-40c7-a721-9f4e0fde8eea"
             }
           },
           {
-            "frame": 0.16666666666666666,
+            "frame": 0.2,
             "value": {
-              "__uuid__": "d0a22020-5651-4be4-9f0a-3b0d6ae3dd82"
+              "__uuid__": "baf18256-09b7-4121-bf92-e52efbce4493"
             }
           },
           {
-            "frame": 0.25,
+            "frame": 0.3,
             "value": {
-              "__uuid__": "88ad294a-1d94-4352-9076-b783f06126d8"
+              "__uuid__": "d199101b-9d08-4b9b-938a-60003b42ef9a"
             }
           },
           {
-            "frame": 0.3333333333333333,
+            "frame": 0.4,
             "value": {
-              "__uuid__": "9d1502ad-e194-409d-8f09-9902203eb13d"
+              "__uuid__": "05ca4338-93ac-4e3c-9b25-b4f782a168b9"
             }
           },
           {
-            "frame": 0.4166666666666667,
+            "frame": 0.5,
             "value": {
-              "__uuid__": "d3eef644-513d-4c42-93b0-be55d9994409"
+              "__uuid__": "4f743f6a-caf6-4e0a-90b4-ccc62687094e"
+            }
+          },
+          {
+            "frame": 0.6,
+            "value": {
+              "__uuid__": "155a79b9-bb5c-43ef-9d2b-673fe0bc9b0e"
+            }
+          },
+          {
+            "frame": 0.7,
+            "value": {
+              "__uuid__": "4eb1ed66-d51d-43c7-9db4-582fb3703639"
+            }
+          },
+          {
+            "frame": 0.8,
+            "value": {
+              "__uuid__": "aef1963e-fc65-423a-8832-017e0606f35f"
+            }
+          },
+          {
+            "frame": 0.9,
+            "value": {
+              "__uuid__": "080b906d-2d4a-4ebd-818f-e10250668409"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "42960eb4-a65f-4019-924f-2dd35e970a7a"
             }
           }
         ]

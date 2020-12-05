@@ -6,6 +6,21 @@ cc.Class({
         PREFAB : cc.Prefab,
         parent : cc.Node,
         autoLoad : true,
+        clickAudio : {
+            default : null,
+            type : cc.AudioClip,
+        },
+
+        victoryAudio : {
+            default : null,
+            type : cc.AudioClip,
+        },
+
+
+        failAudio : {
+            default : null,
+            type : cc.AudioClip,
+        },
     },
 
 
@@ -120,7 +135,6 @@ cc.Class({
             }
             // console.log(rate, demoID);
         }
-
     },
 
 
@@ -141,11 +155,15 @@ cc.Class({
     updateExp(){
         if(this.havenSonInstance.level < this.userData.maxLevel){
             console.log('等级更新');
-            let exp = this.userData.getRandomRange(10, 50);
+            let upExp = this.havenSonInstance.level * this.userData.expBase;
+            let rand = this.userData.getRandomRange(10, 20);
+            console.log(rand);
+            let exp =  rand * 10;
+            console.log(exp);
             this.havenSonInstance.exp += exp;
             // console.log(this.havenSonInstance.exp);
-            if(this.havenSonInstance.exp >= 100){// 升级
-                this.havenSonInstance.exp -= 100;
+            if(this.havenSonInstance.exp >= upExp){// 升级
+                this.havenSonInstance.exp -= upExp;
                 this.havenSonInstance.level++;
 
                 // 属性更新
@@ -154,7 +172,7 @@ cc.Class({
             this.page.getChildByName('exp').getChildByName('num').getComponent(cc.Label).string = exp;
 
             if(this.havenSonInstance.level == this.userData.maxLevel){
-                this.havenSonInstance.exp = 100;
+                this.havenSonInstance.exp = upExp;
             }
             // console.log(this.havenSonInstance.exp);
         }
@@ -187,6 +205,7 @@ cc.Class({
 
 
     victoryBattle(){
+        this.playAudio(this.victoryAudio);
         console.log('战斗胜利');
         this.victory = true;
         this.newTreasure();
@@ -235,6 +254,7 @@ cc.Class({
         cc.director.pause();
         backPage.active = true;
         this.node.active = false;
+        this.playAudio(this.clickAudio);
     },
 
     backMainScence(){
@@ -245,8 +265,8 @@ cc.Class({
         let failPage = cc.find('Canvas/failPage');
         failPage.destroy();
 
-
         this.game.switchScene('mainScene');
+        this.playAudio(this.clickAudio);
     },
 
     backFightScence(){
@@ -254,11 +274,18 @@ cc.Class({
         cc.director.resume();
         let backPage = cc.find("Canvas/backPage");
         backPage.active = false;
+        this.playAudio(this.clickAudio);
     },
 
     showFailPage(){
         let failPage = cc.find('Canvas/failPage');
         failPage.active = true;
         this.node.active = false;
-    }
+        this.playAudio(this.failAudio);
+    },
+
+
+    playAudio(audio){
+        cc.audioEngine.play(audio, false, 1);
+    },
 });

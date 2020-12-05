@@ -23,14 +23,34 @@ cc.Class({
         hpProgress:{
             type: cc.ProgressBar,
             default: null,
-        }
+        },
+
+        attackAudio:{
+            default : null,
+            type : cc.AudioClip,
+        },
+
+        hurtAudio:{
+            default : null,
+            type : cc.AudioClip,
+        }, 
+
+        runAudio:{
+            default : null,
+            type : cc.AudioClip,
+        }, 
+
+        // Audio:{
+        //     default : null,
+        //     type : cc.AudioClip,
+        // }, 
 
         
     },
     
 
     onLoad () {
-        this._speed = 300;
+        this._speed = 600;
         this.sp = cc.v2(0, 0);
         this.havenSonState = State.stand;
         
@@ -38,7 +58,7 @@ cc.Class({
         this.rb = this.node.getComponent(cc.RigidBody);
         this.bg = cc.find('Canvas/bg').getComponent('fight_game');
         this.havenSonInstance = this.bg.havenSonInstance;
-        let id = this.havenSonInstance.heavenSonId;
+        let id = this.havenSonInstance.heavenSonId % 2 + 1;
         this.aniName = {
             idle : "heroIdle" + id,
             run : "heroRun" + id,
@@ -73,6 +93,7 @@ cc.Class({
         this.attackBtn.on(cc.Node.EventType.TOUCH_START, event => {
             this.setAni(this.aniName.attack); 
             this.havenSonState = State.attack;
+            cc.audioEngine.play(this.attackAudio, false, 1);
         }, this);
 
         this.heroAni.on("finished", (e, data) => {
@@ -86,11 +107,13 @@ cc.Class({
                     // console.log(enemyNode);
                     var enemy = enemyNode.getComponent('enemy');
                     // console.log(enemy);
-                    if(this.defend >= enemy.power){
-                        // console.log('未破防！');
-                        this.hp--;
-                    }else{
-                        this.hp -= enemy.power - this.defend;
+                    if(cc.isValid(enemyNode)){
+                        if(this.defend >= enemy.power){
+                            // console.log('未破防！');
+                            this.hp--;
+                        }else{
+                            this.hp -= enemy.power - this.defend;
+                        }
                     }
 
                     this.isHit = false;
@@ -108,7 +131,6 @@ cc.Class({
             this.havenSonState = State.stand;
             this.isHit = false;
         }, this);
-
     },
 
     iniShowErea(){
@@ -170,6 +192,7 @@ cc.Class({
 
                 if(this.sp.x){
                     this.lv.x = this.sp.x * this._speed;
+                    // cc.audioEngine.play(this.runAudio, false, 1); // 行走的音效太魔性了
                 }else{
                     this.lv.x = 0;
                 }
@@ -190,7 +213,7 @@ cc.Class({
         this.lv = this.rb.linearVelocity;
         this.lv.x = 0;
         this.rb.linearVelocity = this.lv;
-
+        cc.audioEngine.play(this.hurtAudio, false, 1);
         this.setAni(this.aniName.hurt);
     },
 });

@@ -835,7 +835,7 @@
       "array": [
         0,
         0,
-        317.8417183641173,
+        317.87803014679633,
         0,
         0,
         0,
@@ -5449,7 +5449,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "e5Hu8Lo/pJ/JMfkeRiMUGg"
+    "_id": "0bJZScasZFEIG5PeNZHQ+Y"
   },
   {
     "__type__": "cc.Label",
@@ -5483,7 +5483,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "1efs0kwyNH5pOrl8BJDS6H"
+    "_id": "4e0y1l7zxAJZrq4muhN3f7"
   },
   {
     "__type__": "cc.RichText",
@@ -9273,7 +9273,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "370a0YjztOO7coTV6grDKn"
+    "_id": "e0XY/oYr5IY6wc+K2GcMKm"
   },
   {
     "__type__": "cc.Label",
@@ -9307,7 +9307,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "aconU0rp5P2b25J//KLflT"
+    "_id": "dcP5yT9QlGDp7w2DUESiBx"
   },
   {
     "__type__": "cc.RichText",
@@ -9457,7 +9457,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "97hIdzGEZNb4bure5wnfh/"
+    "_id": "3aTkoVHYlA6pHaT0TR9jdj"
   },
   {
     "__type__": "cc.Label",
@@ -9491,7 +9491,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "54CBFVaddMqqCaouL0Gte9"
+    "_id": "27A6CQ4GxC4YQPD2dW5Ux5"
   },
   {
     "__type__": "cc.RichText",
@@ -9641,7 +9641,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "ddg2f6O61IBodhSgBAuWbf"
+    "_id": "d94Q7f1lhA7aoc2lHWCVJx"
   },
   {
     "__type__": "cc.Label",
@@ -9675,7 +9675,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "40qbHy3slFjp2+2ogeVyxz"
+    "_id": "ceJAqrxQBG2K+wt1ff79D/"
   },
   {
     "__type__": "cc.RichText",
@@ -9874,7 +9874,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "d4rhoBV4xHYJJiNUKBCcaJ"
+    "_id": "cclxlfq/VPq78Nsnu6Ixj9"
   },
   {
     "__type__": "cc.Label",
@@ -9908,7 +9908,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "6fOzuZtItIDr8e9H0YjvI4"
+    "_id": "2fD0cJqxFB24LZyuNOOvFF"
   },
   {
     "__type__": "cc.RichText",

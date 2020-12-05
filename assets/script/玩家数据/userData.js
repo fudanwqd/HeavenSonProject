@@ -466,8 +466,8 @@ cc.Class({
         var gameNode =  cc.find("game").getComponent("game");
         var treasureDemo = gameNode.getTreasureDemoByID(treasureDemoId);
 
-        console.log(treasureDemoId);
-        console.log(treasureDemo);
+        // console.log(treasureDemoId);
+        // console.log(treasureDemo);
 
 
         newTreasure.treasureDemo = treasureDemo;
