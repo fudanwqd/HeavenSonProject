@@ -78,7 +78,7 @@ cc.Class({
 
         this.totalHP = this.havenSonInstance.HP;
         this.power = this.havenSonInstance.power;
-        this.defend = this.defend;
+        this.defend = this.havenSonInstance.defend;
         this.hp = this.totalHP;
 
         // 设置更新用户的属性
