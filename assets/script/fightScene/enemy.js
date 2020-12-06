@@ -27,7 +27,7 @@ cc.Class({
     onLoad () {
         this.hp = 50;
         this.totalHP = 50;
-        this.power = 300;
+        this.power = 400;
         this.defend = 10;
 
 
