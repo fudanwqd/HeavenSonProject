@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "79eaddf9-b20c-4aa5-a11d-a65081b20e0b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 115,
+  "height": 115,
+  "platformSettings": {},
+  "subMetas": {
+    "血腥之剑": {
+      "ver": "1.0.4",
+      "uuid": "ea153fc6-887e-4929-bb06-328c9ff6c25c",
+      "rawTextureUuid": "79eaddf9-b20c-4aa5-a11d-a65081b20e0b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 114,
+      "height": 114,
+      "rawWidth": 115,
+      "rawHeight": 115,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

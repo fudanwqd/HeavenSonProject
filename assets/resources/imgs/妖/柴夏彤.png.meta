@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "b36adbfe-5eab-4566-a9ee-b8ef6fa7822d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 233,
+  "height": 243,
+  "platformSettings": {},
+  "subMetas": {
+    "柴夏彤": {
+      "ver": "1.0.4",
+      "uuid": "515c3d19-3460-457e-9d6e-82664e838564",
+      "rawTextureUuid": "b36adbfe-5eab-4566-a9ee-b8ef6fa7822d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 233,
+      "height": 243,
+      "rawWidth": 233,
+      "rawHeight": 243,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

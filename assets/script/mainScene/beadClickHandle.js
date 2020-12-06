@@ -183,9 +183,7 @@ cc.Class({
             this.humanImageNode.active = false;
             this.godImageNode.active = false;
             this.bogyImageNode.active = false;
-
-
-
+            
             this.userData.currentWorld = "冥界";
 
             // this.userData.setData("worldType","冥界");
