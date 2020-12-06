@@ -1,3 +1,21 @@
+//能跨文件夹调用类吗
+var Treasure = cc.Class({
+    name : '灵宝',
+    properties :{
+       treasureDemo : {
+           default : null,
+           type : require("../静态数据/TreasureDemo"),
+       },
+       treasureId:cc.Integer,
+       name: cc.String,
+       level : cc.Integer,
+       power : cc.Integer,
+       defend: cc.Integer,
+       HP    : cc.Integer,
+    }
+}) 
+
+
 var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
@@ -12,28 +30,14 @@ var HeavenSon = cc.Class({
        power : cc.Integer,
        defend: cc.Integer,
        HP    : cc.Integer,
-       ownTreasure : {
+       ownTreasures : {
            default :[],
            type : [Treasure]
            // 拥有的灵宝的ID
        },
     }
 })
-//能跨文件夹调用类吗
-var Treasure = cc.Class({
-    name : '灵宝',
-    properties :{
-       treasureDemo : {
-           default : null,
-           type : require("../静态数据/TreasureDemo"),
-       },
-       treasureId:cc.Integer,
-       level : cc.Integer,
-       power : cc.Integer,
-       defend: cc.Integer,
-       HP    : cc.Integer,
-    }
-}) 
+
 
 
 cc.Class({
@@ -54,7 +58,7 @@ cc.Class({
         },
         currentWorld : {
             default : "仙界",
-            type : cc.String,
+            // type : cc.String,
         },//代表玩家此时在哪一个界 ? 实现有可能有问题
         fighterID : {
             default : 1,
@@ -176,6 +180,17 @@ cc.Class({
         var heavenSonNum = this.getData("totalHeavenSonNum");
         if(heavenSonNum){
             this.totalHeavenSonNum = heavenSonNum;
+        }else{
+            this.totalHeavenSonNum = this.sons.length;
+        }
+
+
+        //获得玩家总共获得过的灵宝个数，用于分配灵宝ID
+        var totalTreasureNum = this.getData("totalTreasureNum");
+        if(totalTreasureNum){
+            this.totalTreasureNum = totalTreasureNum;
+        }else{
+            this.totalTreasureNum = this.treasures.length;
         }
 
     },
@@ -425,6 +440,8 @@ cc.Class({
     getRandomRange(min,max){
         return Math.floor(Math.random()*(max - min + 1)) + min; 
     },
+
+
     // 根据demoId 创建一个新的天道之子实例
     createNewHeavenSonByDemoID(heavenSonDemoId){
         var newHeavenSon = new HeavenSon();
@@ -439,6 +456,29 @@ cc.Class({
         newHeavenSon.defend = this.getRandomRange(heavenSonDemo.minDefend,heavenSonDemo.maxDefend);
         newHeavenSon.HP = heavenSonDemo.HP;
         return newHeavenSon;
+    },
+
+
+    // 根据demoId 创建一个新的灵宝实例
+    createNewTreasureByDemoID(treasureDemoId){
+        var newTreasure = new Treasure();
+        var gameNode =  cc.find("game").getComponent("game");
+        var treasureDemo = gameNode.getTreasureDemoByID(treasureDemoId);
+
+        console.log(treasureDemoId);
+        console.log(treasureDemo);
+
+
+        newTreasure.treasureDemo = treasureDemo;
+        var treasureId = this.totalTreasureNum;
+        this.setTotalTreasureNum(++treasureId);
+        newTreasure.treasureId = treasureId;
+        //根据随机数获得灵宝实例的攻击力和防御力
+        newTreasure.power = this.getRandomRange(treasureDemo.minPower,treasureDemo.maxPower);
+        newTreasure.defend = this.getRandomRange(treasureDemo.minDefend,treasureDemo.maxDefend);
+        newTreasure.HP = treasureDemo.HP;
+        newTreasure.name = treasureDemo.name;
+        return newTreasure;
     },
 
     
