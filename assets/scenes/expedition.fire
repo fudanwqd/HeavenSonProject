@@ -186,7 +186,7 @@
       "array": [
         0,
         0,
-        318.1452732551596,
+        317.9442252215195,
         0,
         0,
         0,
@@ -10907,8 +10907,8 @@
     "vertical": true,
     "inertia": true,
     "brake": 0.75,
-    "elastic": false,
-    "bounceDuration": 0.23,
+    "elastic": true,
+    "bounceDuration": 1,
     "scrollEvents": [],
     "cancelInnerEvents": true,
     "_N$content": {
