@@ -17,10 +17,10 @@
         "__id__": 2
       },
       {
-        "__id__": 254
+        "__id__": 279
       },
       {
-        "__id__": 256
+        "__id__": 281
       }
     ],
     "_active": false,
@@ -84,7 +84,7 @@
         "__id__": 9
       },
       {
-        "__id__": 245
+        "__id__": 270
       },
       {
         "__id__": 71
@@ -93,10 +93,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 252
+        "__id__": 277
       },
       {
-        "__id__": 253
+        "__id__": 278
       }
     ],
     "_prefab": null,
@@ -186,7 +186,7 @@
       "array": [
         0,
         0,
-        269.14900499512305,
+        318.1452732551596,
         0,
         0,
         0,
@@ -456,12 +456,15 @@
       },
       {
         "__id__": 60
+      },
+      {
+        "__id__": 244
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 244
+        "__id__": 269
       }
     ],
     "_prefab": null,
@@ -10565,6 +10568,966 @@
     "_id": "fbNlsrEeFIv6Hih//72nSk"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "渲染文字",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 9
+    },
+    "_children": [
+      {
+        "__id__": 245
+      },
+      {
+        "__id__": 260
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 262
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "76RG4VqzlDKosI39KMAeiY"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "New ScrollView",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 244
+    },
+    "_children": [
+      {
+        "__id__": 246
+      },
+      {
+        "__id__": 252
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 259
+      },
+      {
+        "__id__": 250
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 201,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 210,
+      "g": 210,
+      "b": 210,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 786,
+      "height": 575
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        323.073,
+        -293.552,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "9fXqzzUJdFHoxK1/KfvoiQ"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "scrollBar",
+    "_objFlags": 512,
+    "_parent": {
+      "__id__": 245
+    },
+    "_children": [
+      {
+        "__id__": 247
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 249
+      },
+      {
+        "__id__": 257
+      },
+      {
+        "__id__": 258
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 12,
+      "height": 575
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        393,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "2fcFbiuHNOP4LW9taNmHPb"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "bar",
+    "_objFlags": 512,
+    "_parent": {
+      "__id__": 246
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 248
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 10,
+      "height": 30
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "56voUQCcZIWY/eLrLU+ghP"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 247
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "5c3bb932-6c3c-468f-88a9-c8c61d458641"
+    },
+    "_type": 1,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": "04Cj+RFqZNNILlPHiKUTBl"
+  },
+  {
+    "__type__": "cc.Scrollbar",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 246
+    },
+    "_enabled": true,
+    "_scrollView": {
+      "__id__": 250
+    },
+    "_touching": false,
+    "_opacity": 255,
+    "enableAutoHide": true,
+    "autoHideTime": 1,
+    "_N$handle": {
+      "__id__": 248
+    },
+    "_N$direction": 1,
+    "_id": "60oY9wWy5B/Y6RwTAfCbBN"
+  },
+  {
+    "__type__": "cc.ScrollView",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 245
+    },
+    "_enabled": true,
+    "horizontal": false,
+    "vertical": true,
+    "inertia": true,
+    "brake": 0.75,
+    "elastic": false,
+    "bounceDuration": 0.23,
+    "scrollEvents": [],
+    "cancelInnerEvents": true,
+    "_N$content": {
+      "__id__": 251
+    },
+    "content": {
+      "__id__": 251
+    },
+    "_N$horizontalScrollBar": null,
+    "_N$verticalScrollBar": {
+      "__id__": 249
+    },
+    "_id": "72kZHubxVHC7VEW8+INWDv"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "content",
+    "_objFlags": 512,
+    "_parent": {
+      "__id__": 252
+    },
+    "_children": [
+      {
+        "__id__": 255
+      }
+    ],
+    "_active": true,
+    "_components": [],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 786,
+      "height": 575
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "647IGedjRF+YOIvHPDDvFg"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "view",
+    "_objFlags": 512,
+    "_parent": {
+      "__id__": 245
+    },
+    "_children": [
+      {
+        "__id__": 251
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 253
+      },
+      {
+        "__id__": 254
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 786,
+      "height": 575
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "419IuqvKxJ6bsSJ1abDyeG"
+  },
+  {
+    "__type__": "cc.Mask",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 252
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_spriteFrame": null,
+    "_type": 0,
+    "_segments": 64,
+    "_N$alphaThreshold": 0,
+    "_N$inverted": false,
+    "_id": "af4xW1yHlA0Y0UABSIAeeR"
+  },
+  {
+    "__type__": "cc.Layout",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 252
+    },
+    "_enabled": true,
+    "_layoutSize": {
+      "__type__": "cc.Size",
+      "width": 300,
+      "height": 200
+    },
+    "_resize": 0,
+    "_N$layoutType": 2,
+    "_N$cellSize": {
+      "__type__": "cc.Size",
+      "width": 40,
+      "height": 40
+    },
+    "_N$startAxis": 0,
+    "_N$paddingLeft": 0,
+    "_N$paddingRight": 0,
+    "_N$paddingTop": 10,
+    "_N$paddingBottom": 10,
+    "_N$spacingX": 0,
+    "_N$spacingY": 0,
+    "_N$verticalDirection": 0,
+    "_N$horizontalDirection": 0,
+    "_N$affectedByScale": false,
+    "_id": "eabLudBwpGqpXROQKQwJWO"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "文字label显示节点",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 251
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 256
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 0,
+      "g": 0,
+      "b": 38,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 746,
+      "height": 50.4
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "86N8m8J8lCmbD7mJuo6vBO"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 255
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_useOriginalSize": false,
+    "_string": "",
+    "_N$string": "",
+    "_fontSize": 36,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 2,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "89VLlmz2pEJZ/f77d86Bto"
+  },
+  {
+    "__type__": "cc.Widget",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 246
+    },
+    "_enabled": true,
+    "alignMode": 0,
+    "_target": null,
+    "_alignFlags": 37,
+    "_left": 350.07654921020657,
+    "_right": 0,
+    "_top": 0,
+    "_bottom": 0,
+    "_verticalCenter": 0,
+    "_horizontalCenter": 0,
+    "_isAbsLeft": true,
+    "_isAbsRight": true,
+    "_isAbsTop": true,
+    "_isAbsBottom": true,
+    "_isAbsHorizontalCenter": true,
+    "_isAbsVerticalCenter": true,
+    "_originalWidth": 0,
+    "_originalHeight": 237,
+    "_id": "acjlh6dghB5KvisLQ9fgOF"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 246
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "5fe5dcaa-b513-4dc5-a166-573627b3a159"
+    },
+    "_type": 1,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": "05+OxZFFhLPrs9wpG46zui"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 245
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "9bbda31e-ad49-43c9-aaf2-f7d9896bac69"
+    },
+    "_type": 1,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": "949V/zdCVPqKCp3S+EnXPg"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "历练际遇",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 244
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 261
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 142,
+      "g": 177,
+      "b": 212,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 120,
+      "height": 50.4
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        335.712,
+        331.94,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "80IvzvXPRNkZdroG4wqGSt"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 260
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_useOriginalSize": false,
+    "_string": "历练际遇",
+    "_N$string": "历练际遇",
+    "_fontSize": 30,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "2caQoOXUNIaJOhuQDbIZV4"
+  },
+  {
+    "__type__": "e203dhlllBCK4cXlPSlbiHL",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 244
+    },
+    "_enabled": true,
+    "labelNode": {
+      "__id__": 255
+    },
+    "showCtrNode": {
+      "__id__": 9
+    },
+    "emptyString": "千山鸟飞绝，万径人踪灭。天地渺渺，竟无一人历练在外，自然就无因果，便也无。",
+    "plots": [
+      {
+        "__id__": 263
+      },
+      {
+        "__id__": 264
+      },
+      {
+        "__id__": 265
+      },
+      {
+        "__id__": 266
+      },
+      {
+        "__id__": 267
+      },
+      {
+        "__id__": 268
+      }
+    ],
+    "_id": "1ezgOgGZpI2Jt18T7Sab+s"
+  },
+  {
+    "__type__": "情节",
+    "name": "龙傲天奇遇老头",
+    "sections": [
+      "    空间裂缝里时间缓缓的流逝着，或许经过了一年十年百年，又或许只是一瞬间，忽然那灵魂周围的空间波动剧烈起来，渐渐的形成了九彩色的空间通道灵魂也随着空间通道不知道传向了何方。",
+      "    逍遥神尊心里嘀咕着：他怎么用个灵魂召唤术那么费劲，难道是最近功力下降了，没道理啊。”岂不知他召唤的根本不是什么九彩神魂而是传说中的混沌神魂，要不是凭借着他那变态功力，恐怕这混沌神魂要永远被困在空间裂缝里了。",
+      "    不知过了多久终于xx醒了过来，慢慢的睁开眼，茫然的望着眼前的一切，“我是谁，这里是哪里？”慢慢的整理了一下思维，xx终于记起来了所有的事情，“我不是被雷劈死了吗？这里是哪里？难道这里是地狱？不对啊，怎么没见牛头马面啊。”xx自言自语着。",
+      "    “你嘀咕什么呢，你竟敢把本尊的神殿跟那低级的地府相比，你气死我了，你见过这么气派的地府吗？”逍遥神尊气愤的说道。这时xx才发现他旁边坐在龙椅上的紫袍人，刀削的面庞一头紫发，显得儒雅而又不失霸气。",
+      "    看着他那俊朗的面容xx嘀咕道：“怎么可能呢，怎么可能有这么帅的人呢。”说着边伸手摸过去，可是令他惊讶的事情发生了，他的手穿透了他的脸，怎么会这样，这使xx才发现自己竟然是飘在空中的。“怎么会这样？这是怎么回事？我这是怎么了？”xx惊慌地说道。",
+      "  “你已经死了，这只是你的灵魂而已，真是少见多怪。”逍遥神尊不屑的说道。听了他说的话xx惊呆了：灵魂，这竟然是我的灵魂，人死后竟然还有灵魂的存在，这只存在于小说中的事情竟然发生在了自己的身上。",
+      "    慢慢的xx的思绪平静了下来，开始慢慢的打量周围的一切，不看不知道一看吓一跳，一座浑身紫色的豪华宫殿出现在眼前，而且在那男人的旁边他看见了什么：龙啊，传说中的龙，比传说中的五爪神龙更高级九爪神龙。",
+      "    看向紫袍人的眼里带着些许畏惧和疑惑。于是xx小心翼翼的说道：“敢问这位前辈怎么称呼？这里是什么地方，是您把我带到这里来的吗？”",
+      "    逍遥神尊看到xx的表情便安慰说：“你不用害怕，我又不能吃了你，告诉你吧，我呢是神界的逍遥神尊，这里是我的洞府逍遥神殿，至于你当然是本尊救你来的。”尽管心里已经做好了准备但是还是被他说的话吓了一跳，神界？神尊？听起来就很牛逼的样子。",
+      "    逍遥神尊见xx又在一旁发呆便咳嗽了一声将ta从发呆中带了出来，此时xx已经知道站在ta面前的是一个很牛逼的BOSS了，便对他说：“敢问前辈把我弄到这里有什么事吗？”",
+      "    见xx问起这事，逍遥神尊整了整面容说道：“小子，不知道是你幸运呢还是我幸运，你竟然是这个宇宙中除了我之外的第二个拥有九彩神魂的人，两千亿年了本尊活了两千亿年了，上天终于又让我发现了拥有九彩神魂的人，我的本领终于后继有人了，所以呢，小子我现在想收你为徒传承我的衣钵不知你愿不愿意呢？”说完竟然满脸希冀的看着xx。",
+      "    xx被这突如其来的馅饼砸晕了，世上竟然还有这种事，两千亿年啊，眼前这个“年轻人”竟然活了两千亿年。",
+      "    见xx满脸发傻的站在那里，逍遥神尊又咳嗽了一声说：“你到底愿不愿意呢？”这时xx才醒过来连忙说道：“愿意愿意，师傅在上，请受徒儿一拜。”说完连忙拜下去。",
+      "    逍遥神尊见xx答应高兴的说道：“好好好，本尊终于有传人了。”见逍遥神尊这么说，xx说道：“师傅那我们现在是不是可以开始学习您的绝学了呢？”",
+      "    听了xx的话逍遥神尊说道：“不急不急，有些事情在这之前先要准备一下，你呢现在只是一个灵魂，不能修炼，等会儿我交代完之后将你送去异空间轮回转世之后才开始修炼，我现在先跟你说一下为师的事情，我呢是神界五大神尊之一的逍遥神尊，为师修炼的功法呢叫《逍遥傲世诀》，修炼这种功法最低要求是灵魂达到三彩神魂，这是一门夺天地之造化的奇功。好了就说这么多吧，其他还有什么不懂的等自己看我给你的神简，为师也没有什么好送你的就把这逍遥神戒送你吧，这个神戒你目前能用的就只有储物了，还有可以保护你的灵魂不受伤害，其他的功能都被我封印掉了只有你达到一定的能力之后才会解封，有什么功能到时候你自己去探索吧，好了到时候转世之后努力修炼别丢本尊的脸，好了现在就送你去转世吧。”",
+      "    说完不等xx反应就把他打入了时空隧道，在xx进入时空隧道之前只见从逍遥神尊手中打出一个玉简一个戒指融入到了xx的灵魂当中，随后ta便又失去了意识。",
+      "    见xx消失在时空隧道中，逍遥神尊才慢悠悠的转过身望向远方说道：“徒弟啊你也别怪师傅抠门不给你神器神丹，要知道只有经历风雨才能见彩虹的只有经历了挫折和磨难才会成熟才会成才的，希望你不要辜负为师的一片苦心吧，祝你好运了。”"
+    ]
+  },
+  {
+    "__type__": "情节",
+    "name": "修炼突破",
+    "sections": [
+      "xx受天道指引，成功突破到大乘期",
+      "瞬间天地变色，xx从容吐气，拂去了ta身上的灰尘，微微一笑，气度从容不凡，变得愈发深不可测。"
+    ]
+  },
+  {
+    "__type__": "情节",
+    "name": "剑斩桃花",
+    "sections": [
+      "  飞雪漫天，极北之地，玉楼阁上，xx一身白衣，身形寂寥，背后三千白发如瀑洒下。",
+      "  “这么多年了，你总说天下仙家，皆无牵无挂，一生一世落踏潇洒。你那时冷清冷血地说：太上忘情，才是无为真法。怎么，后悔了？后悔当年斩你那桃花的剑太快？”",
+      "  天君踏云而上，忍不住对xx出声道。",
+      "  xx闻言，依旧一言不发，ta缓缓伸手，接住一片雪花。那朵洁白一入手便顷刻间融化。",
+      "  过了许久，ta极轻地说了句：“原来，再冷的心，也冷不过天道无情。”",
+      "  还记得那年，十里红妆，十方繁华。",
+      "  xx入尘世斩桃花前曾言：“问道本是求长生，哪管什么雪月风花？”。ta不屑这红尘，眼里唯有一人一剑，白衣御剑，诗酒当茶。",
+      "  可那夜，满目的红，那人一身红衣坐于塌上，只那一眼，xx便再也难忘那绝世容颜，眉眼如画，便该是如此了吧。",
+      "  可惜，再美也只是昙华一刹，xx的剑一如既往地快，鲜血染红了婚服，几滴鲜血落在那人如玉的手上，那手几秒前才刚刚向ta伸来，似乎是打算执子之手与子偕老。可等来的不是xx的回握，而是一把利剑。",
+      "  门外风雪交加，红白轮替，终于斩了桃花。",
+      "  等到了来年，又是一年碧水桃花，xx也早就饮下了忘川水。可xx依旧忘不了眸中月光，心上朱砂，忘不了那个ta。"
+    ]
+  },
+  {
+    "__type__": "情节",
+    "name": "渡劫失败",
+    "sections": [
+      "天道一时忽视了xx，xx气运大跌，渡劫失败",
+      "可悲可叹"
+    ]
+  },
+  {
+    "__type__": "情节",
+    "name": "龙王赘婿",
+    "sections": [
+      "  老夫人的病情越发严重了，她躺在床上，苍老的声音气若游丝，看到这个废物又出现在她眼前，她不由得翻了个白眼。",
+      "“你来干什么？嫌我死的不够早？”",
+      "  xx听到这句话，心中气郁不已：苏家欺辱我多年，本以为人之将死其言也善，没想到这老女人还是如此刁钻。罢了，三年之约，今日还是得保她，不能让她早死一天。xx深吸了一口气，在心中默念“修罗，隐忍”，才冷静地出声道：",
+      "  “老太君，我是来救你的。”",
+      "  “救我？就凭你？你这个废物还会医术？”老夫人满是皱纹的脸上写满了不信两个字。",
+      "  正在此时，从京都赶来的李神医破门而入，额上的汗还顾不得擦拭，带着医箱便要给老夫人看病，嘴上还不忘吩咐着：",
+      "  “让开，让开，我要治病了，其他人都走吧，别挡着道。”",
+      "  他一针下去，稍微松了一口气，他这才转头仔细看了看房中的亲属，正当他看到xx时，他大惊，双手颤抖，嘴皮子也直哆嗦：",
+      "  “这...这...这不是祖师吗？参加祖师！”",
+      "  李神医拜见过xx后，便满脸疑惑地对老夫人道：“您这不都把神医谷的嫡传祖师请过来了，为何还要找我来治？这不是班门弄斧吗？”",
+      "  “什么？”老夫人一会儿没反应过来，等她明白李神医的意思后，立刻将目光放到了xx身上，连忙急切地说道：",
+      "  “xx，救我！”",
+      "  xx看到老夫人这最后几小时里死不了后，便取消了之前的救治打算，转身就要离去，无视老夫人的呼救。",
+      "  老夫人一看就急了，露出了一贯嚣张欺人的模样：“救我！不然，逐出苏家！”",
+      "  “xx，你给我站住！”苏某人追了出来，反手就给了xx一巴掌：“这一巴掌，打你有眼无珠，轻视老太君。”接着，又是一巴掌打在了xx的另一半脸上：“这一巴掌，打你目无尊长”。",
+      "  xx连挨两下，终于怒了，ta心中有个声音嘶吼着：“忍无可忍，就当修罗死了！”，于是ta奋起反抗，狠狠地还了苏某人一巴掌：“这一巴掌打断你我夫妻情分！”",
+      "  突然，一行人赶了过来，整齐而统一地跪在了xx面前，齐声道：“家主有令，请您到京城，与我们白少主履行当年婚约。”",
+      "  老夫人刚刚追来就听到了这句，大受打击，嘴中不可置信地念叨着，像是在疑惑，也像是在震惊：“帝都白家？！”",
+      "  过了不过片刻，又有一行人赶来，这伙人全部一身黑衣，气势比之前的白家人更加强大。只见他们二话不说就跪在了地上，声音洪亮：“拜见龙主，四大家族尽在掌握，如何处置？”",
+      "  还没等xx回复，又来了行人，他们跟着跪在的黑衣人的另一侧，朗声道：“少主，考察期满，家主有令，请您回去接管杨氏财团，恭迎少主回家！”",
+      "xx见此，让所有人起身，然后回头看了一眼老太君和相处三年的苏某人，ta嘴角扬起了一丝不屑的弧度，露出了ta那标志性的邪魅一笑，转身离去，潇洒至极。"
+    ]
+  },
+  {
+    "__type__": "情节",
+    "name": "霸道王爷凉凉妃",
+    "sections": [
+      "  “王爷，王妃已经挂在城门三天了！”",
+      "  小厮急冲冲跑进来的时候，王爷正在画一副水墨丹青。 ",
+      "  “肯认吗？”",
+      "  王爷拿笔的手顿了顿，问道。 ",
+      "  小厮摇摇头： “只说要见您，别的不肯说。”",
+      "  王爷听罢笑起来：“那就继续挂着。”王爷又闲散的作起画来，“记得定期灌点水，别让王妃死了。”",
+      "  “是，小的这就去办。”",
+      "  幸好xx不是凡人，在城门上挂个几天还死了。换做他人，早就一命呜呼了。",
+      "  等到夜深人静时，xx念了一道术法，解开了手上的绳子，皓腕早已布满红痕，三天三夜，xx已经心灰意冷了，既然他如此薄情寡义，那么接下来的事，就不要怪ta了。",
+      "  过了几天，天子暴毙，名震天下的战神王爷成功继位，他一继位就降旨将消失了几天的王妃xx打入冷宫，找不到便找不到了，那就干脆将人的名分限制在冷宫之中，皇后之位便再也轮不着ta了。",
+      "  过了大半年，xx抱着六胞胎坐在冷宫的床上，做了皇帝的他闻言立刻赶到冷宫门外，王府曾百年无一子嗣，他跪求xx开门。",
+      "  xx不为所动，冷眼看着那人的苦苦哀求，总算扬眉吐气。"
+    ]
+  },
+  {
     "__type__": "1275erRXpJJy4mVd28Byrpf",
     "_name": "",
     "_objFlags": 0,
@@ -10630,16 +11593,16 @@
     },
     "_children": [
       {
-        "__id__": 246
+        "__id__": 271
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 249
+        "__id__": 274
       },
       {
-        "__id__": 251
+        "__id__": 276
       }
     ],
     "_prefab": null,
@@ -10695,16 +11658,16 @@
     "_name": "Background",
     "_objFlags": 512,
     "_parent": {
-      "__id__": 245
+      "__id__": 270
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 247
+        "__id__": 272
       },
       {
-        "__id__": 248
+        "__id__": 273
       }
     ],
     "_prefab": null,
@@ -10760,7 +11723,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 246
+      "__id__": 271
     },
     "_enabled": true,
     "_materials": [
@@ -10792,7 +11755,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 246
+      "__id__": 271
     },
     "_enabled": true,
     "alignMode": 0,
@@ -10819,7 +11782,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 245
+      "__id__": 270
     },
     "_enabled": true,
     "_normalMaterial": null,
@@ -10828,7 +11791,7 @@
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 250
+        "__id__": 275
       }
     ],
     "_N$interactable": true,
@@ -10896,14 +11859,14 @@
       "__uuid__": "1c541101-e902-4975-baed-26db14b59d3e"
     },
     "_N$target": {
-      "__id__": 246
+      "__id__": 271
     },
     "_id": "95m0T9nLBFF7LJqjP0xNn8"
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 245
+      "__id__": 270
     },
     "component": "",
     "_componentId": "f1dc9e2y61LIbmm+dT/bmRZ",
@@ -10915,7 +11878,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 245
+      "__id__": 270
     },
     "_enabled": true,
     "_id": "1dMpnGIlpJy4/C3gyQAvRx"
@@ -10975,7 +11938,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 255
+        "__id__": 280
       }
     ],
     "_prefab": null,
@@ -11031,7 +11994,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 254
+      "__id__": 279
     },
     "_enabled": true,
     "staticImages": [
@@ -11058,7 +12021,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 257
+        "__id__": 282
       }
     ],
     "_prefab": null,
@@ -11114,7 +12077,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 256
+      "__id__": 281
     },
     "_enabled": true,
     "btnAudio": {
