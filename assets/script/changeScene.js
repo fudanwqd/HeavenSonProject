@@ -55,6 +55,10 @@ cc.Class({
         cc.director.loadScene("mainScene");
     },
 
+    changeSceneExper() {
+        cc.log("应该切换到场景：历练");
+        cc.director.loadScene("expedition");
+    },
     
 
 
