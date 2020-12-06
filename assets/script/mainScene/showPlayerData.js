@@ -65,7 +65,7 @@ cc.Class({
         this.currentLevel = this.currentLevelNode.getComponent(cc.RichText);
         this.currentLevel.string = "<color=#80aec2>Lv." + this.fightSon.level + "</color>";
 
-        this.headPortraitNode = cc.find("Canvas/战斗人物圆框/战斗人物占位图");
+        this.headPortraitNode = cc.find("Canvas/头像/战斗人物占位图/人物头像");
         this.headPortrait = this.headPortraitNode.getComponent(cc.Sprite);
         this.headPortrait.spriteFrame = this.fightSon.heavenSonDemo.staticImage;
 
@@ -76,7 +76,7 @@ cc.Class({
         this.fightName.string = '"' +this.fightSon.heavenSonDemo.name+'"';
 
         //经验条进度实现
-        this.progressNode = cc.find("Canvas/战斗人物圆框/progressBar");
+        this.progressNode = cc.find("Canvas/头像/战斗人物圆框/progressBar");
         this.prog = this.progressNode.getComponent(cc.ProgressBar);
         this.prog.progress = this.fightSon.exp/100;
 
