@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "4928f40a-7a22-4bf1-8be7-55b6c7eb9aae",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 531,
+  "height": 171,
+  "platformSettings": {},
+  "subMetas": {
+    "获得的灵宝灵石经验-底图": {
+      "ver": "1.0.4",
+      "uuid": "4407d05b-80a7-4ea8-83b6-e2f08ec71ee7",
+      "rawTextureUuid": "4928f40a-7a22-4bf1-8be7-55b6c7eb9aae",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 531,
+      "height": 171,
+      "rawWidth": 531,
+      "rawHeight": 171,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

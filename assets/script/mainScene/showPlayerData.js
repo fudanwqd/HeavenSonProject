@@ -85,4 +85,16 @@ cc.Class({
     start () {
 
     },
+
+    update(){
+        // this.stoneNumber.string = "<color=#80aec2>" + this.userData.stoneNum + "</color>";
+        // this.hmzqNumber.string = "<color=#80aec2>" + this.userData.hmzqNum + "</color>";
+        // this.currentExpe.string = "<color=#80aec2>" + this.fightSon.exp + " /</color>";
+        // this.currentLevel.string = "<color=#80aec2>Lv." + this.fightSon.level + "</color>";
+        // this.headPortrait = this.headPortraitNode.getComponent(cc.Sprite);
+        // this.headPortrait.spriteFrame = this.fightSon.heavenSonDemo.staticImage;
+        // this.fightName.string = '"' +this.fightSon.heavenSonDemo.name+'"';
+        // //经验条进度实现
+        // this.prog.progress = this.fightSon.exp / 100;
+    }
 });

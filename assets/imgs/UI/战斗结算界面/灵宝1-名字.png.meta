@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "69d4e8b1-de7f-4894-9f29-fc48efaa1356",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 114,
+  "height": 44,
+  "platformSettings": {},
+  "subMetas": {
+    "灵宝1-名字": {
+      "ver": "1.0.4",
+      "uuid": "b3609133-ddd2-4cc3-aa73-4576cdb4cb31",
+      "rawTextureUuid": "69d4e8b1-de7f-4894-9f29-fc48efaa1356",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 114,
+      "height": 44,
+      "rawWidth": 114,
+      "rawHeight": 44,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

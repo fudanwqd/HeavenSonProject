@@ -27,7 +27,7 @@ cc.Class({
     onLoad () {
         this.hp = 50;
         this.totalHP = 50;
-        this.power = 10;
+        this.power = 300;
         this.defend = 10;
 
 
@@ -38,9 +38,21 @@ cc.Class({
         this.isHit = false;
         this.bg = this.node.parent.parent.getComponent('fight_game');
 
+
+        
+        let id = this.bg.nowBattleIndex;
+        // console.log('怪物生成，id: ', id);
+        this.aniName = {
+            idle : "enemyIdle" + id,
+            run : "enemyRun" + id,
+            attack : "enemyAttack" + id,
+            hurt : "enemyHurt" + id,
+            dead : "enemyDead" + id,
+        };
+
         this.enemyAni = this.node.getChildByName('body').getComponent(cc.Animation);
         this.enemyAni.on("finished", (e, data) => {
-            if(data.name == 'enemyHurt' && this.tag != 1){
+            if(data.name == this.aniName.hurt && this.tag != 1){
                 // console.log("扣血");
                 if(this.defend >= this.havenSon.power){
                     this.hp--;
@@ -57,32 +69,25 @@ cc.Class({
                 }else{
                     this.hpProgress.getComponent(cc.ProgressBar).progress = this.hp / this.totalHP;
                 }
-            }else if(data.name == 'enemyAttack'){
-                this.setAni("enemyIdle");
             }
 
             this.enemyState = State.stand;
-            
+            this.setAni(this.aniName.idle);
         });
 
 
-        this.ani = 'enemyIdle';
+        this.ani = "";
+        this.setAni(this.aniName.idle);
         this.rb = this.node.getComponent(cc.RigidBody);
-        this._speed = 250;
+        this._speed = 350;
         this.sp = cc.v2(0, 0);
         this.tt = 0;
         this.enemyState = State.stand;
 
         this.moveLeft = false;
         this.moveRight = false;
-
-
-        
     },
 
-    start () {
-
-    },
 
     
     hurt(){
@@ -97,17 +102,21 @@ cc.Class({
         this.lv.x = 0;
         this.rb.linearVelocity = this.lv;
 
-        this.setAni("enemyHurt");
+        this.setAni(this.aniName.hurt);
     },
 
 
     enemyAction(tt){
+        if(!cc.isValid(this.playerNode)){
+            // console.log('missing');
+            return ;
+        }
         let p_pos= this.playerNode.position;
         let e_pos = this.node.position;
 
         let dis = cc.Vec2.distance(e_pos, p_pos);
 
-        if(dis <= 35){//攻击距离
+        if(dis <= 100){//攻击距离
             // console.log("attack");
             
             this.moveLeft = false;
@@ -128,7 +137,7 @@ cc.Class({
             }
             this.enemyState = State.stand;
         }else{//不动
-            // console.log("stand");
+            // console.log("stand");S
 
             this.moveLeft = false;
             this.moveRight = false;
@@ -138,7 +147,8 @@ cc.Class({
     },
 
     attack(){
-        this.setAni("enemyAttack");
+        // console.log('enemy attack');
+        this.setAni(this.aniName.attack);
         this.lv = this.rb.linearVelocity;
         this.lv.x = 0;
         this.rb.linearVelocity = this.lv;
@@ -150,14 +160,14 @@ cc.Class({
         if(this.moveLeft){
             this.sp.x = -1;
             this.node.scaleX = scaleX;
-            this.setAni('enemyWalk');
+            this.setAni(this.aniName.run);
         }else if(this.moveRight){
             this.sp.x = 1;
             this.node.scaleX = -scaleX;
-            this.setAni('enemyWalk');
+            this.setAni(this.aniName.run);
         }else{
             this.sp.x = 0;
-            this.setAni('enemyIdle');
+            this.setAni(this.aniName.idle);
         }
 
         if(this.sp.x){
@@ -182,8 +192,6 @@ cc.Class({
        }else if(this.enemyState == State.stand){
             this.move();
        }
-
-        
     },
 
     setAni(ani){

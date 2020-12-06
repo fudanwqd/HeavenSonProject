@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "93c13b11-6a5e-498f-ba62-6716b45974b5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1914,
+  "height": 1059,
+  "platformSettings": {},
+  "subMetas": {
+    "战斗背景": {
+      "ver": "1.0.4",
+      "uuid": "d8c07fa1-6d7c-4e0a-83c5-b7de57e43eec",
+      "rawTextureUuid": "93c13b11-6a5e-498f-ba62-6716b45974b5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1914,
+      "height": 1059,
+      "rawWidth": 1914,
+      "rawHeight": 1059,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

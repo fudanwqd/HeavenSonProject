@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "enemyHurt2",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3333333333333333,
+  "sample": 12,
+  "speed": 0.5,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "fba7d8b2-c927-4f51-8a24-4461f73a9d93"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "f3c6281d-932a-4276-9b78-bad43b9bdff1"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "ddd964c7-22a0-4268-8f32-986620545f01"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "42a5e9b8-c56c-4539-aeb3-8f4715540a6a"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
