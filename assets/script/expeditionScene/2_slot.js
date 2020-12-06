@@ -68,8 +68,9 @@ cc.Class({
             sf = null;
             this.showControl.timeNode.active =false;
         }else{
-            i = this.heavenSon.heavenSonDemo.heavenSonDemoId;
-            sf = this.sfManager.staticImages[i];
+            // i = this.heavenSon.heavenSonDemo.heavenSonDemoId;
+            // sf = this.sfManager.staticImages[i];不用sf管理，用主界面的数据
+            sf = this.heavenSon.heavenSonDemo.staticImage;
             this.showControl.showLeftTime();//更新，收获倒计时
         }
 

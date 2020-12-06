@@ -41,19 +41,22 @@
         "__id__": 261
       },
       {
-        "__id__": 272
-      },
-      {
         "__id__": 276
       },
       {
-        "__id__": 267
+        "__id__": 280
+      },
+      {
+        "__id__": 271
       },
       {
         "__id__": 263
       },
       {
-        "__id__": 278
+        "__id__": 282
+      },
+      {
+        "__id__": 284
       }
     ],
     "_active": true,
@@ -835,7 +838,7 @@
       "array": [
         0,
         0,
-        212.91235080620388,
+        317.0778921827688,
         0,
         0,
         0,
@@ -5351,7 +5354,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "53DyHqDNhA/r5IlpkGjBVX"
+    "_id": "93kGdP6UZLkIIg7lujxAtx"
   },
   {
     "__type__": "cc.Label",
@@ -5385,7 +5388,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "65rjg/BbJEGK61phaTXvPl"
+    "_id": "438rxaWuFAPY6MWlsADg05"
   },
   {
     "__type__": "cc.RichText",
@@ -5773,7 +5776,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c5DECxlexNu5RkWESRu3bx"
+    "_id": "a2v3HYBlFF6rPZApCNbY+i"
   },
   {
     "__type__": "cc.Label",
@@ -5807,7 +5810,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "3bwSi/iIdGmaymiN2D6OIP"
+    "_id": "953Vtq1HFKjap7YlLvRryp"
   },
   {
     "__type__": "cc.RichText",
@@ -5957,7 +5960,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "e94GFTyTlNx78Kb1mwjRIq"
+    "_id": "39KH+yodZF6ZiiGzlxYfh8"
   },
   {
     "__type__": "cc.Label",
@@ -5991,7 +5994,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "96v4meYhhM2Kr+2NWwWlBH"
+    "_id": "d7xuELbWtDOYNs5negwee/"
   },
   {
     "__type__": "cc.RichText",
@@ -6141,7 +6144,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "e5rrQm7cxGTIM+9DoWmCs6"
+    "_id": "5b+8cXhiRAa6ABAQjjdy/p"
   },
   {
     "__type__": "cc.Label",
@@ -6175,7 +6178,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "89RL47DOxLMpQWSh6ELv0h"
+    "_id": "a1k3vvDXtDEamezI4sJrok"
   },
   {
     "__type__": "cc.RichText",
@@ -6752,7 +6755,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "580Dn5icFM8YEUybqe8dbZ"
+    "_id": "f9l1lbjsNMCrDEwnpy6TtZ"
   },
   {
     "__type__": "cc.Label",
@@ -6786,7 +6789,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "97uhyNA/RGoJ+eX6Ac7Cd+"
+    "_id": "0fuwxFcRpArp/Cx+DvMAV2"
   },
   {
     "__type__": "cc.RichText",
@@ -12440,13 +12443,13 @@
       "__id__": 263
     },
     "HeavenSonDatabaseNode": {
-      "__id__": 267
+      "__id__": 271
     },
     "TreasureDatabaseNode": {
-      "__id__": 272
+      "__id__": 276
     },
     "MonsterDatabaseNode": {
-      "__id__": 276
+      "__id__": 280
     },
     "_id": "3cVV3HhfdPErc6ZHtRqk0c"
   },
@@ -12529,6 +12532,12 @@
     "sons": [
       {
         "__id__": 265
+      },
+      {
+        "__id__": 267
+      },
+      {
+        "__id__": 269
       }
     ],
     "treasures": [],
@@ -12548,6 +12557,7 @@
     "power": 4,
     "defend": 5,
     "HP": 200,
+    "growRate": 0,
     "ownTreasures": []
   },
   {
@@ -12564,9 +12574,81 @@
     "maxGrowRate": 0,
     "quality": 0,
     "staticImage": {
-      "__uuid__": "ceead107-cdad-4234-9e34-09165f22b6dd"
+      "__uuid__": "438a2556-e71b-4d7d-83bc-d44a2e1f8795"
     },
-    "e_headPortrait": null
+    "e_headPortrait": {
+      "__uuid__": "9d663334-cd14-4171-b17d-245fccc748b8"
+    }
+  },
+  {
+    "__type__": "天道之子",
+    "heavenSonDemo": {
+      "__id__": 268
+    },
+    "name": "龙傲天",
+    "heavenSonId": 2,
+    "level": 0,
+    "exp": 0,
+    "power": 0,
+    "defend": 0,
+    "HP": 0,
+    "growRate": 0,
+    "ownTreasures": []
+  },
+  {
+    "__type__": "天道之子模板",
+    "name": "龙傲天",
+    "heavenSonDemoId": 1,
+    "worldType": "",
+    "minPower": 2,
+    "maxPower": 3,
+    "minDefend": 4,
+    "maxDefend": 5,
+    "HP": 0,
+    "minGrowRate": 0,
+    "maxGrowRate": 0,
+    "quality": 5,
+    "staticImage": {
+      "__uuid__": "09da2286-c152-44a0-a5fe-c327e102c8a9"
+    },
+    "e_headPortrait": {
+      "__uuid__": "91af0fdd-a508-4bd2-9799-e59889ee6083"
+    }
+  },
+  {
+    "__type__": "天道之子",
+    "heavenSonDemo": {
+      "__id__": 270
+    },
+    "name": "敖丙",
+    "heavenSonId": 3,
+    "level": 0,
+    "exp": 0,
+    "power": 0,
+    "defend": 0,
+    "HP": 0,
+    "growRate": 0,
+    "ownTreasures": []
+  },
+  {
+    "__type__": "天道之子模板",
+    "name": "敖丙",
+    "heavenSonDemoId": 2,
+    "worldType": "",
+    "minPower": 0,
+    "maxPower": 0,
+    "minDefend": 0,
+    "maxDefend": 0,
+    "HP": 0,
+    "minGrowRate": 0,
+    "maxGrowRate": 0,
+    "quality": 0,
+    "staticImage": {
+      "__uuid__": "f619fc68-be3e-488b-b7f9-28dcf9c5ff25"
+    },
+    "e_headPortrait": {
+      "__uuid__": "e4993e4e-764e-4124-932c-2a64e96529d6"
+    }
   },
   {
     "__type__": "cc.Node",
@@ -12579,7 +12661,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 268
+        "__id__": 272
       }
     ],
     "_prefab": null,
@@ -12635,18 +12717,18 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 267
+      "__id__": 271
     },
     "_enabled": true,
     "sons": [
       {
-        "__id__": 269
+        "__id__": 273
       },
       {
-        "__id__": 270
+        "__id__": 274
       },
       {
-        "__id__": 271
+        "__id__": 275
       }
     ],
     "_id": "1b3ZyZUx1OxJExoqQbXRZg"
@@ -12722,7 +12804,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 273
+        "__id__": 277
       }
     ],
     "_prefab": null,
@@ -12778,15 +12860,15 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 272
+      "__id__": 276
     },
     "_enabled": true,
     "treasures": [
       {
-        "__id__": 274
+        "__id__": 278
       },
       {
-        "__id__": 275
+        "__id__": 279
       }
     ],
     "_id": "bcmj8YXkxM9rln2rtWJGHH"
@@ -12832,7 +12914,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 277
+        "__id__": 281
       }
     ],
     "_prefab": null,
@@ -12888,11 +12970,83 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 276
+      "__id__": 280
     },
     "_enabled": true,
     "monsters": [],
     "_id": "b6Hj9XkfVDApeAdPS9zWMp"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "清空数据缓存",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 283
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "8afFRRPJdP2rqMOg2mb9cL"
+  },
+  {
+    "__type__": "0d180wN+HdKGZc+GH0NN+Rl",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 282
+    },
+    "_enabled": true,
+    "_id": "a1ZD9z2vFGzoT4yX8m9Kab"
   },
   {
     "__type__": "cc.Node",
@@ -12902,10 +13056,10 @@
       "__id__": 1
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
-        "__id__": 279
+        "__id__": 285
       }
     ],
     "_prefab": null,
@@ -12961,7 +13115,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 278
+      "__id__": 284
     },
     "_enabled": true,
     "_id": "ef76qHR0tGbLHk7CP4MecR"
