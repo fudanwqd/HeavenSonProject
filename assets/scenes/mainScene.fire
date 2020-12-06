@@ -5351,7 +5351,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c548po7kBOrrM9oXQstLwa"
+    "_id": "53DyHqDNhA/r5IlpkGjBVX"
   },
   {
     "__type__": "cc.Label",
@@ -5385,7 +5385,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "737GGb4s1LyI0do2+BHINB"
+    "_id": "65rjg/BbJEGK61phaTXvPl"
   },
   {
     "__type__": "cc.RichText",
@@ -5773,7 +5773,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "93M0chym5Pq515VZR/kqcE"
+    "_id": "c5DECxlexNu5RkWESRu3bx"
   },
   {
     "__type__": "cc.Label",
@@ -5807,7 +5807,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "efzQ2734NCK5bmwHoOFRhx"
+    "_id": "3bwSi/iIdGmaymiN2D6OIP"
   },
   {
     "__type__": "cc.RichText",
@@ -5957,7 +5957,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "52tdSpJFRET65DCFJ3AlmM"
+    "_id": "e94GFTyTlNx78Kb1mwjRIq"
   },
   {
     "__type__": "cc.Label",
@@ -5991,7 +5991,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "fbHhFVaXtAQ4DG4yXd1ETZ"
+    "_id": "96v4meYhhM2Kr+2NWwWlBH"
   },
   {
     "__type__": "cc.RichText",
@@ -6141,7 +6141,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "3cuKkCyIVAB7DQx/T2g++r"
+    "_id": "e5rrQm7cxGTIM+9DoWmCs6"
   },
   {
     "__type__": "cc.Label",
@@ -6175,7 +6175,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "b3QA92IctLgbGq9tGo0gfd"
+    "_id": "89RL47DOxLMpQWSh6ELv0h"
   },
   {
     "__type__": "cc.RichText",
@@ -6752,7 +6752,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "5ctv7JptFJZ4P8fmZNJGm4"
+    "_id": "580Dn5icFM8YEUybqe8dbZ"
   },
   {
     "__type__": "cc.Label",
@@ -6786,7 +6786,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "6fw5cAxSBMm7uy7GkwbuAp"
+    "_id": "97uhyNA/RGoJ+eX6Ac7Cd+"
   },
   {
     "__type__": "cc.RichText",
@@ -7392,7 +7392,7 @@
     },
     "component": "",
     "_componentId": "a55a04FrulM65FNDAC+DAwt",
-    "handler": "changeSceneExpedition2",
+    "handler": "changeSceneExper",
     "customEventData": "expedition"
   },
   {
