@@ -64,7 +64,6 @@ cc.Class({
 
     removeAllStorage(){
         cc.sys.localStorage.clear();
-        
     }
 
 

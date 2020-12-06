@@ -76,12 +76,17 @@ cc.Class({
         this.userData = this.game.userData;        
         this.name = this.havenSonInstance.name;
 
+        this.totalHP = this.havenSonInstance.HP;
+        this.power = this.havenSonInstance.power;
+        this.defend = this.defend;
+        this.hp = this.totalHP;
+
         // 设置更新用户的属性
         this.treasures = this.havenSonInstance.ownTreasures;
         this.treasures.forEach(element => {
-            this.totalHP = this.havenSonInstance.HP + element.HP;
-            this.power = this.havenSonInstance.power + element.power;
-            this.defend = this.havenSonInstance.defend + element.defend;
+            this.totalHP += element.HP;
+            this.power += element.power;
+            this.defend += element.defend;
             this.hp = this.totalHP;
         });
 

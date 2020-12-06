@@ -46,6 +46,7 @@ cc.Class({
         this.userData = this.game.userData;
         this.treasuresLen = cc.find('灵宝s').getComponent('TreasureDB').treasures.length;
         this.havenSonInstance = this.userData.getChildByID(this.userData.fighterID);
+        console.log(this.havenSonInstance);
 
         this.victory = false;
         
