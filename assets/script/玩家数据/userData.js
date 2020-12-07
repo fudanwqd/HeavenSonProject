@@ -99,6 +99,10 @@ cc.Class({
         cc.sys.localStorage.setItem(dataName, JSON.stringify(decycled));
     },
     onLoad(){
+        // //清空数据缓存 一次性使用需删去
+        // clearDataS = cc.find("清空数据缓存").getComponent("e_clearData");
+        // clearDataS.clearData();
+
         // 将数据从已有数据开始进行初始化，如果localstorage中有数据，则使用localstorage数据，否则使用默认数据
 
         cc.log("userdata onload!");

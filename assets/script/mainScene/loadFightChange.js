@@ -39,7 +39,7 @@ cc.Class({
             cc.log("fightScene preloaded");
         })
 
-        cc.game.addPersistRootNode(this.comfirmNode);
+        // cc.game.addPersistRootNode(this.comfirmNode);
      },
 
      changeTaiXuSceneFight(){

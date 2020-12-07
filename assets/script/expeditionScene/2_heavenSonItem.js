@@ -29,9 +29,9 @@ cc.Class({
 
         this.heavenSon = son;
 
-        sf = this.sfManager.staticImages[son.heavenSonDemo.heavenSonDemoId];
+        // sf = this.sfManager.staticImages[son.heavenSonDemo.heavenSonDemoId]; 不用sf管理，用主界面的数据
+        sf = son.heavenSonDemo.staticImage;
         this.heavenSonPNode.getComponent(cc.Sprite).spriteFrame = sf;
-        // this.heavenSonPNode.getComponent(cc.Sprite).spriteFrame = this.sfManager.staticImages[son.heavenSonId];//模板id，待改.......
         this.nameNode.getComponent(cc.Label).string = son.name;
         this.chooseNode.active = false;
 
@@ -44,11 +44,11 @@ cc.Class({
 
     touch(){
         this.bgmManager.playBtnClickM();//playBGM()
-        this.chooseNode.active = true;
         if(this.chooseSonBtnCtr.choosenSonNodeS!=null){
             this.chooseSonBtnCtr.choosenSonNodeS.cancelChoose();//上一个取消选择
         }
         this.chooseSonBtnCtr.choosenSonNodeS =this;//选择这一个
+        this.chooseNode.active = true;
     }
 
     // update (dt) {},

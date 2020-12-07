@@ -44,6 +44,7 @@ cc.Class({
 
     //渲染并显示当前界面
     showHarvestWin () {
+        this.bgmManager = cc.find("bgmManager").getComponent("2_bgmManager");//
         this.bgmManager.playBtnClickM();//playBGM()
         this.mainCtr = this.showCtrNode.getComponent("2_showControl");
         this.heavenSon = this.mainCtr.currentSlot.heavenSon;//获得当前历练结束的正在收获的天道之子heavenSon

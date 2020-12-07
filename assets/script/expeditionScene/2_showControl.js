@@ -100,8 +100,9 @@ cc.Class({
         this.schedule(function() {
             // 这里的 this 指向 component
             if(!this.currentSlot.isEmpty){
-                i = this.currentSlot.heavenSon.heavenSonDemo.heavenSonDemoId;
-                sf = this.sfManager.staticImages[i];
+                // i = this.currentSlot.heavenSon.heavenSonDemo.heavenSonDemoId;
+                // sf = this.sfManager.staticImages[i];不用sf管理，用主界面的数据
+                sf = this.currentSlot.heavenSon.heavenSonDemo.staticImage;
             }else{
                 sf = null;
             }
@@ -251,7 +252,7 @@ cc.Class({
         nowTime = new Date();
         timespan = nowTime - startTime;
         hour = Math.floor(timespan / 1000 / 60 / 60);
-        minute = Math.floor(timespan / 1000 / 60 - hour * 60);
+        minute = Math.floor(timespan / 1000 / 60 - hour * 60)+hour * 60;
         second = timespan / 1000 - hour * 60 * 60 - minute * 60;
         return {'minute':minute,'second':second};
     },

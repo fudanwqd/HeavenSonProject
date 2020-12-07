@@ -12648,7 +12648,9 @@
     "staticImage": {
       "__uuid__": "1477222b-6026-4fd4-962d-7a6668d6d271"
     },
-    "e_headPortrait": null
+    "e_headPortrait": {
+      "__uuid__": "e4993e4e-764e-4124-932c-2a64e96529d6"
+    }
   },
   {
     "__type__": "灵宝",
@@ -14090,7 +14092,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "test",
+    "_name": "清空数据缓存",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
