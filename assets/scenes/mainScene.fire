@@ -41,22 +41,22 @@
         "__id__": 261
       },
       {
-        "__id__": 276
-      },
-      {
-        "__id__": 280
-      },
-      {
-        "__id__": 271
-      },
-      {
-        "__id__": 263
+        "__id__": 278
       },
       {
         "__id__": 282
       },
       {
+        "__id__": 273
+      },
+      {
+        "__id__": 263
+      },
+      {
         "__id__": 284
+      },
+      {
+        "__id__": 286
       }
     ],
     "_active": true,
@@ -838,7 +838,7 @@
       "array": [
         0,
         0,
-        317.0778921827688,
+        267.9049639465157,
         0,
         0,
         0,
@@ -5354,7 +5354,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "93kGdP6UZLkIIg7lujxAtx"
+    "_id": "aaaj8X+OtIzYd/sVxffDl9"
   },
   {
     "__type__": "cc.Label",
@@ -5388,7 +5388,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "438rxaWuFAPY6MWlsADg05"
+    "_id": "865FlwNGxGwqoyxHkssyTM"
   },
   {
     "__type__": "cc.RichText",
@@ -5776,7 +5776,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "a2v3HYBlFF6rPZApCNbY+i"
+    "_id": "f6hpOV8wxL8YwHvEGnSmeK"
   },
   {
     "__type__": "cc.Label",
@@ -5810,7 +5810,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "953Vtq1HFKjap7YlLvRryp"
+    "_id": "3aMSAQCcRFIaZQawNH9NG5"
   },
   {
     "__type__": "cc.RichText",
@@ -5960,7 +5960,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "39KH+yodZF6ZiiGzlxYfh8"
+    "_id": "eal6nrTFNN5ouNI9m5i5at"
   },
   {
     "__type__": "cc.Label",
@@ -5994,7 +5994,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "d7xuELbWtDOYNs5negwee/"
+    "_id": "35DRZ32edG87b/6FQmEKR6"
   },
   {
     "__type__": "cc.RichText",
@@ -6144,7 +6144,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "5b+8cXhiRAa6ABAQjjdy/p"
+    "_id": "efMS51EiNDBpx40lbznEwD"
   },
   {
     "__type__": "cc.Label",
@@ -6178,7 +6178,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "a1k3vvDXtDEamezI4sJrok"
+    "_id": "ddB3z754tA4JCl2u4Qm0pS"
   },
   {
     "__type__": "cc.RichText",
@@ -6755,7 +6755,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "f9l1lbjsNMCrDEwnpy6TtZ"
+    "_id": "bfcgTNDQRDu5kHA+FOW7IY"
   },
   {
     "__type__": "cc.Label",
@@ -6789,7 +6789,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "0fuwxFcRpArp/Cx+DvMAV2"
+    "_id": "e36ycSwRFDErs+bHpL8HKw"
   },
   {
     "__type__": "cc.RichText",
@@ -12443,13 +12443,13 @@
       "__id__": 263
     },
     "HeavenSonDatabaseNode": {
-      "__id__": 271
+      "__id__": 273
     },
     "TreasureDatabaseNode": {
-      "__id__": 276
+      "__id__": 278
     },
     "MonsterDatabaseNode": {
-      "__id__": 280
+      "__id__": 282
     },
     "_id": "3cVV3HhfdPErc6ZHtRqk0c"
   },
@@ -12540,7 +12540,11 @@
         "__id__": 269
       }
     ],
-    "treasures": [],
+    "treasures": [
+      {
+        "__id__": 271
+      }
+    ],
     "expBase": 100,
     "maxLevel": 100,
     "_id": "e9ervPiqRI5pWtaurc5Nty"
@@ -12651,6 +12655,36 @@
     }
   },
   {
+    "__type__": "灵宝",
+    "treasureDemo": {
+      "__id__": 272
+    },
+    "treasureId": 1,
+    "power": 4,
+    "defend": 5,
+    "HP": 25,
+    "isInWorld": false
+  },
+  {
+    "__type__": "灵宝模板",
+    "name": "测试灵宝",
+    "treasurDemoId": 1,
+    "type": "仙界",
+    "minPower": 4,
+    "maxPower": 6,
+    "minDefend": 4,
+    "maxDefend": 6,
+    "minHP": 20,
+    "maxHP": 30,
+    "quality": 6,
+    "minCosttTime": 300,
+    "maxCostTime": 600,
+    "staticImage": {
+      "__uuid__": "8d5d616f-d44f-4cf8-ae08-de8366a4f201"
+    },
+    "e_headPortrait": null
+  },
+  {
     "__type__": "cc.Node",
     "_name": "天道之子s",
     "_objFlags": 0,
@@ -12661,7 +12695,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 272
+        "__id__": 274
       }
     ],
     "_prefab": null,
@@ -12717,18 +12751,18 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 271
+      "__id__": 273
     },
     "_enabled": true,
     "sons": [
       {
-        "__id__": 273
-      },
-      {
-        "__id__": 274
-      },
-      {
         "__id__": 275
+      },
+      {
+        "__id__": 276
+      },
+      {
+        "__id__": 277
       }
     ],
     "_id": "1b3ZyZUx1OxJExoqQbXRZg"
@@ -12804,7 +12838,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 277
+        "__id__": 279
       }
     ],
     "_prefab": null,
@@ -12860,15 +12894,15 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 276
+      "__id__": 278
     },
     "_enabled": true,
     "treasures": [
       {
-        "__id__": 278
+        "__id__": 280
       },
       {
-        "__id__": 279
+        "__id__": 281
       }
     ],
     "_id": "bcmj8YXkxM9rln2rtWJGHH"
@@ -12886,7 +12920,11 @@
     "maxHP": 5,
     "quality": 9,
     "minCosttTime": 0,
-    "maxCostTime": 0
+    "maxCostTime": 0,
+    "staticImage": {
+      "__uuid__": "8d5d616f-d44f-4cf8-ae08-de8366a4f201"
+    },
+    "e_headPortrait": null
   },
   {
     "__type__": "灵宝模板",
@@ -12901,84 +12939,13 @@
     "maxHP": 4,
     "quality": 8,
     "minCosttTime": 0,
-    "maxCostTime": 0
+    "maxCostTime": 0,
+    "staticImage": null,
+    "e_headPortrait": null
   },
   {
     "__type__": "cc.Node",
     "_name": "怪物s",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 1
-    },
-    "_children": [],
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 281
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_trs": {
-      "__type__": "TypedArray",
-      "ctor": "Float64Array",
-      "array": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "_groupIndex": 0,
-    "groupIndex": 0,
-    "_id": "01rQ1If+VMCKlmrhFmI3SZ"
-  },
-  {
-    "__type__": "e0923YxXsNEO5vHV8Bl5tqk",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 280
-    },
-    "_enabled": true,
-    "monsters": [],
-    "_id": "b6Hj9XkfVDApeAdPS9zWMp"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "清空数据缓存",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -13036,6 +13003,79 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
+    "_id": "01rQ1If+VMCKlmrhFmI3SZ"
+  },
+  {
+    "__type__": "e0923YxXsNEO5vHV8Bl5tqk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 282
+    },
+    "_enabled": true,
+    "monsters": [],
+    "_id": "b6Hj9XkfVDApeAdPS9zWMp"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "清空数据缓存",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 285
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
     "_id": "8afFRRPJdP2rqMOg2mb9cL"
   },
   {
@@ -13043,7 +13083,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 282
+      "__id__": 284
     },
     "_enabled": true,
     "_id": "a1ZD9z2vFGzoT4yX8m9Kab"
@@ -13059,7 +13099,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 285
+        "__id__": 287
       }
     ],
     "_prefab": null,
@@ -13115,7 +13155,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 284
+      "__id__": 286
     },
     "_enabled": true,
     "_id": "ef76qHR0tGbLHk7CP4MecR"
