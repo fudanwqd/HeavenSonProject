@@ -41,19 +41,22 @@
         "__id__": 261
       },
       {
-        "__id__": 312
-      },
-      {
-        "__id__": 332
-      },
-      {
         "__id__": 278
+      },
+      {
+        "__id__": 282
+      },
+      {
+        "__id__": 273
       },
       {
         "__id__": 263
       },
       {
-        "__id__": 334
+        "__id__": 284
+      },
+      {
+        "__id__": 286
       }
     ],
     "_active": true,
@@ -835,7 +838,7 @@
       "array": [
         0,
         0,
-        213.95157864784537,
+        267.9049639465157,
         0,
         0,
         0,
@@ -5351,7 +5354,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "84ZJN11KtGp4Ah2JzsiMc8"
+    "_id": "aaaj8X+OtIzYd/sVxffDl9"
   },
   {
     "__type__": "cc.Label",
@@ -5385,7 +5388,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "6bOSeyBKpBHY07kOFEDjfX"
+    "_id": "865FlwNGxGwqoyxHkssyTM"
   },
   {
     "__type__": "cc.RichText",
@@ -5773,7 +5776,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "97z2M6pbtKYbnikW2790ML"
+    "_id": "f6hpOV8wxL8YwHvEGnSmeK"
   },
   {
     "__type__": "cc.Label",
@@ -5807,7 +5810,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "4agWyokE1BQKspDcVlV6fD"
+    "_id": "3aMSAQCcRFIaZQawNH9NG5"
   },
   {
     "__type__": "cc.RichText",
@@ -5957,7 +5960,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "85FQknzoNOr7OEr4qLPRiB"
+    "_id": "eal6nrTFNN5ouNI9m5i5at"
   },
   {
     "__type__": "cc.Label",
@@ -5991,7 +5994,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "f38E+kxXtOs4Y6U5kT+YI1"
+    "_id": "35DRZ32edG87b/6FQmEKR6"
   },
   {
     "__type__": "cc.RichText",
@@ -6141,7 +6144,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "66CSW9+ZRAZoq8N5AWqViV"
+    "_id": "efMS51EiNDBpx40lbznEwD"
   },
   {
     "__type__": "cc.Label",
@@ -6175,7 +6178,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "0a50eLqntK75ILnnS3OIc2"
+    "_id": "ddB3z754tA4JCl2u4Qm0pS"
   },
   {
     "__type__": "cc.RichText",
@@ -6752,7 +6755,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "41ub3/CaVIc7zEyUHc5i7r"
+    "_id": "bfcgTNDQRDu5kHA+FOW7IY"
   },
   {
     "__type__": "cc.Label",
@@ -6786,7 +6789,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "f0/PlL6JVCv5G/611HBKSO"
+    "_id": "e36ycSwRFDErs+bHpL8HKw"
   },
   {
     "__type__": "cc.RichText",
@@ -12440,13 +12443,13 @@
       "__id__": 263
     },
     "HeavenSonDatabaseNode": {
-      "__id__": 278
+      "__id__": 273
     },
     "TreasureDatabaseNode": {
-      "__id__": 312
+      "__id__": 278
     },
     "MonsterDatabaseNode": {
-      "__id__": 332
+      "__id__": 282
     },
     "_id": "3cVV3HhfdPErc6ZHtRqk0c"
   },
@@ -12540,6 +12543,11 @@
     "treasures": [
       {
         "__id__": 276
+      }
+    ],
+    "treasures": [
+      {
+        "__id__": 271
       }
     ],
     "expBase": 100,
@@ -12760,6 +12768,36 @@
     }
   },
   {
+    "__type__": "灵宝",
+    "treasureDemo": {
+      "__id__": 272
+    },
+    "treasureId": 1,
+    "power": 4,
+    "defend": 5,
+    "HP": 25,
+    "isInWorld": false
+  },
+  {
+    "__type__": "灵宝模板",
+    "name": "测试灵宝",
+    "treasurDemoId": 1,
+    "type": "仙界",
+    "minPower": 4,
+    "maxPower": 6,
+    "minDefend": 4,
+    "maxDefend": 6,
+    "minHP": 20,
+    "maxHP": 30,
+    "quality": 6,
+    "minCosttTime": 300,
+    "maxCostTime": 600,
+    "staticImage": {
+      "__uuid__": "8d5d616f-d44f-4cf8-ae08-de8366a4f201"
+    },
+    "e_headPortrait": null
+  },
+  {
     "__type__": "cc.Node",
     "_name": "天道之子s",
     "_objFlags": 0,
@@ -12770,7 +12808,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 279
+        "__id__": 274
       }
     ],
     "_prefab": null,
@@ -12826,105 +12864,18 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 278
+      "__id__": 273
     },
     "_enabled": true,
     "sons": [
       {
-        "__id__": 280
+        "__id__": 275
       },
       {
-        "__id__": 281
+        "__id__": 276
       },
       {
-        "__id__": 282
-      },
-      {
-        "__id__": 283
-      },
-      {
-        "__id__": 284
-      },
-      {
-        "__id__": 285
-      },
-      {
-        "__id__": 286
-      },
-      {
-        "__id__": 287
-      },
-      {
-        "__id__": 288
-      },
-      {
-        "__id__": 289
-      },
-      {
-        "__id__": 290
-      },
-      {
-        "__id__": 291
-      },
-      {
-        "__id__": 292
-      },
-      {
-        "__id__": 293
-      },
-      {
-        "__id__": 294
-      },
-      {
-        "__id__": 295
-      },
-      {
-        "__id__": 296
-      },
-      {
-        "__id__": 297
-      },
-      {
-        "__id__": 298
-      },
-      {
-        "__id__": 299
-      },
-      {
-        "__id__": 300
-      },
-      {
-        "__id__": 301
-      },
-      {
-        "__id__": 302
-      },
-      {
-        "__id__": 303
-      },
-      {
-        "__id__": 304
-      },
-      {
-        "__id__": 305
-      },
-      {
-        "__id__": 306
-      },
-      {
-        "__id__": 307
-      },
-      {
-        "__id__": 308
-      },
-      {
-        "__id__": 309
-      },
-      {
-        "__id__": 310
-      },
-      {
-        "__id__": 311
+        "__id__": 277
       }
     ],
     "_id": "1b3ZyZUx1OxJExoqQbXRZg"
@@ -12990,20 +12941,32 @@
     }
   },
   {
-    "__type__": "天道之子模板",
-    "name": "周水清",
-    "heavenSonDemoId": 3,
-    "worldType": "人界",
-    "minPower": 999,
-    "maxPower": 9999,
-    "minDefend": 999,
-    "maxDefend": 9999,
-    "HP": 9999,
-    "minGrowRate": 100,
-    "maxGrowRate": 999,
-    "quality": 99,
-    "staticImage": {
-      "__uuid__": "67ce8959-99d2-4711-8a40-c1c13f9a923a"
+    "__type__": "cc.Node",
+    "_name": "灵宝s",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 279
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
     },
     "e_headPortrait": {
       "__uuid__": "67ce8959-99d2-4711-8a40-c1c13f9a923a"
@@ -13070,44 +13033,41 @@
     }
   },
   {
-    "__type__": "天道之子模板",
-    "name": "明康平",
-    "heavenSonDemoId": 7,
-    "worldType": "人界",
-    "minPower": 40,
-    "maxPower": 60,
-    "minDefend": 20,
-    "maxDefend": 100,
-    "HP": 100,
-    "minGrowRate": 0,
-    "maxGrowRate": 0,
-    "quality": 4,
-    "staticImage": {
-      "__uuid__": "156bf77a-5f1d-4a65-bb1f-573fc352f873"
+    "__type__": "d6e29ZnX8dL3K7jk5PgoX7Y",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 278
     },
-    "e_headPortrait": {
-      "__uuid__": "156bf77a-5f1d-4a65-bb1f-573fc352f873"
-    }
+    "_enabled": true,
+    "treasures": [
+      {
+        "__id__": 280
+      },
+      {
+        "__id__": 281
+      }
+    ],
+    "_id": "bcmj8YXkxM9rln2rtWJGHH"
   },
   {
-    "__type__": "天道之子模板",
-    "name": "毕俊杰",
-    "heavenSonDemoId": 8,
-    "worldType": "人界",
-    "minPower": 30,
-    "maxPower": 90,
-    "minDefend": 50,
-    "maxDefend": 60,
-    "HP": 130,
-    "minGrowRate": 0,
-    "maxGrowRate": 1.5,
-    "quality": 5,
+    "__type__": "灵宝模板",
+    "name": "昆仑镜",
+    "treasurDemoId": 0,
+    "type": "仙界",
+    "minPower": 3,
+    "maxPower": 5,
+    "minDefend": 3,
+    "maxDefend": 5,
+    "minHP": 3,
+    "maxHP": 5,
+    "quality": 9,
+    "minCosttTime": 0,
+    "maxCostTime": 0,
     "staticImage": {
-      "__uuid__": "08461520-c8f2-499c-b69b-14ebb5070555"
+      "__uuid__": "8d5d616f-d44f-4cf8-ae08-de8366a4f201"
     },
-    "e_headPortrait": {
-      "__uuid__": "08461520-c8f2-499c-b69b-14ebb5070555"
-    }
+    "e_headPortrait": null
   },
   {
     "__type__": "天道之子模板",
@@ -13382,192 +13342,10 @@
     "minGrowRate": 0.2,
     "maxGrowRate": 0.5,
     "quality": 8,
-    "staticImage": {
-      "__uuid__": "a85dce7f-752d-4e73-abdf-4fc212f07b53"
-    },
-    "e_headPortrait": {
-      "__uuid__": "a85dce7f-752d-4e73-abdf-4fc212f07b53"
-    }
-  },
-  {
-    "__type__": "天道之子模板",
-    "name": "后欣畅",
-    "heavenSonDemoId": 22,
-    "worldType": "神界",
-    "minPower": 25,
-    "maxPower": 35,
-    "minDefend": 50,
-    "maxDefend": 150,
-    "HP": 187,
-    "minGrowRate": 0.3,
-    "maxGrowRate": 0.5,
-    "quality": 6,
-    "staticImage": {
-      "__uuid__": "3c8d5221-9ddc-4c84-8cf0-7822327e9729"
-    },
-    "e_headPortrait": {
-      "__uuid__": "3c8d5221-9ddc-4c84-8cf0-7822327e9729"
-    }
-  },
-  {
-    "__type__": "天道之子模板",
-    "name": "松宏儒",
-    "heavenSonDemoId": 23,
-    "worldType": "神界",
-    "minPower": 40,
-    "maxPower": 55,
-    "minDefend": 60,
-    "maxDefend": 140,
-    "HP": 160,
-    "minGrowRate": 0.4,
-    "maxGrowRate": 0.5,
-    "quality": 6,
-    "staticImage": {
-      "__uuid__": "f1b574a8-a9ad-4112-aa4f-0285624d12a5"
-    },
-    "e_headPortrait": {
-      "__uuid__": "f1b574a8-a9ad-4112-aa4f-0285624d12a5"
-    }
-  },
-  {
-    "__type__": "天道之子模板",
-    "name": "解修竹",
-    "heavenSonDemoId": 24,
-    "worldType": "神界",
-    "minPower": 60,
-    "maxPower": 75,
-    "minDefend": 65,
-    "maxDefend": 80,
-    "HP": 160,
-    "minGrowRate": 0.4,
-    "maxGrowRate": 0.6,
-    "quality": 7,
-    "staticImage": {
-      "__uuid__": "b4a68c7b-c2f3-4ee1-a914-718ab400b2c8"
-    },
-    "e_headPortrait": {
-      "__uuid__": "b4a68c7b-c2f3-4ee1-a914-718ab400b2c8"
-    }
-  },
-  {
-    "__type__": "天道之子模板",
-    "name": "佘佴问儿",
-    "heavenSonDemoId": 25,
-    "worldType": "魔界",
-    "minPower": 80,
-    "maxPower": 94,
-    "minDefend": 23,
-    "maxDefend": 100,
-    "HP": 125,
-    "minGrowRate": 0.6,
-    "maxGrowRate": 0.7,
-    "quality": 8,
-    "staticImage": {
-      "__uuid__": "89db381f-dbe1-4f24-868c-dec4e9bc3095"
-    },
-    "e_headPortrait": {
-      "__uuid__": "89db381f-dbe1-4f24-868c-dec4e9bc3095"
-    }
-  },
-  {
-    "__type__": "天道之子模板",
-    "name": "左丘梓萱",
-    "heavenSonDemoId": 26,
-    "worldType": "魔界",
-    "minPower": 70,
-    "maxPower": 86,
-    "minDefend": 34,
-    "maxDefend": 90,
-    "HP": 130,
-    "minGrowRate": 0.5,
-    "maxGrowRate": 0.7,
-    "quality": 8,
-    "staticImage": {
-      "__uuid__": "e7a0c00c-5e88-4d31-a60b-6749f97b244a"
-    },
-    "e_headPortrait": {
-      "__uuid__": "e7a0c00c-5e88-4d31-a60b-6749f97b244a"
-    }
-  },
-  {
-    "__type__": "天道之子模板",
-    "name": "武绍元",
-    "heavenSonDemoId": 27,
-    "worldType": "魔界",
-    "minPower": 13,
-    "maxPower": 24,
-    "minDefend": 90,
-    "maxDefend": 200,
-    "HP": 198,
-    "minGrowRate": 0.4,
-    "maxGrowRate": 0.6,
-    "quality": 7,
-    "staticImage": {
-      "__uuid__": "48cd94d7-5313-4af6-b235-b3fb58332482"
-    },
-    "e_headPortrait": {
-      "__uuid__": "48cd94d7-5313-4af6-b235-b3fb58332482"
-    }
-  },
-  {
-    "__type__": "天道之子模板",
-    "name": "祁永安",
-    "heavenSonDemoId": 28,
-    "worldType": "魔界",
-    "minPower": 40,
-    "maxPower": 60,
-    "minDefend": 90,
-    "maxDefend": 93,
-    "HP": 177,
-    "minGrowRate": 0.4,
-    "maxGrowRate": 0.6,
-    "quality": 7,
-    "staticImage": {
-      "__uuid__": "34cf5965-cccd-4976-8982-739f0ebb4a7a"
-    },
-    "e_headPortrait": {
-      "__uuid__": "34cf5965-cccd-4976-8982-739f0ebb4a7a"
-    }
-  },
-  {
-    "__type__": "天道之子模板",
-    "name": "蝶客",
-    "heavenSonDemoId": 29,
-    "worldType": "魔界",
-    "minPower": 70,
-    "maxPower": 89,
-    "minDefend": 50,
-    "maxDefend": 100,
-    "HP": 157,
-    "minGrowRate": 0.4,
-    "maxGrowRate": 0.7,
-    "quality": 6,
-    "staticImage": {
-      "__uuid__": "88dad533-d9d7-44a5-9235-28f302fb7435"
-    },
-    "e_headPortrait": {
-      "__uuid__": "88dad533-d9d7-44a5-9235-28f302fb7435"
-    }
-  },
-  {
-    "__type__": "天道之子模板",
-    "name": "邓小月",
-    "heavenSonDemoId": 30,
-    "worldType": "人界",
-    "minPower": 60,
-    "maxPower": 100,
-    "minDefend": 80,
-    "maxDefend": 100,
-    "HP": 199.1,
-    "minGrowRate": 0.9,
-    "maxGrowRate": 1,
-    "quality": 9,
-    "staticImage": {
-      "__uuid__": "41e633dc-ff06-470c-8b30-6d40fa10736e"
-    },
-    "e_headPortrait": {
-      "__uuid__": "41e633dc-ff06-470c-8b30-6d40fa10736e"
-    }
+    "minCosttTime": 0,
+    "maxCostTime": 0,
+    "staticImage": null,
+    "e_headPortrait": null
   },
   {
     "__type__": "cc.Node",
@@ -13580,7 +13358,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 313
+        "__id__": 283
       }
     ],
     "_prefab": null,
@@ -13636,7 +13414,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 312
+      "__id__": 282
     },
     "_enabled": true,
     "treasures": [
@@ -14028,7 +13806,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 333
+        "__id__": 285
       }
     ],
     "_prefab": null,
@@ -14084,7 +13862,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 332
+      "__id__": 284
     },
     "_enabled": true,
     "monsters": [],
@@ -14101,7 +13879,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 335
+        "__id__": 287
       }
     ],
     "_prefab": null,
@@ -14157,7 +13935,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 334
+      "__id__": 286
     },
     "_enabled": true,
     "_id": "ef76qHR0tGbLHk7CP4MecR"

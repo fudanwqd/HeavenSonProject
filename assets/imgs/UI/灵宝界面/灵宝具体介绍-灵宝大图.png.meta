@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "eadbbd0c-cb6e-4eb9-b5b6-9339e51e4d8d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 199,
+  "height": 206,
+  "platformSettings": {},
+  "subMetas": {
+    "灵宝具体介绍-灵宝大图": {
+      "ver": "1.0.4",
+      "uuid": "8d5d616f-d44f-4cf8-ae08-de8366a4f201",
+      "rawTextureUuid": "eadbbd0c-cb6e-4eb9-b5b6-9339e51e4d8d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 199,
+      "height": 206,
+      "rawWidth": 199,
+      "rawHeight": 206,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

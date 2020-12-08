@@ -6,15 +6,13 @@ var Treasure = cc.Class({
            type : require("../静态数据/TreasureDemo"),
        },
        treasureId:cc.Integer,
-       name: cc.String,
-       level : cc.Integer,
+    //    level : cc.Integer,
        power : cc.Integer,
        defend: cc.Integer,
        HP    : cc.Integer,
+       isInWorld : cc.Boolean,
     }
 }) 
-
-
 var HeavenSon = cc.Class({
     name : '天道之子',
     properties :{
@@ -38,7 +36,7 @@ var HeavenSon = cc.Class({
        
     }
 })
-
+//能跨文件夹调用类吗
 
 
 cc.Class({
@@ -88,7 +86,20 @@ cc.Class({
         },
 
     },
-
+// 删除数组指定元素
+    arrRemove(it, arr) {
+        if (!arr || arr.length == 0) {
+            return ""
+        }
+        let flag = arr.indexOf(it)
+        if (flag > -1) {
+            arr.splice(flag, 1)
+            return arr
+        } else {
+            console.log("未查找到该元素")
+        }
+    },
+    
 
     getData(dataName){
         return JSON.parse(cc.sys.localStorage.getItem(dataName));
@@ -400,9 +411,6 @@ cc.Class({
     getAllOwnedTreasures(){
         return this.treasures;
     },
-    start () {
-
-    },
 
     updateHeavenSon(){
         this.setData("heavenSons",this.sons);
@@ -422,8 +430,18 @@ cc.Class({
     //将灵宝treasure从某界world中删除       （this.treasuresInWorld）
     deleteTreasureFromWorld(treasure,world){
         //...
-        this.treasuresInWorld[world].remove(treasure);
+        this.arrRemove(treasure,this.treasuresInWorld[world]);
+        // this.treasuresInWorld[world].removeItem(treasure);
         this.updateTreasureInWorld();
+    }, 
+    
+    removeTreasureFromWorldByID(treasureID,worldType){
+        this.treasuresInWorld[worldType].forEach(element => {
+            if(element.treasureId == treasureID){
+                this.arrRemove(element,this.treasuresInWorld[worldType]);
+            
+            }
+        })
     },
 
     //更新六界中的灵宝       （this.treasuresInWorld）
@@ -431,6 +449,8 @@ cc.Class({
         //...
         this.setData("treasuresInWorld",this.treasuresInWorld);
     },
+
+   
 
     // for test
     
@@ -441,6 +461,10 @@ cc.Class({
     //     return newHeavenSon;
     // }
 
+    setTreasuresInWorld(treasuresInWorld){
+        this.treasuresInWorld = treasuresInWorld;
+        this.updateTreasureInWorld();
+    },
 
     getRandomRange(min,max){
         return Math.floor(Math.random()*(max - min + 1)) + min; 
