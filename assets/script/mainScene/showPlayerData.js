@@ -43,7 +43,8 @@ cc.Class({
         // this.game.onLoad();
         // this.userData = this.game.userData;
         // // this.userData.onLoad();
-
+        cc.sys.localStorage.removeItem("heavenSons");//treasures
+        cc.sys.localStorage.removeItem("treasures");
         this.userData = cc.find("用户数据").getComponent("userData");//js脚本
         // console.log(this.stoneNumber);
         this.stoneNumber = this.stoneNumberNode.getComponent(cc.RichText);

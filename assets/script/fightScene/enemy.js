@@ -27,8 +27,8 @@ cc.Class({
     onLoad () {
         this.hp = 50;
         this.totalHP = 50;
-        this.power = 100;
-        this.defend = 10;
+        this.power = 350;
+        this.defend = 30;
 
 
         this.hpProgress = this.node.getChildByName('hp');
@@ -116,7 +116,7 @@ cc.Class({
 
         let dis = cc.Vec2.distance(e_pos, p_pos);
 
-        if(dis <= 100){//攻击距离
+        if(dis <= 125){//攻击距离
             // console.log("attack");
             
             this.moveLeft = false;

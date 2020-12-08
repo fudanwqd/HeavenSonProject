@@ -89,6 +89,8 @@ cc.Class({
 
 //         this.game = cc.find("game").getComponent("game");//game节点的game脚本
 //         this.userData = this.game.userData;
+        cc.sys.localStorage.removeItem("heavenSons");//treasures
+        cc.sys.localStorage.removeItem("treasures");
         this.userData = cc.find("用户数据").getComponent("userData");//js脚本
         this.userData.currentWorld = "仙界";
     },
@@ -232,6 +234,11 @@ cc.Class({
 
             this.userData.currentWorld = "魔界";
             }
+    },
+
+    clearData(){
+        cc.sys.localStorage.removeItem("heavenSons");//treasures
+        cc.sys.localStorage.removeItem("treasures");
     },
 
     // update (dt) {},

@@ -34,9 +34,9 @@ cc.Class({
         cc.director.preloadScene("treasureDisplayScene", function(){
             cc.log("treasureDisplayScene preloaded");
         })
-     },
+    },
 
-     changeSceneTreasure(){
+    changeSceneTreasure(){
         cc.log("应该切换到场景：treasureDisplayScene");
         cc.director.loadScene("treasureDisplayScene");
     },

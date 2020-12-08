@@ -36,7 +36,7 @@ cc.Class({
         cc.director.getPhysicsManager().enabled = true;
         // cc.director.getPhysicsManager().debugDrawFlags = true;
         cc.director.getCollisionManager().enabled = true;
-        cc.director.getCollisionManager().enabledDebugDraw = true;
+        // cc.director.getCollisionManager().enabledDebugDraw = true;
 
 
         this.enemies = this.node.getChildByName('enemies');
