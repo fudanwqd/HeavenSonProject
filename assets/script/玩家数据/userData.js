@@ -502,6 +502,7 @@ cc.Class({
         var treasureId = this.totalTreasureNum;
         this.setTotalTreasureNum(++treasureId);
         newTreasure.treasureId = treasureId;
+
         //根据随机数获得灵宝实例的攻击力和防御力
         newTreasure.power = this.getRandomRange(treasureDemo.minPower,treasureDemo.maxPower);
         newTreasure.defend = this.getRandomRange(treasureDemo.minDefend,treasureDemo.maxDefend);

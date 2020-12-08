@@ -43,7 +43,8 @@ cc.Class({
         // this.game.onLoad();
         // this.userData = this.game.userData;
         // // this.userData.onLoad();
-
+        cc.sys.localStorage.removeItem("heavenSons");//treasures
+        cc.sys.localStorage.removeItem("treasures");
         this.userData = cc.find("用户数据").getComponent("userData");//js脚本
         // console.log(this.stoneNumber);
         this.stoneNumber = this.stoneNumberNode.getComponent(cc.RichText);
@@ -62,6 +63,9 @@ cc.Class({
         this.currentExpe = this.currentExpeNode.getComponent(cc.RichText);
         this.currentExpe.string = "<color=#80aec2>" + this.fightSon.exp + " /</color>";
 
+        this.upgradeExpe = cc.find("Canvas/头像/战斗人物圆框/progressBar/升级所需经验").getComponent(cc.RichText);
+        this.upgradeExpe.string = "<color=#80aec2>" + this.fightSon.level *100 + "</color>";
+
         this.currentLevel = this.currentLevelNode.getComponent(cc.RichText);
         this.currentLevel.string = "<color=#80aec2>Lv." + this.fightSon.level + "</color>";
 
@@ -78,7 +82,7 @@ cc.Class({
         //经验条进度实现
         this.progressNode = cc.find("Canvas/头像/战斗人物圆框/progressBar");
         this.prog = this.progressNode.getComponent(cc.ProgressBar);
-        this.prog.progress = this.fightSon.exp/100;
+        this.prog.progress = this.fightSon.exp/(this.fightSon.level *100);
 
     },
 

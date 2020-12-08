@@ -3398,10 +3398,13 @@
       "__uuid__": "3beddff2-4b74-407f-8154-280982f472fe"
     },
     "victoryAudio": {
-      "__uuid__": "ead1ee55-3566-408d-87ca-4a085d655e9d"
+      "__uuid__": "8170e9bb-07db-46b1-9f8f-6b7f74c1303e"
     },
     "failAudio": {
-      "__uuid__": "d0b65797-aa41-48c1-bb92-7c8e23f6d4ac"
+      "__uuid__": "e55a2dff-7c82-473c-af9c-b5cfbb3cfa98"
+    },
+    "backgroundAudio": {
+      "__uuid__": "19e3d166-0228-4947-b244-ad3a94eae052"
     },
     "_id": "aabltm8zxD3Z1NDhdlRJvR"
   },

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "ee453446-c56e-4302-9ea0-cb9342a17dc0",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 115,
+  "height": 115,
+  "platformSettings": {},
+  "subMetas": {
+    "雌雄双股剑-雌": {
+      "ver": "1.0.4",
+      "uuid": "8f736b21-b91e-494c-8aa3-ba6ebfbe3c9c",
+      "rawTextureUuid": "ee453446-c56e-4302-9ea0-cb9342a17dc0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -6.5,
+      "offsetY": -4,
+      "trimX": 8,
+      "trimY": 8,
+      "width": 86,
+      "height": 107,
+      "rawWidth": 115,
+      "rawHeight": 115,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

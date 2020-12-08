@@ -150,11 +150,18 @@ cc.Class({
         totalHPLabel.string = this.totalHP;
         
         let header = this.show.getChildByName('header').getChildByName('header');
-        var url = 'imgs/' + this.name;
-        cc.resources.load(url,cc.SpriteFrame,function(err,spriteFrame)
-    　　{
-            header.getComponent(cc.Sprite).spriteFrame = spriteFrame;
-    　　});
+        let demo = this.havenSonInstance.heavenSonDemo;
+        console.log(demo);
+        header.getComponent(cc.Sprite).spriteFrame = demo.staticImage;
+
+        
+    //     var url = 'imgs/' + this.name;
+    //     cc.resources.load(url,cc.SpriteFrame,function(err,spriteFrame)
+    // 　　{
+    //         header.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+    // 　　});
+
+        
     },
 
 

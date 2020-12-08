@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "7283c111-46a5-415d-860e-a5b949d31cee",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 115,
+  "height": 115,
+  "platformSettings": {},
+  "subMetas": {
+    "统治法袍": {
+      "ver": "1.0.4",
+      "uuid": "b4fca31c-1da2-4216-a08c-a9b0f758fa62",
+      "rawTextureUuid": "7283c111-46a5-415d-860e-a5b949d31cee",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 115,
+      "height": 114,
+      "rawWidth": 115,
+      "rawHeight": 115,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
