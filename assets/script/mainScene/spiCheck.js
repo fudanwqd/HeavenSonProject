@@ -31,14 +31,14 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        cc.director.preloadScene("treasureScene", function(){
-            cc.log("treasureScene preloaded");
+        cc.director.preloadScene("treasureDisplayScene", function(){
+            cc.log("treasureDisplayScene preloaded");
         })
-     },
+    },
 
-     changeSceneTreasure(){
-        cc.log("应该切换到场景：treasureScene");
-        cc.director.loadScene("treasureScene");
+    changeSceneTreasure(){
+        cc.log("应该切换到场景：treasureDisplayScene");
+        cc.director.loadScene("treasureDisplayScene");
     },
 
     // update (dt) {},

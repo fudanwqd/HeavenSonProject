@@ -21,6 +21,11 @@ cc.Class({
             default : null,
             type : cc.AudioClip,
         },
+
+        backgroundAudio : {
+            default : null,
+            type : cc.AudioClip,
+        },
     },
 
 
@@ -31,7 +36,7 @@ cc.Class({
         cc.director.getPhysicsManager().enabled = true;
         // cc.director.getPhysicsManager().debugDrawFlags = true;
         cc.director.getCollisionManager().enabled = true;
-        cc.director.getCollisionManager().enabledDebugDraw = true;
+        // cc.director.getCollisionManager().enabledDebugDraw = true;
 
 
         this.enemies = this.node.getChildByName('enemies');
@@ -46,7 +51,7 @@ cc.Class({
         this.userData = this.game.userData;
         this.treasuresLen = cc.find('灵宝s').getComponent('TreasureDB').treasures.length;
         this.havenSonInstance = this.userData.getChildByID(this.userData.fighterID);
-        console.log(this.havenSonInstance);
+        // console.log(this.havenSonInstance);
 
         this.victory = false;
         
@@ -58,6 +63,9 @@ cc.Class({
 
         // 生成的怪物种类
         this.enemyKindId = 1;
+
+
+        cc.audioEngine.playMusic(this.backgroundAudio, true, 1);
 
         // console.log(this.userData.currentWorld);// 获取当前所在世界
     },
@@ -139,8 +147,6 @@ cc.Class({
     },
 
 
-
-
     
     ShowVictoryPage(){
         //天道之子经验更新
@@ -196,6 +202,7 @@ cc.Class({
                 this.item.getChildByName('name').active = false;
             }else{
                 this.item.getChildByName('name').getComponent(cc.Label).string = this.newTreasures[i].name;
+                this.item.getChildByName('img').getComponent(cc.Sprite).spriteFrame = this.newTreasures[i].treasureDemo.staticImage;
             }
         }
 
@@ -271,7 +278,7 @@ cc.Class({
     },
 
     backFightScence(){
-        this.active = true;
+        this.node.active = true;
         cc.director.resume();
         let backPage = cc.find("Canvas/backPage");
         backPage.active = false;
@@ -288,5 +295,10 @@ cc.Class({
 
     playAudio(audio){
         cc.audioEngine.play(audio, false, 1);
+    },
+
+    onDestroy: function () {
+        console.log("销毁战斗界面");
+        cc.audioEngine.stopMusic(this.backgroundAudio);
     },
 });

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "551dc05f-3fe6-4fea-aa1a-9ce77b876a7b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 115,
+  "height": 115,
+  "platformSettings": {},
+  "subMetas": {
+    "噬神之书": {
+      "ver": "1.0.4",
+      "uuid": "31494d7d-955b-4be9-b06e-b0867957e290",
+      "rawTextureUuid": "551dc05f-3fe6-4fea-aa1a-9ce77b876a7b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 1,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 113,
+      "height": 111,
+      "rawWidth": 115,
+      "rawHeight": 115,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

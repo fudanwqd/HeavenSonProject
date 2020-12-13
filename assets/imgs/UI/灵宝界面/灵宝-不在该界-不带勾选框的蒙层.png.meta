@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "c3082cde-2460-4c5f-bbf1-d17024dccf8c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 168,
+  "height": 175,
+  "platformSettings": {},
+  "subMetas": {
+    "灵宝-不在该界-不带勾选框的蒙层": {
+      "ver": "1.0.4",
+      "uuid": "76f6daf7-5e3d-4222-b78f-b6316b1e3b5c",
+      "rawTextureUuid": "c3082cde-2460-4c5f-bbf1-d17024dccf8c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 168,
+      "height": 175,
+      "rawWidth": 168,
+      "rawHeight": 175,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

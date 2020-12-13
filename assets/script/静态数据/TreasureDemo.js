@@ -13,6 +13,13 @@ TreasureDemo = cc.Class({
         quality : cc.Integer,
         minCosttTime : cc.Integer, //修炼获得时所需时间
         maxCostTime : cc.Integer, //跨界修炼时获取所需时间
-
+        staticImage:{
+            default:null,
+            type: cc.SpriteFrame,
+        },
+        e_headPortrait:{
+            default:null,
+            type: cc.SpriteFrame,
+        },
     }
 })
