@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "973fe474-0dbc-48ab-a71e-05ceb533fa93",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1414,
+  "height": 721,
+  "platformSettings": {},
+  "subMetas": {
+    "显示天道之子的大面板": {
+      "ver": "1.0.4",
+      "uuid": "7c062dec-dfa3-43b3-bd96-3d23c5903794",
+      "rawTextureUuid": "973fe474-0dbc-48ab-a71e-05ceb533fa93",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1414,
+      "height": 721,
+      "rawWidth": 1414,
+      "rawHeight": 721,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

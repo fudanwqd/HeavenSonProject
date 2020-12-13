@@ -22,8 +22,8 @@ cc.Class({
      },
 
      changeSceneHeavenSon(){
-        cc.log("应该切换到场景：getHeavenSonScene");
-        cc.director.loadScene("getHeavenSonScene");
+        cc.log("应该切换到场景：heavenSonScene");
+        cc.director.loadScene("heavenSonScene");
     },
 
     // update (dt) {},

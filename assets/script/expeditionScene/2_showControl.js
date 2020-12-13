@@ -75,6 +75,7 @@ cc.Class({
         
         //解锁的槽位个数、槽位：状态（是否有某天道之子在历练:-1无，0~n代表天道之子身份id）（只存已解锁的值）、【数据存储+数据初始化】
         //历练信息：天道之子id-开始历练的时间（每次历练单位耗时设置定值）this.eStartTimes
+        // cc.sys.localStorage.removeItem("e_existData");//删除
         existData = cc.sys.localStorage.getItem("e_existData");
         if(existData=='true'){//已存在数据则读取
             this.unlockN = parseInt(cc.sys.localStorage.getItem('e_unlockN'));

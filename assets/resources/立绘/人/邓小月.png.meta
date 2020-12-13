@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "da7f2956-1891-4e25-b501-f7f7d98c66df",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 255,
+  "height": 443,
+  "platformSettings": {},
+  "subMetas": {
+    "邓小月": {
+      "ver": "1.0.4",
+      "uuid": "d1231226-842f-454e-9c5b-5c6f70dee5fe",
+      "rawTextureUuid": "da7f2956-1891-4e25-b501-f7f7d98c66df",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 255,
+      "height": 443,
+      "rawWidth": 255,
+      "rawHeight": 443,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

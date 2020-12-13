@@ -2,7 +2,9 @@
   "title": "heavensonOrigin",
   "packageName": "org.cocos2d.demo",
   "startScene": "c3698825-0e1d-4199-8ae8-d84f9ad66d84",
-  "excludeScenes": [],
+  "excludeScenes": [
+    "09c60f60-13c5-4880-9fa6-e66ea683fc15"
+  ],
   "orientation": {
     "landscapeLeft": true,
     "landscapeRight": true,
@@ -23,7 +25,7 @@
   "fb-instant-games": {},
   "android": {
     "REMOTE_SERVER_ROOT": "",
-    "packageName": "org.cocos2d.demo"
+    "packageName": "heavenson1.cocos2d.demo"
   },
   "ios": {
     "REMOTE_SERVER_ROOT": "",

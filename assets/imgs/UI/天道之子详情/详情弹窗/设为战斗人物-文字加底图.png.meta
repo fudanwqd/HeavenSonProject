@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "aa2d1549-2d21-4162-9c4b-a2c7d515e350",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 462,
+  "height": 140,
+  "platformSettings": {},
+  "subMetas": {
+    "设为战斗人物-文字加底图": {
+      "ver": "1.0.4",
+      "uuid": "68a95029-773a-4005-8bd6-b51fa9217049",
+      "rawTextureUuid": "aa2d1549-2d21-4162-9c4b-a2c7d515e350",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 462,
+      "height": 140,
+      "rawWidth": 462,
+      "rawHeight": 140,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

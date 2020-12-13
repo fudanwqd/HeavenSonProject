@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "01b94973-7c3a-44b1-9e0d-60e92ffdcb47",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 500,
+  "height": 737,
+  "platformSettings": {},
+  "subMetas": {
+    "天道之子立绘底图": {
+      "ver": "1.0.4",
+      "uuid": "0d81378d-4aa3-45c1-ada4-3c4ba33d4dcc",
+      "rawTextureUuid": "01b94973-7c3a-44b1-9e0d-60e92ffdcb47",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 500,
+      "height": 737,
+      "rawWidth": 500,
+      "rawHeight": 737,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

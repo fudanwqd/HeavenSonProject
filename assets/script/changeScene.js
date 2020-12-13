@@ -36,9 +36,13 @@ cc.Class({
         });
     },
 
+    // changeSceneExpedition () {
+    //     cc.log("应该切换到场景：抽卡场景");
+    //     cc.director.loadScene("getHeavenSonScene");
+    // },
     changeSceneExpedition () {
-        cc.log("应该切换到场景：抽卡场景");
-        cc.director.loadScene("getHeavenSonScene");
+        cc.log("应该切换到场景：天道之子详情");
+        cc.director.loadScene("heavenSonScene");
     },
 
     changeFightScene () {
