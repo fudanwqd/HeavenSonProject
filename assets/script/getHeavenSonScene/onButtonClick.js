@@ -78,6 +78,7 @@ cc.Class({
             this.userData.setHmzqNum(hmzqNum-customEventData);
             var newHeavenSonDemoId = this.getHMZQRandomDemoId();
             var newHeavenSon =  this.userData.createNewHeavenSonByDemoID(newHeavenSonDemoId);
+            newHeavenSon.name = newHeavenSon.heavenSonDemo.name;
             this.userData.addNewChild(newHeavenSon);
              // 刷新页面灵石鸿蒙之气展示
              cc.find("Canvas/抽卡界面/灵石鸿蒙之气底图").getComponent("stoneAndHmzqOnload").flushStoneAndHmzqNum(); 

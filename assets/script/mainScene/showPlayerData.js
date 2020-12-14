@@ -71,7 +71,7 @@ cc.Class({
 
         this.headPortraitNode = cc.find("Canvas/头像/战斗人物占位图/人物头像");
         this.headPortrait = this.headPortraitNode.getComponent(cc.Sprite);
-        this.headPortrait.spriteFrame = this.fightSon.heavenSonDemo.staticImage;
+        this.headPortrait.spriteFrame = this.fightSon.heavenSonDemo.e_headPortrait;
 
         this.comfirmNode = cc.find("Canvas/确认弹窗");
         this.fightNameNode = cc.find("Canvas/确认弹窗/战斗人物名字");

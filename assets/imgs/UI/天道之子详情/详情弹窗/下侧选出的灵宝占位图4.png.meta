@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "4c4b3521-cdc2-4fd9-908d-d2de60e9d267",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 172,
+  "height": 185,
+  "platformSettings": {},
+  "subMetas": {
+    "下侧选出的灵宝占位图4": {
+      "ver": "1.0.4",
+      "uuid": "affaf88f-38af-4f08-bb41-5739bf905781",
+      "rawTextureUuid": "4c4b3521-cdc2-4fd9-908d-d2de60e9d267",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 172,
+      "height": 185,
+      "rawWidth": 172,
+      "rawHeight": 185,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "454eb2aa-0d22-4727-b6e6-ea535a3a587c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 81,
+  "height": 84,
+  "platformSettings": {},
+  "subMetas": {
+    "天道之子详情页面-叉-图片": {
+      "ver": "1.0.4",
+      "uuid": "31c41bf5-5546-4f4b-8e65-cf5b918b86fc",
+      "rawTextureUuid": "454eb2aa-0d22-4727-b6e6-ea535a3a587c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 81,
+      "height": 84,
+      "rawWidth": 81,
+      "rawHeight": 84,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -152,7 +152,7 @@ cc.Class({
         let header = this.show.getChildByName('header').getChildByName('header');
         let demo = this.havenSonInstance.heavenSonDemo;
         console.log(demo);
-        header.getComponent(cc.Sprite).spriteFrame = demo.staticImage;
+        header.getComponent(cc.Sprite).spriteFrame = demo.e_headPortrait;
 
         
     //     var url = 'imgs/' + this.name;

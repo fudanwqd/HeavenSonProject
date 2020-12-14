@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "d9887956-55ae-4363-8a2c-5a88d734f038",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 255,
+  "height": 443,
+  "platformSettings": {},
+  "subMetas": {
+    "秋琰琬": {
+      "ver": "1.0.4",
+      "uuid": "6653b1cb-9fc2-4027-ac53-becddd2e0f79",
+      "rawTextureUuid": "d9887956-55ae-4363-8a2c-5a88d734f038",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 255,
+      "height": 443,
+      "rawWidth": 255,
+      "rawHeight": 443,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
